@@ -1,0 +1,10 @@
+docs/
+site/
+mkdocs.yml
+__pycache__/
+*.pyc
+.venv/
+dist/
+
+# poetry.lock NÃO entra aqui: ele é versionado de propósito,
+# para todo mundo instalar exatamente as mesmas versões.

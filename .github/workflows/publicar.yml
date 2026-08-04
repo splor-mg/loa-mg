@@ -1,0 +1,56 @@
+# Publica o site no GitHub Pages sempre que os dados ou a configuração mudam.
+#
+# O passo `loa check --estrito` é proposital: se as somas do orçamento não
+# fecharem, a publicação para. Nada inconsistente vai ao ar.
+
+name: Publicar site do orçamento
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "dados/**"
+      - "config/**"
+      - "paginas/**"
+      - "loa/**"
+      - "tema/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar o Poetry
+        run: pipx install poetry
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: poetry
+
+      - name: Instalar o projeto
+        run: poetry install --no-interaction
+
+      - name: Conferir a consistência dos dados
+        run: poetry run loa check
+
+      - name: Gerar o site
+        run: poetry run loa build --estrito
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

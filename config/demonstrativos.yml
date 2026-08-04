@@ -1,0 +1,565 @@
+# =====================================================================
+#  ESTE É O ÚNICO ARQUIVO QUE VOCÊ PRECISA EDITAR PARA PUBLICAR
+#  UM DEMONSTRATIVO NOVO. Não é preciso escrever código Python.
+#
+#  Estrutura:
+#      anexos:
+#        - id / titulo / descricao
+#          demonstrativos:
+#            - id / titulo / dados / colunas / ...
+#
+#  Dica: rode `poetry run loa new nome_do_arquivo.csv` e ele imprime um
+#  bloco já preenchido com as colunas do seu CSV, pronto para colar aqui.
+#
+#  Tipos de coluna: texto | dinheiro | quantidade | percentual
+#  Funções de card: soma | contagem | maximo | valor_de
+#  Tipos de gráfico: barras | rosca
+# =====================================================================
+
+anexos:
+
+  # -------------------------------------------------------------------
+  - id: anexo-i
+    titulo: "Anexo I — Demonstrativos"
+    descricao: >-
+      Visão consolidada do Orçamento Fiscal e do Orçamento de Investimento
+      das empresas controladas pelo Estado. É por aqui que se começa: os
+      grandes números do orçamento de Minas em 2026.
+
+    demonstrativos:
+
+      - id: consolidado-receita
+        titulo: "Demonstrativo Consolidado do Orçamento Fiscal — Receita"
+        base_legal: "Art. 7º, inciso I, da Lei estadual nº 25.440/2025 (LDO)"
+        resumo: "De onde vem todo o dinheiro que o Estado espera arrecadar em 2026."
+        explicacao: |
+          A receita aparece dividida em **ordinária** (o Estado decide onde
+          aplicar) e **vinculada** (já tem destino definido por lei — saúde,
+          educação, FUNDEB, repasse aos municípios).
+
+          As linhas com valor negativo são **deduções**: parcelas que entram
+          no caixa mas saem obrigatoriamente, como a parte do ICMS que
+          pertence aos municípios. Por isso o total arrecadado é maior que o
+          total disponível.
+
+          A **receita intra-orçamentária** é dinheiro que um órgão do Estado
+          paga a outro. Aparece separada para que o mesmo real não seja
+          contado duas vezes.
+
+          Clique em uma linha com seta para abrir o detalhamento.
+        dados: consolidado_fiscal.csv
+        filtro: {lado: receita}
+        hierarquia: {campo_nivel: nivel}
+        nivel_aberto: 2
+        mostrar_total: false
+        colunas:
+          - {campo: especificacao, titulo: "Origem da receita", tipo: texto}
+          - {campo: ordinaria, titulo: "Ordinária", tipo: dinheiro}
+          - {campo: vinculada, titulo: "Vinculada", tipo: dinheiro}
+          - {campo: total, titulo: "Total", tipo: dinheiro}
+        cards:
+          - {titulo: "Receita fiscal total", campo: total, funcao: valor_de,
+             filtro: {especificacao: "TOTAL DA RECEITA FISCAL"}}
+          - {titulo: "ICMS", campo: total, funcao: maximo,
+             filtro: {especificacao: "ICMS"},
+             nota: "principal tributo do Estado"}
+          - {titulo: "Deduções obrigatórias", campo: total, funcao: valor_de,
+             filtro: {especificacao: "DEDUÇÕES DA RECEITA CORRENTE"},
+             nota: "municípios, FUNDEB e outros"}
+        validacoes:
+          - {tipo: sem_vazios, campos: [especificacao, total],
+             descricao: "toda linha tem descrição e valor"}
+
+      - id: consolidado-despesa
+        titulo: "Demonstrativo Consolidado do Orçamento Fiscal — Despesa"
+        base_legal: "Art. 7º, inciso I, da Lei estadual nº 25.440/2025 (LDO)"
+        resumo: "Para onde vai o dinheiro do Estado em 2026, por natureza do gasto."
+        explicacao: |
+          **Despesas correntes** mantêm a máquina funcionando: salários,
+          contas de luz, medicamentos, merenda. **Despesas de capital** são
+          investimentos: obras, equipamentos, amortização da dívida.
+
+          A **reserva de contingência** é uma parcela guardada para imprevistos
+          e para abrir créditos adicionais ao longo do ano.
+
+          Dentro de cada grupo, o gasto aparece separado entre Executivo e
+          demais Poderes, e depois entre administração direta e indireta.
+        dados: consolidado_fiscal.csv
+        filtro: {lado: despesa}
+        hierarquia: {campo_nivel: nivel}
+        nivel_aberto: 2
+        mostrar_total: false
+        colunas:
+          - {campo: especificacao, titulo: "Natureza da despesa", tipo: texto}
+          - {campo: ordinaria, titulo: "Ordinária", tipo: dinheiro}
+          - {campo: vinculada, titulo: "Vinculada", tipo: dinheiro}
+          - {campo: total, titulo: "Total", tipo: dinheiro}
+        cards:
+          - {titulo: "Despesa fiscal total", campo: total, funcao: valor_de,
+             filtro: {especificacao: "TOTAL DA DESPESA FISCAL"}}
+          - {titulo: "Pessoal e encargos", campo: total, funcao: valor_de,
+             filtro: {especificacao: "PESSOAL E ENCARGOS SOCIAIS"}}
+          - {titulo: "Investimentos", campo: total, funcao: maximo,
+             filtro: {especificacao: "INVESTIMENTOS"},
+             nota: "obras e equipamentos"}
+        validacoes:
+          - {tipo: sem_vazios, campos: [especificacao, total],
+             descricao: "toda linha tem descrição e valor"}
+
+      - id: categorias-economicas
+        titulo: "Resumo da Receita e da Despesa segundo as Categorias Econômicas"
+        base_legal: "Art. 2º, §1º, inciso II, da Lei federal nº 4.320/1964"
+        resumo: "O quadro clássico da Lei 4.320: receita de um lado, despesa do outro."
+        explicacao: |
+          Este é o formato exigido pela Lei federal nº 4.320/1964 para todo
+          orçamento público do país — o que permite comparar Minas com outros
+          estados.
+
+          Use o campo de filtro acima da tabela para ver só a receita ou só a
+          despesa.
+        dados: categorias_economicas.csv
+        mostrar_total: false
+        colunas:
+          - {campo: especificacao, titulo: "Especificação", tipo: texto}
+          - {campo: lado, titulo: "Lado", tipo: texto}
+          - {campo: valor, titulo: "Valor", tipo: dinheiro}
+        cards:
+          - {titulo: "Total da receita", campo: valor, funcao: soma,
+             filtro: {lado: receita}}
+          - {titulo: "Total da despesa", campo: valor, funcao: soma,
+             filtro: {lado: despesa}}
+        graficos:
+          - tipo: barras
+            titulo: "Despesa por categoria econômica"
+            rotulo: especificacao
+            valor: valor
+            filtro: {lado: despesa}
+
+      - id: despesa-por-unidade
+        titulo: "Despesa por Unidade Orçamentária segundo os Grupos de Despesa"
+        base_legal: "Art. 2º, §2º, inciso II, da Lei federal nº 4.320/1964"
+        resumo: "Quanto cada órgão do Estado tem para gastar em 2026, e com o quê."
+        explicacao: |
+          Cada linha é uma **unidade orçamentária** — a menor unidade que
+          recebe dotação própria na lei. Uma secretaria pode ter várias
+          (a secretaria em si, suas fundações, seus fundos).
+
+          As colunas são os **grupos de natureza da despesa**, a classificação
+          oficial do que se pode fazer com o dinheiro. Clique no título de uma
+          coluna para ordenar; use o filtro para achar um órgão pelo nome ou
+          pela sigla.
+        dados: despesa_uo_grupo.csv
+        ordenar_por: total
+        colunas:
+          - {campo: uo_nome, titulo: "Unidade Orçamentária", tipo: texto}
+          - {campo: pessoal, titulo: "Pessoal e encargos", tipo: dinheiro}
+          - {campo: juros, titulo: "Juros da dívida", tipo: dinheiro}
+          - {campo: outras_correntes, titulo: "Outras despesas correntes", tipo: dinheiro}
+          - {campo: investimentos, titulo: "Investimentos", tipo: dinheiro}
+          - {campo: inversoes, titulo: "Inversões financeiras", tipo: dinheiro}
+          - {campo: amortizacao, titulo: "Amortização da dívida", tipo: dinheiro}
+          - {campo: reserva, titulo: "Reserva de contingência", tipo: dinheiro}
+          - {campo: total, titulo: "Total", tipo: dinheiro}
+        cards:
+          - {titulo: "Despesa fiscal total", campo: total, funcao: soma}
+          - {titulo: "Unidades orçamentárias", funcao: contagem}
+          - {titulo: "Maior orçamento individual", campo: total, funcao: maximo}
+        graficos:
+          - tipo: barras
+            titulo: "As 12 unidades orçamentárias com maior dotação"
+            rotulo: uo_nome
+            valor: total
+            limite: 12
+            nota: "O percentual é sobre o total da despesa fiscal do Estado."
+        validacoes:
+          - {tipo: soma_igual, campo: total, esperado: "146969637358,00",
+             descricao: "soma das unidades = total da despesa fiscal"}
+          - {tipo: colunas_somam,
+             parcelas: [pessoal, juros, outras_correntes, investimentos,
+                        inversoes, amortizacao, reserva],
+             total: total,
+             descricao: "grupos de despesa somam o total em cada linha"}
+          - {tipo: sem_vazios, campos: [uo_nome, total],
+             descricao: "toda unidade tem nome e total"}
+
+      - id: quadro-geral-receita
+        titulo: "Quadro Geral da Receita"
+        base_legal: "Art. 2º, §1º, inciso I, da Lei federal nº 4.320/1964"
+        resumo: "A árvore inteira da receita do Estado, do total ao centavo classificado."
+        explicacao: |
+          O **código** de nove posições é a classificação oficial da receita,
+          usada em todo o país. Ele é hierárquico: os primeiros dígitos dizem a
+          categoria econômica, os seguintes vão estreitando até o tipo exato de
+          arrecadação.
+
+          A mesma receita aparece em vários níveis com valores iguais: não é
+          repetição, é o mesmo dinheiro visto com mais ou menos detalhe.
+          **Somar todas as linhas dá um número sem sentido** — some apenas as
+          linhas de um mesmo nível.
+        dados: receita_geral.csv
+        hierarquia: {campo_nivel: nivel}
+        nivel_aberto: 2
+        mostrar_total: false
+        colunas:
+          - {campo: especificacao, titulo: "Especificação", tipo: texto}
+          - {campo: codigo, titulo: "Código", tipo: texto}
+          - {campo: fonte, titulo: "Fonte", tipo: texto}
+          - {campo: valor, titulo: "Valor previsto", tipo: dinheiro}
+        cards:
+          - {titulo: "Receita prevista", campo: valor, funcao: soma,
+             filtro: {nivel: "1"}, nota: "somando apenas o nível mais alto"}
+          - {titulo: "Linhas de classificação", funcao: contagem}
+        validacoes:
+          - {tipo: sem_vazios, campos: [codigo, especificacao, valor],
+             descricao: "toda linha tem código, descrição e valor"}
+          - {tipo: niveis_fecham, campo_nivel: nivel, campo: valor,
+             descricao: "cada nível é igual à soma dos seus filhos"}
+
+      - id: pessoal-consolidado
+        titulo: "Demonstrativo Consolidado da Categoria de Pessoal"
+        base_legal: "Art. 22, parágrafo único, inciso I, da Lei federal nº 4.320/1964"
+        resumo: "Quantas pessoas trabalham para o Estado, órgão por órgão."
+        explicacao: |
+          **Ativos** são os servidores em exercício. **Inativos** são
+          aposentados e pensionistas pagos pelo órgão. **Terceirizados** são
+          contratados por empresas prestadoras de serviço.
+
+          São quantidades de cargos previstos no orçamento, não
+          necessariamente pessoas em exercício hoje.
+        dados: pessoal_consolidado.csv
+        ordenar_por: total
+        colunas:
+          - {campo: orgao_nome, titulo: "Órgão", tipo: texto}
+          - {campo: ativos, titulo: "Ativos", tipo: quantidade}
+          - {campo: inativos, titulo: "Inativos", tipo: quantidade}
+          - {campo: terceirizados, titulo: "Terceirizados", tipo: quantidade}
+          - {campo: total, titulo: "Total", tipo: quantidade}
+        cards:
+          - {titulo: "Total de pessoal", campo: total, funcao: soma}
+          - {titulo: "Órgãos", funcao: contagem}
+        graficos:
+          - tipo: barras
+            titulo: "Órgãos com mais pessoal"
+            rotulo: orgao_nome
+            valor: total
+            limite: 12
+
+  # -------------------------------------------------------------------
+  - id: anexo-ii-a
+    titulo: "Anexo II-A — Orçamento Fiscal (receitas)"
+    descricao: >-
+      Origem detalhada dos recursos de cada unidade orçamentária. No PDF são
+      622 páginas do mesmo quadro repetido, com a hierarquia da receita
+      "desenrolada" linha a linha. Aqui a hierarquia volta a ser uma árvore
+      que abre e fecha, e cada unidade tem sua própria página.
+
+    demonstrativos:
+
+      - id: recursos-financeiros
+        titulo: "Demonstrativo dos Recursos Financeiros"
+        base_legal: "Art. 2º, §1º, inciso I, da Lei federal nº 4.320/1964"
+        resumo: "De onde vem o dinheiro de cada unidade orçamentária do Estado."
+        explicacao: |
+          O **código** de nove posições é a classificação oficial da receita.
+          Ele é hierárquico: os primeiros dígitos dizem a categoria econômica,
+          os seguintes vão estreitando até o tipo exato de arrecadação.
+
+          É por isso que a mesma receita aparece várias vezes com valores
+          iguais em níveis diferentes: não é repetição, é o mesmo dinheiro
+          visto com mais ou menos detalhe. **Somar todas as linhas de uma
+          tabela dá um número sem sentido** — some apenas as linhas de um mesmo
+          nível.
+
+          A **fonte** é o código que amarra o recurso a uma finalidade. É ela
+          que impede, por exemplo, que dinheiro carimbado da saúde pague
+          despesa de outra área.
+
+          Comece com a árvore fechada e vá abrindo só o ramo que interessa.
+        dados: recursos_financeiros.csv
+        agrupar_por: uo_nome
+        filtro_resumo: {nivel: "1"}
+        hierarquia: {campo_nivel: nivel}
+        nivel_aberto: 3
+        mostrar_total: false
+        colunas:
+          - {campo: especificacao, titulo: "Especificação", tipo: texto}
+          - {campo: codigo, titulo: "Código", tipo: texto}
+          - {campo: fonte, titulo: "Fonte", tipo: texto}
+          - {campo: valor, titulo: "Valor previsto", tipo: dinheiro}
+        colunas_resumo:
+          - {campo: uo_nome, titulo: "Unidade Orçamentária", tipo: texto}
+          - {campo: valor, titulo: "Receita prevista", tipo: dinheiro}
+        ordenar_resumo: valor
+        cards:
+          - {titulo: "Receita das unidades", campo: valor, funcao: soma,
+             filtro: {nivel: "1"}, nota: "somando apenas o nível mais alto"}
+          - {titulo: "Unidades orçamentárias", funcao: contagem, filtro: {nivel: "1"}}
+        graficos:
+          - tipo: barras
+            titulo: "Unidades com maior receita própria"
+            rotulo: uo_nome
+            valor: valor
+            filtro: {nivel: "1"}
+            limite: 12
+        validacoes:
+          - {tipo: sem_vazios, campos: [uo_nome, codigo, valor],
+             descricao: "toda linha tem unidade, código e valor"}
+          - {tipo: niveis_fecham, campo_nivel: nivel, campo: valor,
+             descricao: "cada nível é igual à soma dos seus filhos"}
+
+      - id: fonte-grupo-despesa
+        titulo: "Fonte de Recursos e Grupos de Despesa"
+        base_legal: "Art. 8º, parágrafo único, da Lei Complementar federal nº 101/2000"
+        resumo: "Qual dinheiro paga qual tipo de gasto, em cada unidade."
+        explicacao: |
+          Cada linha cruza uma **fonte de recurso** com os **grupos de
+          despesa** que ela financia. É o quadro que mostra, na prática, o que
+          significa dinheiro carimbado: uma fonte vinculada à educação não
+          aparece pagando despesa de outra área.
+
+          O código da fonte (10, 42, 60…) é o mesmo usado no restante do
+          orçamento e na execução.
+        dados: fonte_grupo_despesa.csv
+        agrupar_por: uo_nome
+        ordenar_por: total
+        colunas:
+          - {campo: fonte, titulo: "Fonte de recurso", tipo: texto}
+          - {campo: pessoal, titulo: "Pessoal e encargos", tipo: dinheiro}
+          - {campo: outras_correntes, titulo: "Outras despesas correntes", tipo: dinheiro}
+          - {campo: investimentos, titulo: "Investimentos", tipo: dinheiro}
+          - {campo: inversoes, titulo: "Inversões financeiras", tipo: dinheiro}
+          - {campo: total, titulo: "Total", tipo: dinheiro}
+        colunas_resumo:
+          - {campo: uo_nome, titulo: "Unidade Orçamentária", tipo: texto}
+          - {campo: total, titulo: "Total", tipo: dinheiro}
+        ordenar_resumo: total
+        cards:
+          - {titulo: "Total por fonte", campo: total, funcao: soma}
+          - {titulo: "Combinações fonte × unidade", funcao: contagem}
+        validacoes:
+          - {tipo: sem_vazios, campos: [uo_nome, fonte, total],
+             descricao: "toda linha tem unidade, fonte e total"}
+
+  # -------------------------------------------------------------------
+  - id: anexo-ii-b
+    titulo: "Anexo II-B — Orçamento Fiscal (pessoal)"
+    descricao: >-
+      Detalhamento da categoria de pessoal por unidade orçamentária. No PDF
+      são 643 páginas de um mesmo quadro repetido; aqui cada unidade tem sua
+      própria página, com o quadro integral.
+
+    demonstrativos:
+
+      - id: pessoal
+        titulo: "Detalhamento da Categoria de Pessoal"
+        base_legal: "Art. 22, parágrafo único, inciso I, da Lei federal nº 4.320/1964"
+        resumo: "Quantos servidores cada unidade tem, por carreira."
+        explicacao: |
+          As categorias seguem a estrutura de carreiras do Estado:
+          **administrativa**, **técnica**, **especializada**, **docente**,
+          **direção e assessoramento** e **direção superior**.
+
+          A classificação separa **pessoal ativo** de **inativo**
+          (aposentados e pensionistas).
+
+          A quantidade é o número de cargos previstos no orçamento, não
+          necessariamente o número de pessoas em exercício hoje.
+        dados: pessoal.csv
+        agrupar_por: uo_nome
+        ordenar_por: quantidade
+        colunas:
+          - {campo: categoria, titulo: "Categoria", tipo: texto}
+          - {campo: classificacao, titulo: "Classificação", tipo: texto}
+          - {campo: quantidade, titulo: "Quantidade", tipo: quantidade}
+        colunas_resumo:
+          - {campo: uo_nome, titulo: "Unidade Orçamentária", tipo: texto}
+          - {campo: quantidade, titulo: "Cargos previstos", tipo: quantidade}
+        ordenar_resumo: quantidade
+        cards:
+          - {titulo: "Cargos previstos", campo: quantidade, funcao: soma}
+          - {titulo: "Unidades detalhadas", funcao: contagem}
+        graficos:
+          - tipo: barras
+            titulo: "Categorias com mais cargos"
+            rotulo: categoria
+            valor: quantidade
+            limite: 10
+        validacoes:
+          - {tipo: sem_vazios, campos: [uo_nome, categoria],
+             descricao: "toda linha tem unidade e categoria"}
+
+  # -------------------------------------------------------------------
+  - id: anexo-iii
+    titulo: "Anexo III — Investimento das estatais"
+    descricao: >-
+      Orçamento de Investimento das empresas em que o Estado é sócio
+      majoritário. Elas se sustentam com receita própria, por isso só os
+      investimentos entram na lei orçamentária.
+
+    demonstrativos:
+
+      - id: investimento-estatais
+        titulo: "Investimento por Empresa segundo as Fontes de Financiamento"
+        base_legal: "Art. 165, §5º, inciso II, da Constituição Federal"
+        resumo: "Quanto cada empresa controlada pelo Estado vai investir, e com que dinheiro."
+        explicacao: |
+          Estas empresas — CEMIG, COPASA, BDMG, GASMIG e outras — não dependem
+          do Tesouro estadual para se manter: cobram tarifas ou prestam
+          serviços. O que a Assembleia autoriza aqui é o **plano de
+          investimento** de cada uma: usinas, redes de água e esgoto,
+          gasodutos, sistemas.
+
+          As colunas mostram a origem do dinheiro. Repare que **recursos
+          próprios** dominam: é a diferença entre uma estatal dependente e
+          uma que se sustenta.
+
+          Por isso os valores desta página **não se somam** ao Orçamento
+          Fiscal: são orçamentos distintos, com dinheiro de origem diferente.
+        dados: investimento_estatais.csv
+        ordenar_por: total
+        colunas:
+          - {campo: uo_nome, titulo: "Empresa", tipo: texto}
+          - {campo: tesouro_ordinario, titulo: "Tesouro ordinário", tipo: dinheiro}
+          - {campo: tesouro_vinculado, titulo: "Tesouro vinculado", tipo: dinheiro}
+          - {campo: outras_entidades, titulo: "Outras entidades", tipo: dinheiro}
+          - {campo: operacao_credito, titulo: "Operação de crédito", tipo: dinheiro}
+          - {campo: recursos_proprios, titulo: "Recursos próprios", tipo: dinheiro}
+          - {campo: outras_origens, titulo: "Outras origens", tipo: dinheiro}
+          - {campo: total, titulo: "Total", tipo: dinheiro}
+        cards:
+          - {titulo: "Investimento das estatais", campo: total, funcao: soma}
+          - {titulo: "Empresas", funcao: contagem}
+          - {titulo: "Maior plano individual", campo: total, funcao: maximo}
+        graficos:
+          - tipo: rosca
+            titulo: "Distribuição do investimento entre as empresas"
+            rotulo: uo_nome
+            valor: total
+            limite: 8
+        validacoes:
+          - {tipo: sem_vazios, campos: [uo_nome, total],
+             descricao: "toda empresa tem nome e valor"}
+
+      - id: investimento-detalhe
+        titulo: "Investimento segundo o Detalhamento"
+        base_legal: "Art. 165, §5º, inciso II, da Constituição Federal"
+        resumo: "No que cada empresa vai aplicar o dinheiro do investimento."
+        explicacao: |
+          Abre o total de cada empresa por tipo de aplicação — obras,
+          máquinas e equipamentos, participações — e pela fonte que financia
+          cada parcela.
+        dados: investimento_detalhe.csv
+        agrupar_por: uo_nome
+        hierarquia: {campo_nivel: nivel}
+        nivel_aberto: 1
+        mostrar_total: false
+        colunas:
+          - {campo: especificacao, titulo: "Detalhamento", tipo: texto}
+          - {campo: valor, titulo: "Valor", tipo: dinheiro}
+        colunas_resumo:
+          - {campo: uo_nome, titulo: "Empresa", tipo: texto}
+          - {campo: valor, titulo: "Valor", tipo: dinheiro}
+        filtro_resumo: {nivel: "1"}
+        ordenar_resumo: valor
+        cards:
+          - {titulo: "Linhas de detalhamento", funcao: contagem}
+        validacoes:
+          - {tipo: sem_vazios, campos: [uo_nome, especificacao],
+             descricao: "toda linha tem empresa e detalhamento"}
+
+  # -------------------------------------------------------------------
+  - id: anexo-iv
+    titulo: "Anexo IV — Investimentos por região"
+    descricao: >-
+      Distribuição regionalizada dos investimentos, por região geográfica
+      intermediária de Minas Gerais. É o anexo que responde à pergunta mais
+      comum do cidadão: *quanto vai para a minha região?*
+
+    demonstrativos:
+
+      - id: regionalizado
+        titulo: "Obras por Unidade Orçamentária segundo as Regiões Geográficas Intermediárias"
+        base_legal: "Art. 165, §7º, da Constituição Federal e LDO estadual"
+        resumo: "Onde, no mapa de Minas, o Estado vai investir em 2026."
+        explicacao: |
+          Minas Gerais é dividida pelo IBGE em **13 regiões geográficas
+          intermediárias**. Cada obra prevista no orçamento é atribuída à
+          região onde será executada.
+
+          Existe ainda a categoria **Estadual**: obras de alcance em todo o
+          estado, que não se localizam em uma região só — uma rodovia que
+          cruza várias, um sistema de informação, uma frota. Ela aparece na
+          tabela e no ranking, mas não tem lugar no mapa.
+
+          Clique em uma região no mapa para ver a lista completa de unidades
+          orçamentárias que investem ali, com os valores integrais.
+        dados: regionalizado.csv
+        agrupar_por: regiao
+        prefixo_slug: "regiao-"
+        ordenar_por: valor
+        colunas:
+          - {campo: orgao_nome, titulo: "Órgão", tipo: texto}
+          - {campo: uo_nome, titulo: "Unidade Orçamentária", tipo: texto}
+          - {campo: valor, titulo: "Investimento previsto", tipo: dinheiro}
+        colunas_resumo:
+          - {campo: regiao, titulo: "Região geográfica intermediária", tipo: texto}
+          - {campo: valor, titulo: "Investimento previsto", tipo: dinheiro}
+        ordenar_resumo: valor
+        cards:
+          - {titulo: "Investimento regionalizado", campo: valor, funcao: soma}
+          - {titulo: "Territórios atendidos", funcao: contagem}
+        mapa:
+          titulo: "Investimento previsto por região geográfica intermediária"
+          regiao: regiao
+          valor: valor
+        graficos:
+          - tipo: barras
+            titulo: "Ranking dos territórios"
+            rotulo: regiao
+            valor: valor
+        validacoes:
+          - {tipo: sem_vazios, campos: [regiao, valor],
+             descricao: "toda linha tem região e valor"}
+
+      - id: obras-municipio
+        titulo: "Obras por Município"
+        base_legal: "Art. 165, §7º, da Constituição Federal e LDO estadual"
+        resumo: "A lista das obras previstas, uma a uma, com a cidade onde ficam."
+        explicacao: |
+          Este é o nível mais concreto do orçamento inteiro: não é uma
+          categoria contábil, é a obra que vai acontecer na sua cidade.
+
+          **Tesouro** é o dinheiro que vem do Estado; **outras fontes** são
+          convênios, operações de crédito e recursos das próprias entidades.
+
+          Use o filtro para digitar o nome do seu município.
+        dados: obras_municipio.csv
+        agrupar_por: municipio
+        prefixo_slug: "municipio-"
+        ordenar_por: total
+        colunas:
+          - {campo: obra, titulo: "Obra", tipo: texto}
+          - {campo: uo_nome, titulo: "Unidade Orçamentária", tipo: texto}
+          - {campo: acao, titulo: "Ação orçamentária", tipo: texto}
+          - {campo: tesouro, titulo: "Tesouro", tipo: dinheiro}
+          - {campo: outras_fontes, titulo: "Outras fontes", tipo: dinheiro}
+          - {campo: total, titulo: "Total", tipo: dinheiro}
+        colunas_resumo:
+          - {campo: municipio, titulo: "Município", tipo: texto}
+          - {campo: total, titulo: "Investimento previsto", tipo: dinheiro}
+        ordenar_resumo: total
+        cards:
+          - {titulo: "Investimento em obras", campo: total, funcao: soma}
+          - {titulo: "Obras previstas", funcao: contagem}
+          - {titulo: "Municípios atendidos", funcao: contagem}
+        graficos:
+          - tipo: barras
+            titulo: "Municípios com maior investimento previsto"
+            rotulo: municipio
+            valor: total
+            limite: 15
+        validacoes:
+          - {tipo: colunas_somam, parcelas: [tesouro, outras_fontes], total: total,
+             descricao: "tesouro + outras fontes = total de cada obra"}
+          - {tipo: sem_vazios, campos: [municipio, obra, total],
+             descricao: "toda obra tem município, descrição e valor"}

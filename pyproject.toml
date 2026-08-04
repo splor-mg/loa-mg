@@ -1,0 +1,31 @@
+[project]
+name = "loa-mg"
+version = "1.0.0"
+description = "Site da Lei Orçamentária Anual do Estado de Minas Gerais"
+authors = [
+    { name = "SCPO/SEPLAG-MG" },
+]
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "mkdocs-material (>=9.5,<10.0)",
+    "pyyaml (>=6.0,<7.0)",
+]
+
+# O comando `loa` fica disponível depois de `poetry install`.
+[project.scripts]
+loa = "loa.cli:principal"
+
+[tool.poetry]
+packages = [
+    { include = "loa" },
+]
+
+# Dependências só de desenvolvimento: não vão para o site publicado.
+# Instale com `poetry install --with dev`.
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+
+[build-system]
+requires = ["poetry-core>=2.0"]
+build-backend = "poetry.core.masonry.api"

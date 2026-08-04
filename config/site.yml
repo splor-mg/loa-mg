@@ -1,0 +1,98 @@
+# Identidade do site e configuração do MkDocs Material.
+# Este arquivo é copiado para o mkdocs.yml final pelo comando `loa build`.
+
+mkdocs:
+  site_name: Orçamento de Minas Gerais — LOA 2026
+  site_description: >-
+    Lei Orçamentária Anual do Estado de Minas Gerais, exercício 2026.
+    Todos os demonstrativos do projeto de lei enviado à Assembleia
+    Legislativa, navegáveis, pesquisáveis e com os dados abertos.
+  site_author: SEPLAG-MG / Subsecretaria de Planejamento e Orçamento
+  copyright: >-
+    Governo do Estado de Minas Gerais — dados públicos, uso livre.
+    Elaboração: SCPO/SEPLAG.
+
+  # Ao publicar, troque pela URL definitiva:
+  site_url: https://splor-mg.github.io/loa/
+  repo_url: https://github.com/splor-mg/loa
+  repo_name: splor-mg/loa
+  edit_uri: ""
+
+  theme:
+    name: material
+    language: pt-BR
+    font:
+      text: Inter
+      code: JetBrains Mono
+    # Vermelho e branco da bandeira de Minas Gerais.
+    # 'custom' aponta para as variáveis definidas em tema/loa.css.
+    palette:
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        primary: custom
+        accent: custom
+        toggle:
+          icon: material/weather-night
+          name: Modo escuro
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        primary: custom
+        accent: custom
+        toggle:
+          icon: material/weather-sunny
+          name: Modo claro
+    logo: assets/bandeira.svg
+    favicon: assets/bandeira.svg
+    icon:
+      repo: fontawesome/brands/github
+    features:
+      - navigation.instant        # navegação sem recarregar a página
+      - navigation.tracking
+      - navigation.tabs           # anexos como abas no topo
+      - navigation.sections
+      - navigation.top
+      - navigation.indexes
+      - navigation.prune          # essencial: milhares de páginas sem travar
+      - toc.follow
+      - search.suggest
+      - search.highlight
+      - search.share
+      - content.tooltips          # glossário aparece como balãozinho
+      - content.action.view
+
+  plugins:
+    - search:
+        lang: pt
+
+  markdown_extensions:
+    - abbr
+    - admonition
+    - attr_list
+    - def_list
+    - footnotes
+    - md_in_html
+    - tables
+    - toc:
+        permalink: "¶"
+        permalink_title: Link permanente para esta seção
+    - pymdownx.details
+    - pymdownx.superfences
+    # Habilita os ícones :material-...: e :octicons-...: usados nas páginas.
+    # O prefixo PY! vira uma tag !!python/name: no mkdocs.yml gerado.
+    - pymdownx.emoji:
+        emoji_index: "PY!material.extensions.emoji.twemoji"
+        emoji_generator: "PY!material.extensions.emoji.to_svg"
+    - pymdownx.tabbed:
+        alternate_style: true
+
+  extra_css:
+    - assets/loa.css
+  extra_javascript:
+    - assets/loa.js
+
+  extra:
+    generator: false
+    social:
+      - icon: material/web
+        link: https://www.mg.gov.br
+        name: Portal do Governo de Minas Gerais
