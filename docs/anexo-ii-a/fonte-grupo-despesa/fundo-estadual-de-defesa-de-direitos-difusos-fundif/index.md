@@ -22,13 +22,9 @@ hide:
 
 <div class="loa-cards">
 <div class="loa-card">
-<span class="loa-card__titulo">Total por fonte</span>
-<strong class="loa-card__valor">R$ 19,51 mi</strong>
-<span class="loa-card__exato">R$ 19.509.370,00</span>
-</div>
-<div class="loa-card">
-<span class="loa-card__titulo">Combinações fonte × unidade</span>
-<strong class="loa-card__valor">2</strong>
+<span class="loa-card__titulo">Despesa por fonte</span>
+<strong class="loa-card__valor">R$ 9,75 mi</strong>
+<span class="loa-card__exato">R$ 9.754.685,00</span>
 </div>
 </div>
 
@@ -46,7 +42,7 @@ hide:
       <colgroup><col style="width:14rem"><col style="width:12rem"><col style="width:12rem"><col style="width:12rem"><col style="width:12rem"><col style="width:12rem"></colgroup>
       <thead><tr><th class="loa-col--texto" data-coluna="0" data-tipo="texto" tabindex="0" role="columnheader" aria-sort="none">Fonte de recurso</th><th class="loa-col--numero" data-coluna="1" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Pessoal e encargos</th><th class="loa-col--numero" data-coluna="2" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Outras despesas correntes</th><th class="loa-col--numero" data-coluna="3" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Investimentos</th><th class="loa-col--numero" data-coluna="4" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Inversões financeiras</th><th class="loa-col--numero" data-coluna="5" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Total</th></tr></thead>
       <tbody>
-        <tr data-nivel="1" data-num="0"><td class="loa-col--texto">39 - MULTAS PECUNIÁRIAS E JUROS DE MORA FIXADOS EM SENTENÇAS JUDICIAIS</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="5566985.00">R$ 5.566.985,00</td><td class="loa-col--numero" data-valor="4187700.00">R$ 4.187.700,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="9754685.00">R$ 9.754.685,00</td></tr><tr data-nivel="1" data-num="1"><td class="loa-col--texto">TOTAL</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="5566985.00">R$ 5.566.985,00</td><td class="loa-col--numero" data-valor="4187700.00">R$ 4.187.700,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="9754685.00">R$ 9.754.685,00</td></tr><tr class="loa-total"><td class="loa-col--texto">TOTAL</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 11.133.970,00</td><td class="loa-col--numero">R$ 8.375.400,00</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 19.509.370,00</td></tr>
+        <tr data-nivel="1" data-num="0"><td class="loa-col--texto">39 - MULTAS PECUNIÁRIAS E JUROS DE MORA FIXADOS EM SENTENÇAS JUDICIAIS</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="5566985.00">R$ 5.566.985,00</td><td class="loa-col--numero" data-valor="4187700.00">R$ 4.187.700,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="9754685.00">R$ 9.754.685,00</td></tr><tr data-nivel="1" data-num="1"><td class="loa-col--texto">TOTAL DA UNIDADE</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="5566985.00">R$ 5.566.985,00</td><td class="loa-col--numero" data-valor="4187700.00">R$ 4.187.700,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="9754685.00">R$ 9.754.685,00</td></tr><tr class="loa-total"><td class="loa-col--texto">TOTAL</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 11.133.970,00</td><td class="loa-col--numero">R$ 8.375.400,00</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 19.509.370,00</td></tr>
       </tbody>
     </table>
   </div>

@@ -191,7 +191,11 @@ def importar_anexo_i(volume: Path, destino: Path) -> dict[str, int]:
             destino, "consolidado_fiscal.csv",
             ["lado", "nivel", "especificacao", "ordinaria", "vinculada", "total"], linhas)
 
-    # T3: resumo por categoria econômica
+    # T3: resumo por categoria econômica.
+    #
+    # O arquivo mistura três coisas na mesma coluna: as PARCELAS (receitas
+    # correntes, de capital…), a linha TOTAL e a linha DÉFICIT. Somar tudo
+    # conta o mesmo dinheiro três vezes — a coluna `papel` separa os três.
     t3 = volume / "T3_DCGF_Resumo_Demonst_Receita_Despesa_Segundo_Categorias.txt"
     if t3.exists():
         linhas = []
@@ -202,11 +206,19 @@ def importar_anexo_i(volume: Path, destino: Path) -> dict[str, int]:
             ):
                 nome = _texto(registro.get(campo_nome))
                 valor = _numero(registro.get(campo_valor))
-                if nome and valor:
-                    linhas.append([lado, 1, nome, valor])
+                if not (nome and valor):
+                    continue
+                acima = nome.upper()
+                if acima.startswith("TOTAL"):
+                    papel = "total"
+                elif acima.startswith(("DÉFICIT", "DEFICIT", "SUPERÁVIT", "SUPERAVIT")):
+                    papel = "resultado"
+                else:
+                    papel = "parcela"
+                linhas.append([lado, papel, nome, valor])
         resultado["categorias_economicas.csv"] = gravar(
             destino, "categorias_economicas.csv",
-            ["lado", "nivel", "especificacao", "valor"], linhas)
+            ["lado", "papel", "especificacao", "valor"], linhas)
 
     # T4: despesa por unidade orçamentária e grupo
     t4 = volume / "T4_DEMONSTRATIVO_DESPESA_POR_ORGAOS_ENTIDADES_SEGUNDO_GRUPOS_DESPESA.txt"
@@ -316,28 +328,49 @@ def importar_anexo_ii(volume: Path, destino: Path) -> dict[str, int]:
             ["orgao_nome", "uo_nome", "classificacao", "categoria",
              "quantidade", "valor"], linhas)
 
-    # tabela2: fonte de recurso e grupo de despesa
+    # tabela2: fonte de recurso e grupo de despesa.
+    #
+    # Cuidado com o layout: cada fonte ocupa VÁRIAS linhas, uma por IAG, e
+    # o valor da fonte só aparece na linha de subtotal (a que traz "Total"
+    # na coluna IAG). A linha onde o nome da fonte aparece contém apenas o
+    # primeiro IAG — usá-la subestima a fonte. Na ALMG, por exemplo, a
+    # fonte 10 vale R$ 2,04 bi no subtotal e R$ 1,60 bi na primeira linha.
+    #
+    # A última linha de cada unidade traz "TOTAL" na coluna da fonte: é a
+    # soma da unidade, marcada aqui como papel "total" para não ser somada
+    # junto com as parcelas.
     pasta = volume / "tabela2"
     if pasta.exists():
+        campos = ("PESSOAL E ENCARGOS SOCIAIS", "OUTRAS DESPESAS CORRENTES",
+                  "INVESTIMENTOS", "INVERSÕES FINANCEIRAS")
         linhas = []
         for arquivo in sorted(pasta.glob("*.txt")):
             registros = preencher(ler_tsv(arquivo), ["nome_uo", "nome_orgao"])
+            fonte_atual = ""
             for registro in registros:
                 fonte = _texto(registro.get("FONTE / GRUPO DE DESPESA"))
+                iag = _texto(registro.get("IAG"))
                 total = _numero(registro.get("Total"))
-                if not (fonte and total):
+
+                if fonte and fonte.upper() != "TOTAL":
+                    fonte_atual = fonte           # abre uma fonte; valor vem depois
                     continue
+
+                eh_total_da_uo = fonte.upper() == "TOTAL"
+                eh_subtotal = iag.upper() == "TOTAL"
+                if not (eh_total_da_uo or eh_subtotal) or not total:
+                    continue
+
                 linhas.append([so_uo(registro.get("nome_orgao")),
-                               so_uo(registro.get("nome_uo")), fonte,
-                               _numero(registro.get("PESSOAL E ENCARGOS SOCIAIS")) or "0,00",
-                               _numero(registro.get("OUTRAS DESPESAS CORRENTES")) or "0,00",
-                               _numero(registro.get("INVESTIMENTOS")) or "0,00",
-                               _numero(registro.get("INVERSÕES FINANCEIRAS")) or "0,00",
-                               total])
+                               so_uo(registro.get("nome_uo")),
+                               "TOTAL DA UNIDADE" if eh_total_da_uo else fonte_atual,
+                               "total" if eh_total_da_uo else "parcela"]
+                              + [_numero(registro.get(c)) or "0,00" for c in campos]
+                              + [total])
         resultado["fonte_grupo_despesa.csv"] = gravar(
             destino, "fonte_grupo_despesa.csv",
-            ["orgao_nome", "uo_nome", "fonte", "pessoal", "outras_correntes",
-             "investimentos", "inversoes", "total"], linhas)
+            ["orgao_nome", "uo_nome", "fonte", "papel", "pessoal",
+             "outras_correntes", "investimentos", "inversoes", "total"], linhas)
 
     return resultado
 

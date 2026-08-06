@@ -22,13 +22,9 @@ hide:
 
 <div class="loa-cards">
 <div class="loa-card">
-<span class="loa-card__titulo">Total por fonte</span>
-<strong class="loa-card__valor">R$ 120,10 mi</strong>
-<span class="loa-card__exato">R$ 120.100.000,00</span>
-</div>
-<div class="loa-card">
-<span class="loa-card__titulo">Combinações fonte × unidade</span>
-<strong class="loa-card__valor">3</strong>
+<span class="loa-card__titulo">Despesa por fonte</span>
+<strong class="loa-card__valor">R$ 60,05 mi</strong>
+<span class="loa-card__exato">R$ 60.050.000,00</span>
 </div>
 </div>
 
@@ -46,7 +42,7 @@ hide:
       <colgroup><col style="width:14rem"><col style="width:12rem"><col style="width:12rem"><col style="width:12rem"><col style="width:12rem"><col style="width:12rem"></colgroup>
       <thead><tr><th class="loa-col--texto" data-coluna="0" data-tipo="texto" tabindex="0" role="columnheader" aria-sort="none">Fonte de recurso</th><th class="loa-col--numero" data-coluna="1" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Pessoal e encargos</th><th class="loa-col--numero" data-coluna="2" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Outras despesas correntes</th><th class="loa-col--numero" data-coluna="3" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Investimentos</th><th class="loa-col--numero" data-coluna="4" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Inversões financeiras</th><th class="loa-col--numero" data-coluna="5" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Total</th></tr></thead>
       <tbody>
-        <tr data-nivel="1" data-num="0"><td class="loa-col--texto">TOTAL</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="28800000.00">R$ 28.800.000,00</td><td class="loa-col--numero" data-valor="31250000.00">R$ 31.250.000,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="60050000.00">R$ 60.050.000,00</td></tr><tr data-nivel="1" data-num="1"><td class="loa-col--texto">60 - RECURSOS DIRETAMENTE ARRECADADOS</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="28800000.00">R$ 28.800.000,00</td><td class="loa-col--numero" data-valor="31200000.00">R$ 31.200.000,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="60000000.00">R$ 60.000.000,00</td></tr><tr data-nivel="1" data-num="2"><td class="loa-col--texto">47 - ALIENAÇÃO DE BENS DE ENTIDADES ESTADUAIS</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="50000.00">R$ 50.000,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="50000.00">R$ 50.000,00</td></tr><tr class="loa-total"><td class="loa-col--texto">TOTAL</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 57.600.000,00</td><td class="loa-col--numero">R$ 62.500.000,00</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 120.100.000,00</td></tr>
+        <tr data-nivel="1" data-num="0"><td class="loa-col--texto">TOTAL DA UNIDADE</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="28800000.00">R$ 28.800.000,00</td><td class="loa-col--numero" data-valor="31250000.00">R$ 31.250.000,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="60050000.00">R$ 60.050.000,00</td></tr><tr data-nivel="1" data-num="1"><td class="loa-col--texto">60 - RECURSOS DIRETAMENTE ARRECADADOS</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="28800000.00">R$ 28.800.000,00</td><td class="loa-col--numero" data-valor="31200000.00">R$ 31.200.000,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="60000000.00">R$ 60.000.000,00</td></tr><tr data-nivel="1" data-num="2"><td class="loa-col--texto">47 - ALIENAÇÃO DE BENS DE ENTIDADES ESTADUAIS</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="50000.00">R$ 50.000,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="50000.00">R$ 50.000,00</td></tr><tr class="loa-total"><td class="loa-col--texto">TOTAL</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 57.600.000,00</td><td class="loa-col--numero">R$ 62.500.000,00</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 120.100.000,00</td></tr>
       </tbody>
     </table>
   </div>

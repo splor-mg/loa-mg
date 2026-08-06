@@ -22,13 +22,9 @@ hide:
 
 <div class="loa-cards">
 <div class="loa-card">
-<span class="loa-card__titulo">Total por fonte</span>
-<strong class="loa-card__valor">R$ 2,15 bi</strong>
-<span class="loa-card__exato">R$ 2.148.039.821,00</span>
-</div>
-<div class="loa-card">
-<span class="loa-card__titulo">Combinações fonte × unidade</span>
-<strong class="loa-card__valor">3</strong>
+<span class="loa-card__titulo">Despesa por fonte</span>
+<strong class="loa-card__valor">R$ 1,74 bi</strong>
+<span class="loa-card__exato">R$ 1.742.278.106,00</span>
 </div>
 </div>
 
@@ -46,7 +42,7 @@ hide:
       <colgroup><col style="width:14rem"><col style="width:12rem"><col style="width:12rem"><col style="width:12rem"><col style="width:12rem"><col style="width:12rem"></colgroup>
       <thead><tr><th class="loa-col--texto" data-coluna="0" data-tipo="texto" tabindex="0" role="columnheader" aria-sort="none">Fonte de recurso</th><th class="loa-col--numero" data-coluna="1" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Pessoal e encargos</th><th class="loa-col--numero" data-coluna="2" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Outras despesas correntes</th><th class="loa-col--numero" data-coluna="3" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Investimentos</th><th class="loa-col--numero" data-coluna="4" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Inversões financeiras</th><th class="loa-col--numero" data-coluna="5" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Total</th></tr></thead>
       <tbody>
-        <tr data-nivel="1" data-num="0"><td class="loa-col--texto">TOTAL</td><td class="loa-col--numero" data-valor="1119284718.00">R$ 1.119.284.718,00</td><td class="loa-col--numero" data-valor="619106926.00">R$ 619.106.926,00</td><td class="loa-col--numero" data-valor="3886462.00">R$ 3.886.462,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="1742278106.00">R$ 1.742.278.106,00</td></tr><tr data-nivel="1" data-num="1"><td class="loa-col--texto">10 - RECURSOS ORDINÁRIOS - RECURSOS NÃO VINCULADOS DE IMPOSTOS</td><td class="loa-col--numero" data-valor="371866796.00">R$ 371.866.796,00</td><td class="loa-col--numero" data-valor="29657457.00">R$ 29.657.457,00</td><td class="loa-col--numero" data-valor="3136462.00">R$ 3.136.462,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="404660715.00">R$ 404.660.715,00</td></tr><tr data-nivel="1" data-num="2"><td class="loa-col--texto">9 - TERMOS DE AJUSTAMENTO, DOAÇÕES CONTROLADAS POR INSTRUMENTO JURÍDICO E CONGÊNERES</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="351000.00">R$ 351.000,00</td><td class="loa-col--numero" data-valor="750000.00">R$ 750.000,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="1101000.00">R$ 1.101.000,00</td></tr><tr class="loa-total"><td class="loa-col--texto">TOTAL</td><td class="loa-col--numero">R$ 1.491.151.514,00</td><td class="loa-col--numero">R$ 649.115.383,00</td><td class="loa-col--numero">R$ 7.772.924,00</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 2.148.039.821,00</td></tr>
+        <tr data-nivel="1" data-num="0"><td class="loa-col--texto">TOTAL DA UNIDADE</td><td class="loa-col--numero" data-valor="1119284718.00">R$ 1.119.284.718,00</td><td class="loa-col--numero" data-valor="619106926.00">R$ 619.106.926,00</td><td class="loa-col--numero" data-valor="3886462.00">R$ 3.886.462,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="1742278106.00">R$ 1.742.278.106,00</td></tr><tr data-nivel="1" data-num="1"><td class="loa-col--texto">10 - RECURSOS ORDINÁRIOS - RECURSOS NÃO VINCULADOS DE IMPOSTOS</td><td class="loa-col--numero" data-valor="1119284718.00">R$ 1.119.284.718,00</td><td class="loa-col--numero" data-valor="618755926.00">R$ 618.755.926,00</td><td class="loa-col--numero" data-valor="3136462.00">R$ 3.136.462,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="1741177106.00">R$ 1.741.177.106,00</td></tr><tr data-nivel="1" data-num="2"><td class="loa-col--texto">9 - TERMOS DE AJUSTAMENTO, DOAÇÕES CONTROLADAS POR INSTRUMENTO JURÍDICO E CONGÊNERES</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="351000.00">R$ 351.000,00</td><td class="loa-col--numero" data-valor="750000.00">R$ 750.000,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="1101000.00">R$ 1.101.000,00</td></tr><tr class="loa-total"><td class="loa-col--texto">TOTAL</td><td class="loa-col--numero">R$ 2.238.569.436,00</td><td class="loa-col--numero">R$ 1.238.213.852,00</td><td class="loa-col--numero">R$ 7.772.924,00</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 3.484.556.212,00</td></tr>
       </tbody>
     </table>
   </div>

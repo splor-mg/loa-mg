@@ -22,13 +22,9 @@ hide:
 
 <div class="loa-cards">
 <div class="loa-card">
-<span class="loa-card__titulo">Total por fonte</span>
-<strong class="loa-card__valor">R$ 35,83 mi</strong>
-<span class="loa-card__exato">R$ 35.828.506,00</span>
-</div>
-<div class="loa-card">
-<span class="loa-card__titulo">Combinações fonte × unidade</span>
-<strong class="loa-card__valor">2</strong>
+<span class="loa-card__titulo">Despesa por fonte</span>
+<strong class="loa-card__valor">R$ 18,67 mi</strong>
+<span class="loa-card__exato">R$ 18.674.829,00</span>
 </div>
 </div>
 
@@ -46,7 +42,7 @@ hide:
       <colgroup><col style="width:14rem"><col style="width:12rem"><col style="width:12rem"><col style="width:12rem"><col style="width:12rem"><col style="width:12rem"></colgroup>
       <thead><tr><th class="loa-col--texto" data-coluna="0" data-tipo="texto" tabindex="0" role="columnheader" aria-sort="none">Fonte de recurso</th><th class="loa-col--numero" data-coluna="1" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Pessoal e encargos</th><th class="loa-col--numero" data-coluna="2" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Outras despesas correntes</th><th class="loa-col--numero" data-coluna="3" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Investimentos</th><th class="loa-col--numero" data-coluna="4" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Inversões financeiras</th><th class="loa-col--numero" data-coluna="5" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Total</th></tr></thead>
       <tbody>
-        <tr data-nivel="1" data-num="0"><td class="loa-col--texto">TOTAL</td><td class="loa-col--numero" data-valor="15149831.00">R$ 15.149.831,00</td><td class="loa-col--numero" data-valor="3524998.00">R$ 3.524.998,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="18674829.00">R$ 18.674.829,00</td></tr><tr data-nivel="1" data-num="1"><td class="loa-col--texto">10 - RECURSOS ORDINÁRIOS - RECURSOS NÃO VINCULADOS DE IMPOSTOS</td><td class="loa-col--numero" data-valor="15149831.00">R$ 15.149.831,00</td><td class="loa-col--numero" data-valor="2003846.00">R$ 2.003.846,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="17153677.00">R$ 17.153.677,00</td></tr><tr class="loa-total"><td class="loa-col--texto">TOTAL</td><td class="loa-col--numero">R$ 30.299.662,00</td><td class="loa-col--numero">R$ 5.528.844,00</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 35.828.506,00</td></tr>
+        <tr data-nivel="1" data-num="0"><td class="loa-col--texto">10 - RECURSOS ORDINÁRIOS - RECURSOS NÃO VINCULADOS DE IMPOSTOS</td><td class="loa-col--numero" data-valor="15149831.00">R$ 15.149.831,00</td><td class="loa-col--numero" data-valor="3524998.00">R$ 3.524.998,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="18674829.00">R$ 18.674.829,00</td></tr><tr data-nivel="1" data-num="1"><td class="loa-col--texto">TOTAL DA UNIDADE</td><td class="loa-col--numero" data-valor="15149831.00">R$ 15.149.831,00</td><td class="loa-col--numero" data-valor="3524998.00">R$ 3.524.998,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="18674829.00">R$ 18.674.829,00</td></tr><tr class="loa-total"><td class="loa-col--texto">TOTAL</td><td class="loa-col--numero">R$ 30.299.662,00</td><td class="loa-col--numero">R$ 7.049.996,00</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 37.349.658,00</td></tr>
       </tbody>
     </table>
   </div>

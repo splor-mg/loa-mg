@@ -22,13 +22,9 @@ hide:
 
 <div class="loa-cards">
 <div class="loa-card">
-<span class="loa-card__titulo">Total por fonte</span>
-<strong class="loa-card__valor">R$ 16,00 mi</strong>
-<span class="loa-card__exato">R$ 15.996.866,00</span>
-</div>
-<div class="loa-card">
-<span class="loa-card__titulo">Combinações fonte × unidade</span>
-<strong class="loa-card__valor">3</strong>
+<span class="loa-card__titulo">Despesa por fonte</span>
+<strong class="loa-card__valor">R$ 8,22 mi</strong>
+<span class="loa-card__exato">R$ 8.215.238,00</span>
 </div>
 </div>
 
@@ -46,7 +42,7 @@ hide:
       <colgroup><col style="width:14rem"><col style="width:12rem"><col style="width:12rem"><col style="width:12rem"><col style="width:12rem"><col style="width:12rem"></colgroup>
       <thead><tr><th class="loa-col--texto" data-coluna="0" data-tipo="texto" tabindex="0" role="columnheader" aria-sort="none">Fonte de recurso</th><th class="loa-col--numero" data-coluna="1" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Pessoal e encargos</th><th class="loa-col--numero" data-coluna="2" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Outras despesas correntes</th><th class="loa-col--numero" data-coluna="3" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Investimentos</th><th class="loa-col--numero" data-coluna="4" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Inversões financeiras</th><th class="loa-col--numero" data-coluna="5" data-tipo="dinheiro" tabindex="0" role="columnheader" aria-sort="none">Total</th></tr></thead>
       <tbody>
-        <tr data-nivel="1" data-num="0"><td class="loa-col--texto">TOTAL</td><td class="loa-col--numero" data-valor="2508880.00">R$ 2.508.880,00</td><td class="loa-col--numero" data-valor="5706358.00">R$ 5.706.358,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="8215238.00">R$ 8.215.238,00</td></tr><tr data-nivel="1" data-num="1"><td class="loa-col--texto">10 - RECURSOS ORDINÁRIOS - RECURSOS NÃO VINCULADOS DE IMPOSTOS</td><td class="loa-col--numero" data-valor="2507880.00">R$ 2.507.880,00</td><td class="loa-col--numero" data-valor="4805828.00">R$ 4.805.828,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="7313708.00">R$ 7.313.708,00</td></tr><tr data-nivel="1" data-num="2"><td class="loa-col--texto">36 - TRANSFERÊNCIAS DO FNDE VINCULADAS À EDUCAÇÃO - EXCETO EMENDAS INDIVIDUAIS E DE BANCADA</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="467920.00">R$ 467.920,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="467920.00">R$ 467.920,00</td></tr><tr class="loa-total"><td class="loa-col--texto">TOTAL</td><td class="loa-col--numero">R$ 5.016.760,00</td><td class="loa-col--numero">R$ 10.980.106,00</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 15.996.866,00</td></tr>
+        <tr data-nivel="1" data-num="0"><td class="loa-col--texto">TOTAL DA UNIDADE</td><td class="loa-col--numero" data-valor="2508880.00">R$ 2.508.880,00</td><td class="loa-col--numero" data-valor="5706358.00">R$ 5.706.358,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="8215238.00">R$ 8.215.238,00</td></tr><tr data-nivel="1" data-num="1"><td class="loa-col--texto">10 - RECURSOS ORDINÁRIOS - RECURSOS NÃO VINCULADOS DE IMPOSTOS</td><td class="loa-col--numero" data-valor="2508880.00">R$ 2.508.880,00</td><td class="loa-col--numero" data-valor="5238438.00">R$ 5.238.438,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="7747318.00">R$ 7.747.318,00</td></tr><tr data-nivel="1" data-num="2"><td class="loa-col--texto">36 - TRANSFERÊNCIAS DO FNDE VINCULADAS À EDUCAÇÃO - EXCETO EMENDAS INDIVIDUAIS E DE BANCADA</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="467920.00">R$ 467.920,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="0.00">R$ 0,00</td><td class="loa-col--numero" data-valor="467920.00">R$ 467.920,00</td></tr><tr class="loa-total"><td class="loa-col--texto">TOTAL</td><td class="loa-col--numero">R$ 5.017.760,00</td><td class="loa-col--numero">R$ 11.412.716,00</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 0,00</td><td class="loa-col--numero">R$ 16.430.476,00</td></tr>
       </tbody>
     </table>
   </div>

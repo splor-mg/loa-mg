@@ -114,7 +114,55 @@ def _niveis_fecham(linhas, regra):
     )
 
 
+def _parcelas_somam_total(linhas, regra):
+    """A soma das parcelas é igual à linha de total declarada no arquivo.
+
+    Muitos demonstrativos trazem, na mesma coluna, as parcelas e a linha
+    que as totaliza. Somar tudo conta o mesmo dinheiro duas vezes — foi o
+    que aconteceu no Resumo por Categorias Econômicas, que exibia
+    R$ 249 bi de receita onde o correto eram R$ 127 bi.
+
+    A importação separa os dois com a coluna `papel`; esta regra confere
+    que a separação está certa e que nenhuma parcela se perdeu no caminho.
+    Quando `agrupar_por` é informado, a conferência é feita grupo a grupo.
+    """
+    campo = regra["campo"]
+    papel = regra.get("campo_papel", "papel")
+    grupos = regra.get("agrupar_por")
+    if isinstance(grupos, str):
+        grupos = [grupos]
+
+    def chave(linha):
+        return tuple(linha.get(g, "") for g in grupos) if grupos else ()
+
+    parcelas: dict = {}
+    totais: dict = {}
+    for linha in linhas:
+        destino = parcelas if linha.get(papel) == "parcela" else (
+            totais if linha.get(papel) == "total" else None)
+        if destino is None:
+            continue          # 'resultado' (déficit) fica de fora
+        k = chave(linha)
+        destino[k] = destino.get(k, Decimal(0)) + para_decimal(linha.get(campo))
+
+    problemas = []
+    for k in sorted(set(parcelas) | set(totais), key=str):
+        soma = parcelas.get(k, Decimal(0))
+        alvo = totais.get(k, Decimal(0))
+        if alvo == 0 and soma == 0:
+            continue
+        if abs(soma - alvo) > TOLERANCIA:
+            rotulo = " / ".join(str(x) for x in k) if k else "total geral"
+            problemas.append(f"{rotulo}: parcelas {reais(soma)} vs total {reais(alvo)}")
+
+    return (
+        not problemas,
+        f"{len(problemas)} grupo(s) não fecham: " + "; ".join(problemas[:5]),
+    )
+
+
 REGRAS = {
+    "parcelas_somam_total": _parcelas_somam_total,
     "soma_igual": _soma_igual,
     "colunas_somam": _colunas_somam,
     "sem_vazios": _sem_vazios,
@@ -123,15 +171,19 @@ REGRAS = {
 
 
 def verificar(nome_demonstrativo: str, linhas: list[dict], regras: list[dict]) -> list[Resultado]:
+    from .dados import filtrar
+
     resultados = []
     for regra in regras or []:
+        # uma regra pode se aplicar só a parte das linhas
+        alvo = filtrar(linhas, regra.get("filtro", {}))
         funcao = REGRAS.get(regra["tipo"])
         if not funcao:
             resultados.append(
                 Resultado(nome_demonstrativo, regra["tipo"], False, "tipo de validação desconhecido")
             )
             continue
-        ok, detalhe = funcao(linhas, regra)
+        ok, detalhe = funcao(alvo, regra)
         resultados.append(
             Resultado(nome_demonstrativo, regra.get("descricao", regra["tipo"]), ok, detalhe)
         )

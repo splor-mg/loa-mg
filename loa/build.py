@@ -234,10 +234,20 @@ class Gerador:
         from .formato import para_decimal
 
         numericas = [c for c in dem["colunas"] if c.get("tipo") in ("dinheiro", "quantidade")]
+
+        # Colunas de classificação que os cards podem filtrar (como `papel`)
+        # são preservadas: sem elas, um card com `filtro: {papel: total}`
+        # não encontraria nada na visão geral e exibiria zero.
+        classificadoras = [c for c in ("papel", "lado", "nivel")
+                           if linhas and c in linhas[0]]
+
         resumo: dict[str, dict] = {}
         for linha in linhas:
             chave = linha.get(campo_grupo, "")
-            alvo = resumo.setdefault(chave, {campo_grupo: chave})
+            alvo = resumo.setdefault(
+                chave,
+                {campo_grupo: chave, **{c: linha.get(c, "") for c in classificadoras}},
+            )
             for coluna in numericas:
                 campo = coluna["campo"]
                 alvo[campo] = para_decimal(alvo.get(campo, 0)) + para_decimal(linha.get(campo))

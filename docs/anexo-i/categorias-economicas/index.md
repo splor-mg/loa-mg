@@ -22,17 +22,23 @@ hide:
 <div class="loa-cards">
 <div class="loa-card">
 <span class="loa-card__titulo">Total da receita</span>
-<strong class="loa-card__valor">R$ 249,07 bi</strong>
-<span class="loa-card__exato">R$ 249.072.418.798,00</span>
+<strong class="loa-card__valor">R$ 127,15 bi</strong>
+<span class="loa-card__exato">R$ 127.145.455.180,00</span>
 </div>
 <div class="loa-card">
 <span class="loa-card__titulo">Total da despesa</span>
-<strong class="loa-card__valor">R$ 264,73 bi</strong>
-<span class="loa-card__exato">R$ 264.727.893.484,00</span>
+<strong class="loa-card__valor">R$ 132,36 bi</strong>
+<span class="loa-card__exato">R$ 132.363.946.742,00</span>
+</div>
+<div class="loa-card">
+<span class="loa-card__titulo">Déficit previsto</span>
+<strong class="loa-card__valor">-R$ 5,22 bi</strong>
+<span class="loa-card__exato">R$ -5.218.491.562,00</span>
+<span class="loa-card__nota">diferença entre receita e despesa</span>
 </div>
 </div>
 
-<figure class="loa-figura"><figcaption>Despesa por categoria econômica</figcaption><svg class="loa-grafico" viewBox="0 0 1000 188" role="img" aria-label="Despesa por categoria econômica"><text x="388" y="28" text-anchor="end" class="loa-grafico__rotulo">TOTAL<title>TOTAL</title></text><rect x="400" y="8" width="370" height="30" rx="3" fill="#501313"><title>TOTAL: R$ 132,36 bi</title></rect><text x="780" y="28" class="loa-grafico__valor">R$ 132,36 bi (50,00%)</text><text x="388" y="70" text-anchor="end" class="loa-grafico__rotulo">DESPESAS CORRENTES<title>DESPESAS CORRENTES</title></text><rect x="400" y="50" width="327" height="30" rx="3" fill="#791f1f"><title>DESPESAS CORRENTES: R$ 117,01 bi</title></rect><text x="737" y="70" class="loa-grafico__valor">R$ 117,01 bi (44,20%)</text><text x="388" y="112" text-anchor="end" class="loa-grafico__rotulo">DESPESAS DE CAPITAL<title>DESPESAS DE CAPITAL</title></text><rect x="400" y="92" width="39" height="30" rx="3" fill="#a32d2d"><title>DESPESAS DE CAPITAL: R$ 14,17 bi</title></rect><text x="449" y="112" class="loa-grafico__valor">R$ 14,17 bi (5,35%)</text><text x="388" y="154" text-anchor="end" class="loa-grafico__rotulo">RESERVA DE CONTIGÊNCIA<title>RESERVA DE CONTIGÊNCIA</title></text><rect x="400" y="134" width="3" height="30" rx="3" fill="#c23c3a"><title>RESERVA DE CONTIGÊNCIA: R$ 1,18 bi</title></rect><text x="413" y="154" class="loa-grafico__valor">R$ 1,18 bi (0,44%)</text></svg></figure>
+<figure class="loa-figura"><figcaption>Despesa por categoria econômica</figcaption><svg class="loa-grafico" viewBox="0 0 1000 146" role="img" aria-label="Despesa por categoria econômica"><text x="388" y="28" text-anchor="end" class="loa-grafico__rotulo">DESPESAS CORRENTES<title>DESPESAS CORRENTES</title></text><rect x="400" y="8" width="370" height="30" rx="3" fill="#501313"><title>DESPESAS CORRENTES: R$ 117,01 bi</title></rect><text x="780" y="28" class="loa-grafico__valor">R$ 117,01 bi (88,40%)</text><text x="388" y="70" text-anchor="end" class="loa-grafico__rotulo">DESPESAS DE CAPITAL<title>DESPESAS DE CAPITAL</title></text><rect x="400" y="50" width="44" height="30" rx="3" fill="#791f1f"><title>DESPESAS DE CAPITAL: R$ 14,17 bi</title></rect><text x="454" y="70" class="loa-grafico__valor">R$ 14,17 bi (10,71%)</text><text x="388" y="112" text-anchor="end" class="loa-grafico__rotulo">RESERVA DE CONTIGÊNCIA<title>RESERVA DE CONTIGÊNCIA</title></text><rect x="400" y="92" width="3" height="30" rx="3" fill="#a32d2d"><title>RESERVA DE CONTIGÊNCIA: R$ 1,18 bi</title></rect><text x="413" y="112" class="loa-grafico__valor">R$ 1,18 bi (0,89%)</text></svg></figure>
 
 <div class="loa-tabela" id="tabela-categorias-economicas" data-id="categorias-economicas">
   <div class="loa-ferramentas">

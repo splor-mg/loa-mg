@@ -124,16 +124,25 @@ anexos:
           - {campo: lado, titulo: "Lado", tipo: texto}
           - {campo: valor, titulo: "Valor", tipo: dinheiro}
         cards:
-          - {titulo: "Total da receita", campo: valor, funcao: soma,
-             filtro: {lado: receita}}
-          - {titulo: "Total da despesa", campo: valor, funcao: soma,
-             filtro: {lado: despesa}}
+          # `valor_de` na linha de total do próprio arquivo, não `soma`:
+          # somar todas as linhas contaria as parcelas mais o total mais o
+          # déficit, e o card exibia R$ 249 bi onde o certo são R$ 127 bi.
+          - {titulo: "Total da receita", campo: valor, funcao: valor_de,
+             filtro: {lado: receita, papel: total}}
+          - {titulo: "Total da despesa", campo: valor, funcao: valor_de,
+             filtro: {lado: despesa, papel: total}}
+          - {titulo: "Déficit previsto", campo: valor, funcao: valor_de,
+             filtro: {papel: resultado},
+             nota: "diferença entre receita e despesa"}
         graficos:
           - tipo: barras
             titulo: "Despesa por categoria econômica"
             rotulo: especificacao
             valor: valor
-            filtro: {lado: despesa}
+            filtro: {lado: despesa, papel: parcela}
+        validacoes:
+          - {tipo: parcelas_somam_total, campo: valor, agrupar_por: lado,
+             descricao: "parcelas somam o total declarado, em cada lado"}
 
       - id: despesa-por-unidade
         titulo: "Despesa por Unidade Orçamentária segundo os Grupos de Despesa"
@@ -323,6 +332,7 @@ anexos:
           orçamento e na execução.
         dados: fonte_grupo_despesa.csv
         agrupar_por: uo_nome
+        filtro_resumo: {papel: total}
         ordenar_por: total
         colunas:
           - {campo: fonte, titulo: "Fonte de recurso", tipo: texto}
@@ -336,11 +346,24 @@ anexos:
           - {campo: total, titulo: "Total", tipo: dinheiro}
         ordenar_resumo: total
         cards:
-          - {titulo: "Total por fonte", campo: total, funcao: soma}
-          - {titulo: "Combinações fonte × unidade", funcao: contagem}
+          # Filtra pela linha de TOTAL, não pelas parcelas: assim o card
+          # funciona tanto na visão geral (onde cada linha já é o total de
+          # uma unidade) quanto na página de uma unidade. Somar tudo sem
+          # filtro contaria as fontes mais o total da unidade — o dobro.
+          - {titulo: "Despesa por fonte", campo: total, funcao: soma,
+             filtro: {papel: total}}
+          # A contagem de fontes não vira um card: na visão geral cada
+          # linha é uma unidade, na página da unidade é uma fonte — o
+          # mesmo card significaria coisas diferentes em cada tela. O
+          # contador acima da tabela já informa quantas linhas há.
         validacoes:
           - {tipo: sem_vazios, campos: [uo_nome, fonte, total],
              descricao: "toda linha tem unidade, fonte e total"}
+          - {tipo: parcelas_somam_total, campo: total, agrupar_por: uo_nome,
+             descricao: "fontes somam o total de cada unidade"}
+          - {tipo: soma_igual, campo: total, esperado: "146969637358,00",
+             filtro: {papel: parcela},
+             descricao: "soma das fontes = total da despesa fiscal"}
 
   # -------------------------------------------------------------------
   - id: anexo-ii-b
