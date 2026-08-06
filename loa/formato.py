@@ -71,6 +71,29 @@ def resumido(valor) -> str:
     return reais(numero)
 
 
+def resumido_quantidade(valor) -> str:
+    """Versão curta para contagens: '659.445' ou '1,2 mi' — sem 'R$'.
+
+    Pessoal, cargos e obras são contagens, não dinheiro. Formatá-las com
+    `resumido()` produzia coisas como "R$ 659,44 mil" para 659.445 cargos.
+    """
+    numero = para_decimal(valor)
+    sinal = "-" if numero < 0 else ""
+    n = abs(numero)
+
+    if n >= Decimal("1000000"):
+        reduzido = (n / Decimal("1000000")).quantize(Decimal("0.01"))
+        return f"{sinal}{str(reduzido).replace('.', ',')} mi"
+    return sinal + inteiro(n)
+
+
+def resumo_por_tipo(valor, tipo: str) -> tuple[str, str]:
+    """Devolve (destaque, detalhe) conforme o tipo da coluna."""
+    if tipo == "quantidade":
+        return resumido_quantidade(valor), ""
+    return resumido(valor), reais(valor)
+
+
 def inteiro(valor) -> str:
     """1605 -> '1.605' (quantidades, sem centavos)."""
     return reais(valor, com_simbolo=False).split(",")[0]

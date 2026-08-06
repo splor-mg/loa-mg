@@ -12,7 +12,23 @@ No YAML:
 from decimal import Decimal
 
 from ..dados import filtrar, somar
-from ..formato import inteiro, reais, resumido
+from ..formato import inteiro, resumo_por_tipo
+
+
+def _tipo_do_card(card: dict, colunas: list[dict]) -> str:
+    """Descobre se o card mostra dinheiro ou contagem.
+
+    Prioridade: o que o YAML declarar em `tipo`; senão, o tipo da coluna
+    que o card soma. Sem isto, um card sobre número de servidores saía
+    formatado como reais.
+    """
+    if card.get("tipo"):
+        return card["tipo"]
+    campo = card.get("campo")
+    for coluna in colunas or []:
+        if coluna.get("campo") == campo:
+            return coluna.get("tipo", "dinheiro")
+    return "dinheiro"
 
 
 def _calcular(linhas: list[dict], card: dict):
@@ -34,7 +50,7 @@ def _calcular(linhas: list[dict], card: dict):
     raise ValueError(f"Função de card desconhecida: {funcao}")
 
 
-def montar(linhas: list[dict], config_cards: list[dict]) -> str:
+def montar(linhas: list[dict], config_cards: list[dict], colunas: list[dict] | None = None) -> str:
     """Gera o HTML da faixa de cards."""
     if not config_cards:
         return ""
@@ -42,11 +58,10 @@ def montar(linhas: list[dict], config_cards: list[dict]) -> str:
     pecas = ['<div class="loa-cards">']
     for card in config_cards:
         valor, tipo = _calcular(linhas, card)
+        if tipo != "quantidade":
+            tipo = _tipo_do_card(card, colunas)
 
-        if tipo == "quantidade":
-            grande, detalhe = inteiro(valor), ""
-        else:
-            grande, detalhe = resumido(valor), reais(valor)
+        grande, detalhe = resumo_por_tipo(valor, tipo)
 
         pecas.append('<div class="loa-card">')
         pecas.append(f'<span class="loa-card__titulo">{card["titulo"]}</span>')

@@ -12,10 +12,17 @@ mkdocs:
     Governo do Estado de Minas Gerais — dados públicos, uso livre.
     Elaboração: SCPO/SEPLAG.
 
-  # Ao publicar, troque pela URL definitiva:
-  site_url: https://splor-mg.github.io/loa/
-  repo_url: https://github.com/splor-mg/loa
-  repo_name: splor-mg/loa
+  # AJUSTE ESTAS TRÊS LINHAS para o seu repositório.
+  # Se o painel está em github.com/SEU-USUARIO/loa-mg, então:
+  site_url:  https://lorenadecastro.github.io/loa-mg/
+  repo_url:  https://github.com/LorenadeCastro/loa-mg
+  repo_name: LorenadeCastro/loa-mg
+
+  # O site_url precisa terminar com barra e bater com a URL do Pages,
+  # senão os links internos apontam para o lugar errado.
+  site_url: https://LorenadeCastro.github.io/loa-mg/
+  repo_url: https://github.com/LorenadeCastro/loa-mg
+  repo_name: LorenadeCastro/loa-mg
   edit_uri: ""
 
   theme:

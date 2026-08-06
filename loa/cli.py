@@ -16,7 +16,8 @@ from pathlib import Path
 
 from .build import gerar
 from .dados import ler
-from .importar import importar
+from .importar import importar, inspecionar
+from . import procedencia as proc
 
 
 def _raiz() -> Path:
@@ -101,6 +102,77 @@ def comando_importar(args) -> int:
     return 0
 
 
+def comando_inspecionar(args) -> int:
+    """Mostra onde cada volume foi encontrado, sem importar nada."""
+    origem = Path(args.origem).expanduser().resolve()
+    if not origem.exists():
+        print(f"ERRO: pasta não encontrada: {origem}")
+        return 1
+
+    print(f"Procurando os volumes da LOA em {origem}\n")
+    relatorio = inspecionar(origem)
+
+    faltando = []
+    for numero, titulo, caminho in relatorio:
+        if caminho:
+            print(f"  Volume {numero}  {titulo}")
+            print(f"            encontrado em: {caminho}")
+        else:
+            print(f"  Volume {numero}  {titulo}")
+            print(f"            NÃO ENCONTRADO")
+            faltando.append(numero)
+
+    if faltando:
+        print(f"\nVolumes não encontrados: {', '.join(map(str, faltando))}.")
+        print("Confira se o caminho informado é a raiz do repositório de dados.")
+        print("Pastas no primeiro nível do caminho informado:")
+        for item in sorted(p for p in origem.iterdir() if p.is_dir())[:20]:
+            print(f"  {item.name}/")
+        return 1
+
+    print("\nTodos os volumes localizados. Pode rodar `loa importar`.")
+    return 0
+
+
+def comando_procedencia(args) -> int:
+    """Registra de onde vieram os dados desta publicação.
+
+    Chamado pelo GitHub Actions depois de `loa importar`. Sem argumentos,
+    apenas mostra a procedência registrada.
+    """
+    raiz = _raiz()
+
+    if not any([args.origem, args.commit, args.mensagem, args.disparo]):
+        atual = proc.ler(raiz / "dados")
+        if not atual.existe():
+            print("Nenhuma procedência registrada.")
+            print("Ela é gravada pelo GitHub Actions a cada atualização.")
+            return 0
+        print(f"Origem     : {atual.origem or '(não informada)'}")
+        print(f"Commit     : {atual.commit or '(não informado)'}")
+        print(f"Atualizado : {atual.data_amigavel}")
+        if atual.mensagem:
+            print(f"Alteração  : {atual.mensagem}")
+        if atual.disparo:
+            print(f"Disparo    : {atual.disparo}")
+        return 0
+
+    url = args.commit_url
+    if not url and args.origem and args.commit:
+        url = f"https://github.com/{args.origem}/commit/{args.commit}"
+
+    registrada = proc.escrever(
+        raiz / "dados",
+        origem=args.origem,
+        commit=args.commit,
+        commit_url=url,
+        mensagem=args.mensagem,
+        disparo=args.disparo,
+    )
+    print("Procedência registrada:", registrada.linha_curta())
+    return 0
+
+
 def comando_new(args) -> int:
     """Imprime um bloco de config já preenchido com as colunas do CSV."""
     raiz = _raiz()
@@ -152,6 +224,20 @@ def principal(argv=None) -> int:
     p = sub.add_parser("importar", help="converte os volumes brutos do datapackage")
     p.add_argument("origem", help="pasta com as pastas 'data-volume N'")
     p.set_defaults(funcao=comando_importar)
+
+    p = sub.add_parser("inspecionar",
+                       help="mostra onde cada volume foi encontrado, sem importar")
+    p.add_argument("origem", help="raiz do repositório de dados")
+    p.set_defaults(funcao=comando_inspecionar)
+
+    p = sub.add_parser("procedencia",
+                       help="registra ou mostra a origem dos dados publicados")
+    p.add_argument("--origem", default="", help="repositório de origem (owner/repo)")
+    p.add_argument("--commit", default="", help="SHA do commit de origem")
+    p.add_argument("--commit-url", default="", help="link do commit (opcional)")
+    p.add_argument("--mensagem", default="", help="assunto do commit de origem")
+    p.add_argument("--disparo", default="", help="o que acionou a atualização")
+    p.set_defaults(funcao=comando_procedencia)
 
     p = sub.add_parser("new", help="cria um bloco de config a partir de um CSV")
     p.add_argument("arquivo")

@@ -14,6 +14,7 @@ from pathlib import Path
 
 import yaml
 
+from . import procedencia as proc
 from . import validacao
 from .componentes import cards, grafico, mapa, tabela
 from .dados import filtrar, ler, valores_distintos
@@ -81,6 +82,9 @@ class Gerador:
         self.estrutura = ler_yaml(self.pasta_config / "demonstrativos.yml")
         self.glossario = Glossario(ler_yaml(self.pasta_config / "glossario.yml"))
 
+        # De onde vieram os dados desta publicação (ver loa/procedencia.py).
+        self.procedencia = proc.ler(self.pasta_dados)
+
         self.nav: list = []
         self.resultados: list[validacao.Resultado] = []
 
@@ -116,6 +120,8 @@ class Gerador:
             f"    Fonte primária: `{arquivo}` — o mesmo arquivo que gera o PDF oficial.",
             f"    Baixe a base completa em [Dados abertos]({subir}dados-abertos.md).",
             "    Nenhuma linha foi omitida ou agregada nesta página.",
+        ] + ([f"    {self.procedencia.linha_curta()}"]
+             if self.procedencia.existe() else []) + [
             "",
         ])
 
@@ -123,7 +129,7 @@ class Gerador:
         blocos = []
 
         if dem.get("cards"):
-            blocos.append(cards.montar(linhas, dem["cards"]))
+            blocos.append(cards.montar(linhas, dem["cards"], dem.get("colunas")))
 
         if dem.get("mapa"):
             blocos.append(mapa.montar(linhas, dem["mapa"], self.pasta_dados))
@@ -268,6 +274,8 @@ class Gerador:
         linhas = [
             "# Dados abertos",
             "",
+            self.procedencia.bloco_markdown(),
+            "",
             "Todo número exibido neste site vem dos arquivos abaixo — são os mesmos "
             "que geram o PDF oficial enviado à Assembleia Legislativa. Estão em CSV "
             "(separador `;`, decimal `,`, codificação UTF-8), abrem no Excel, no "
@@ -277,6 +285,8 @@ class Gerador:
             "| --- | ---: | --- | --- |",
         ]
         for arquivo in sorted(self.pasta_dados.glob("*.csv")):
+            if arquivo.name == proc.ARQUIVO:
+                continue
             shutil.copy(arquivo, destino / arquivo.name)
             registros = ler(self.pasta_dados, arquivo.name)
             colunas = ", ".join(f"`{c}`" for c in (registros[0].keys() if registros else []))

@@ -1,0 +1,491 @@
+/* ---------------------------------------------------------------
+   Estilos do site da LOA-MG.
+
+   Paleta: as cores da bandeira de Minas Gerais — vermelho e branco.
+   O vermelho é ESTRUTURA (navegação, cabeçalhos, destaques, setas);
+   o branco domina as áreas de leitura. Orçamento é documento denso:
+   texto sobre fundo vermelho cansa em minutos.
+
+   Escala de seis tons, do quase-branco ao quase-preto. É a mesma
+   escala que colore o mapa por intensidade, as barras por posição no
+   ranking e as linhas destacadas da tabela. Um sistema só, nenhuma
+   cor decorativa.
+   --------------------------------------------------------------- */
+
+:root {
+  --loa-50:  #fcebeb;
+  --loa-100: #f7c1c1;
+  --loa-200: #f09595;
+  --loa-400: #e24b4a;
+  --loa-600: #a32d2d;
+  --loa-800: #791f1f;
+  --loa-900: #501313;
+
+  --loa-vermelho: var(--loa-600);
+  --loa-tinta: var(--loa-900);
+  --loa-tinta-clara: var(--loa-50);
+  --loa-borda: rgba(0, 0, 0, .09);
+  --loa-texto-fraco: rgba(0, 0, 0, .58);
+}
+
+[data-md-color-scheme="slate"] {
+  --loa-tinta-clara: rgba(226, 75, 74, .13);
+  --loa-tinta: #f7c1c1;
+  --loa-borda: rgba(255, 255, 255, .16);
+  --loa-texto-fraco: rgba(255, 255, 255, .68);
+
+  /* No modo escuro o vermelho da bandeira (#a32d2d) é escuro demais para
+     servir de cor de texto: medido sobre o fundo escuro dá contraste de
+     1,8:1, muito abaixo do mínimo de 4,5:1 da WCAG AA. Links e destaques
+     passam a usar os tons claros da MESMA escala — a identidade se
+     mantém, a leitura volta a funcionar. */
+  --md-typeset-a-color: #f09595;
+  --md-accent-fg-color: #f7c1c1;
+}
+
+/* Títulos no modo escuro: o Material os desenha com opacidade reduzida,
+   o que sobre fundo escuro os deixa apagados demais. */
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  color: var(--md-default-fg-color);
+}
+
+/* A barra superior mantém o vermelho da bandeira nos dois modos. */
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: var(--loa-900);
+}
+
+/* A barra de anexos fica um tom mais escuro que o cabeçalho. */
+.md-tabs { background-color: var(--loa-900); }
+
+.md-grid { max-width: 68rem; }
+
+/* ----------------------------------------------------------- cards */
+
+.loa-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  gap: .8rem;
+  margin: 1.4rem 0 2rem;
+}
+
+.loa-card {
+  display: flex;
+  flex-direction: column;
+  gap: .15rem;
+  padding: 1rem 1.1rem;
+  border-left: 3px solid var(--loa-vermelho);
+  border-radius: 0;
+  background: var(--loa-tinta-clara);
+}
+
+.loa-card__titulo {
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--loa-tinta);
+}
+
+.loa-card__valor {
+  font-size: 1.6rem;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+  color: var(--loa-vermelho);
+}
+
+[data-md-color-scheme="slate"] .loa-card__valor { color: var(--loa-200); }
+
+.loa-card__exato { font-size: .74rem; color: var(--loa-texto-fraco); font-variant-numeric: tabular-nums; }
+.loa-card__nota  { font-size: .72rem; color: var(--loa-texto-fraco); font-style: italic; }
+
+/* --------------------------------------------------------- tabelas */
+
+.loa-tabela { margin: 1.6rem 0 2.4rem; }
+
+.loa-ferramentas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .55rem;
+}
+
+.loa-filtro {
+  flex: 1 1 230px;
+  min-width: 190px;
+  padding: .45rem .7rem;
+  border: 1px solid var(--loa-borda);
+  border-radius: .35rem;
+  background: transparent;
+  color: inherit;
+  font-size: .8rem;
+}
+
+.loa-filtro:focus {
+  outline: none;
+  border-color: var(--loa-vermelho);
+  box-shadow: 0 0 0 2px var(--loa-tinta-clara);
+}
+
+.loa-botao {
+  padding: .45rem .8rem;
+  border: 1px solid var(--loa-borda);
+  border-radius: .35rem;
+  background: transparent;
+  color: inherit;
+  font-size: .76rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.loa-botao:hover {
+  background: var(--loa-vermelho);
+  color: #fff;
+  border-color: var(--loa-vermelho);
+}
+
+.loa-contador { font-size: .74rem; color: var(--loa-texto-fraco); margin-left: auto; }
+
+/* A barra de rolagem horizontal só aparece quando é inevitável — em
+   tabelas com muitas colunas numéricas numa tela estreita. Nas demais, a
+   tabela se ajusta à largura disponível. */
+.loa-rolagem {
+  overflow-x: auto;
+  border: 1px solid var(--loa-borda);
+  border-radius: .4rem;
+  scrollbar-width: thin;
+}
+
+/* O MkDocs Material envolve automaticamente TODA <table> num par de divs
+   (`md-typeset__scrollwrap` > `md-typeset__table`) que tem rolagem e
+   padding lateral próprios. Dentro do nosso `.loa-rolagem` isso criava
+   dois contêineres de rolagem aninhados: o wrapper do Material somava
+   ~17 px de padding e a barra horizontal aparecia mesmo quando a tabela
+   cabia com folga. Aqui ele é neutralizado — quem controla a rolagem é
+   o `.loa-rolagem`. */
+.loa-tabela .md-typeset__scrollwrap,
+.loa-tabela .md-typeset__table {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  min-width: 0;
+}
+
+/* O Material aplica `display: inline-block` a toda tabela sem classe
+   (`.md-typeset table:not([class])`) para poder rolá-la. Uma tabela em
+   inline-block IGNORA `table-layout: fixed`: as colunas voltam a se
+   dimensionar pelo conteúdo, o <colgroup> é descartado e a tabela cresce
+   além do contêiner. O seletor abaixo tem especificidade maior que o do
+   Material e devolve o comportamento de tabela. */
+.md-typeset .loa-tabela table,
+.loa-tabela table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .78rem;
+  /* `fixed` faz o navegador respeitar as larguras do <colgroup> que o
+     Python emite, em vez de dimensionar pelo conteúdo mais longo. Sem
+     isto a tabela estoura o contêiner e aparece barra de rolagem mesmo
+     quando ela caberia na tela. */
+  table-layout: fixed;
+}
+
+.loa-tabela thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: .6rem .7rem;
+  background: var(--loa-600);
+  color: #fff;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  user-select: none;
+  /* o título pode quebrar em duas linhas: "Investimento previsto" em uma
+     linha só ocupava mais que a própria coluna e estourava a tabela */
+  overflow-wrap: break-word;
+  line-height: 1.25;
+}
+
+.loa-tabela thead th::after { content: " \2645"; opacity: .45; font-size: .8em; }
+.loa-tabela thead th[aria-sort="ascending"]::after  { content: " \2191"; opacity: 1; }
+.loa-tabela thead th[aria-sort="descending"]::after { content: " \2193"; opacity: 1; }
+
+/* O valor não quebra: a coluna já é dimensionada para o maior deles (ver
+   LARGURA_MINIMA_NUMERO em tabela.py). Sem isto o "R$" descia sozinho
+   para a linha de baixo. Vale só para as CÉLULAS: o título da coluna
+   ("Investimento previsto") precisa poder quebrar em duas linhas, senão
+   é ele que estoura a tabela. */
+.loa-tabela td.loa-col--numero { white-space: nowrap; }
+
+.loa-tabela td { padding: .42rem .55rem; border-top: 1px solid var(--loa-borda); vertical-align: top; }
+
+.loa-tabela tbody tr:nth-of-type(even):not(.loa-total) td { background: var(--loa-tinta-clara); }
+.loa-tabela tbody tr:hover td { background: var(--loa-100); }
+
+[data-md-color-scheme="slate"] .loa-tabela tbody tr:hover td { background: rgba(226, 75, 74, .22); }
+
+.loa-col--numero {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+
+  /* valores em reais nunca quebram no meio, mas podem descer de linha
+     quando a coluna aperta — melhor que empurrar a tabela para fora */
+  overflow-wrap: break-word;
+}
+
+.loa-col--texto {
+  /* sem largura mínima em pixels: quem manda é o <colgroup>.
+     `break-word` sozinho quebra só quando a palavra não cabe de jeito
+     nenhum; `word-break` e `hyphens` foram removidos porque partiam
+     nomes de órgãos em pedaços de duas letras ("COMPA-NHIA DE HABITA-
+     ÇÃO"), tornando a coluna ilegível. */
+  overflow-wrap: break-word;
+}
+
+.loa-total td {
+  border-top: 2px solid var(--loa-vermelho);
+  font-weight: 700;
+  background: var(--loa-tinta-clara);
+}
+
+.loa-recuo { display: inline-block; width: calc(var(--nivel) * 1.15rem); }
+
+.loa-abridor {
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  background: none;
+  width: 1.15rem;
+  margin-left: -1.15rem;
+  color: var(--loa-vermelho);
+  cursor: pointer;
+  font-size: .7rem;
+  user-select: none;
+}
+
+[data-md-color-scheme="slate"] .loa-abridor { color: var(--loa-200); }
+
+tr[data-nivel="1"] > .loa-col--texto .loa-rotulo { font-weight: 700; }
+tr[data-nivel="2"] > .loa-col--texto .loa-rotulo { font-weight: 600; }
+
+.loa-tabela abbr,
+article abbr {
+  text-decoration: underline dotted var(--loa-vermelho);
+  text-underline-offset: 2px;
+  cursor: help;
+}
+
+[data-md-color-scheme="slate"] article abbr,
+[data-md-color-scheme="slate"] .loa-tabela abbr { text-decoration-color: var(--loa-200); }
+
+/* --------------------------------------------------- gráficos e mapa */
+
+.loa-figura {
+  margin: 1.6rem 0 2rem;
+  padding: 1rem;
+  border: 1px solid var(--loa-borda);
+  border-radius: .75rem;
+}
+
+.loa-figura figcaption { margin-bottom: .8rem; font-weight: 700; font-size: .88rem; }
+.loa-figura__nota { margin-top: .7rem; font-size: .74rem; color: var(--loa-texto-fraco); }
+.loa-grafico { width: 100%; height: auto; }
+.loa-grafico__rotulo { font-size: 13px; fill: currentColor; }
+.loa-grafico__valor  { font-size: 13px; fill: currentColor; font-weight: 600; }
+.loa-grafico__centro { font-size: 22px; fill: currentColor; font-weight: 700; }
+
+.loa-mapa { width: 100%; height: auto; max-width: 780px; margin: 0 auto; display: block; }
+
+/* Mapa de blocos: grade de 5 × 5 onde cada região ocupa a célula que
+   corresponde, aproximadamente, à sua posição no estado. */
+.loa-blocos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: .5rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.loa-bloco {
+  grid-column: var(--coluna);
+  grid-row: var(--linha);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .1rem;
+  aspect-ratio: 1;
+  padding: .4rem;
+  border-radius: .5rem;
+  background: var(--cor);
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.2;
+  transition: transform .1s ease, box-shadow .1s ease;
+}
+
+.loa-bloco:hover, .loa-bloco:focus-visible {
+  transform: scale(1.03);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+  text-decoration: none;
+}
+
+/* Os blocos são links, e `.md-typeset a` do Material tem especificidade
+   maior que uma classe isolada — no modo escuro ele repintava o texto de
+   rosa-claro sobre bloco rosa-claro. O prefixo `.md-typeset` empata a
+   especificidade e devolve o controle ao contraste que calculamos.
+   A cor do bloco não muda entre os modos, então o texto também não deve:
+   é o fundo do bloco que manda, não o tema da página. */
+.md-typeset .loa-bloco--claro,
+.md-typeset .loa-bloco--claro:hover,
+.md-typeset .loa-bloco--claro:focus { color: #501313; }
+
+.md-typeset .loa-bloco--escuro,
+.md-typeset .loa-bloco--escuro:hover,
+.md-typeset .loa-bloco--escuro:focus { color: #fcebeb; }
+
+.md-typeset .loa-bloco { text-decoration: none; }
+
+.loa-bloco__nome  { font-size: .72rem; font-weight: 600; }
+.loa-bloco__valor { font-size: .78rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.loa-bloco__parte { font-size: .66rem; opacity: .85; }
+
+/* área clicável do mapa geográfico (SVG), quando houver GeoJSON */
+.loa-mapa__area[data-href] { cursor: pointer; }
+.loa-mapa__area[data-href]:focus-visible { outline: 3px solid var(--loa-vermelho); }
+.loa-mapa__area { transition: opacity .12s ease; cursor: pointer; }
+.loa-mapa__link:hover .loa-mapa__area { opacity: .75; }
+.loa-mapa__link:focus .loa-mapa__area { outline: 3px solid var(--loa-vermelho); }
+
+.loa-legenda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .3rem;
+  margin-top: .8rem;
+  font-size: .72rem;
+  color: var(--loa-texto-fraco);
+}
+
+.loa-legenda i { display: inline-block; width: 26px; height: 12px; border-radius: 2px; }
+
+/* --------------------------------------------- destaques editoriais */
+
+.md-typeset .admonition.abstract,
+.md-typeset details.abstract,
+.md-typeset .admonition.tip,
+.md-typeset details.tip,
+.md-typeset .admonition.info,
+.md-typeset details.info,
+.md-typeset .admonition.question,
+.md-typeset details.question {
+  border-color: var(--loa-vermelho);
+  background: var(--loa-tinta-clara);
+}
+
+.md-typeset .abstract > .admonition-title, .md-typeset .abstract > summary,
+.md-typeset .tip > .admonition-title,      .md-typeset .tip > summary,
+.md-typeset .info > .admonition-title,     .md-typeset .info > summary,
+.md-typeset .question > .admonition-title, .md-typeset .question > summary {
+  background: transparent;
+  color: var(--loa-tinta);
+}
+
+.md-typeset .abstract > .admonition-title::before, .md-typeset .abstract > summary::before,
+.md-typeset .tip > .admonition-title::before,      .md-typeset .tip > summary::before,
+.md-typeset .info > .admonition-title::before,     .md-typeset .info > summary::before,
+.md-typeset .question > .admonition-title::before, .md-typeset .question > summary::before {
+  background-color: var(--loa-vermelho);
+}
+
+/* O aviso sobre a tramitação continua âmbar: é um alerta de verdade e
+   precisa se destacar da identidade visual, não se fundir a ela. */
+
+.md-typeset .grid.cards > ul > li {
+  border-left: 3px solid var(--loa-vermelho);
+  border-radius: 0;
+  background: var(--loa-tinta-clara);
+}
+
+.md-typeset .grid.cards > ul > li:hover { border-color: var(--loa-900); box-shadow: none; }
+
+/* ------------------------------------------------------- impressão */
+
+@media print {
+  .loa-ferramentas, .md-header, .md-sidebar, .md-footer, .md-tabs { display: none !important; }
+  .loa-rolagem { overflow: visible; border: 0; }
+  .loa-tabela tbody tr[hidden] { display: table-row !important; }
+  .loa-tabela { break-inside: auto; }
+  .loa-tabela thead { display: table-header-group; }
+  .loa-tabela thead th { background: var(--loa-600) !important; color: #fff !important; }
+}
+
+/* ---------------------------------------------------------- celular */
+
+@media screen and (max-width: 45rem) {
+  .loa-card__valor { font-size: 1.35rem; }
+  .loa-contador { margin-left: 0; width: 100%; }
+
+  /* No celular a tabela deixa de se espremer e passa a rolar: espremer
+     seis colunas de valores em 360 px produz uma coluna por dígito. */
+  .loa-tabela table { font-size: .72rem; table-layout: auto; min-width: 34rem; }
+  .loa-tabela colgroup { display: none; }
+  .loa-tabela td, .loa-tabela thead th { padding: .4rem .5rem; }
+  .loa-col--numero { white-space: nowrap; }
+  .loa-col--texto { min-width: 9rem; }
+
+  /* a primeira coluna fica fixa enquanto o resto rola, para não se perder
+     de qual linha é cada número */
+  .loa-tabela td:first-child,
+  .loa-tabela thead th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: var(--md-default-bg-color);
+  }
+  .loa-tabela thead th:first-child { background: var(--loa-600); z-index: 3; }
+
+  .loa-blocos { grid-template-columns: repeat(3, 1fr); gap: .35rem; }
+  .loa-bloco { grid-column: auto; grid-row: auto; aspect-ratio: 1 / .85; }
+  .loa-bloco__nome  { font-size: .64rem; }
+  .loa-bloco__valor { font-size: .7rem; }
+  .loa-legenda { flex-wrap: wrap; }
+}
+
+/* ------------------------------------ paleta do tema Material ------
+   O MkDocs Material não traz o vermelho da bandeira entre suas cores
+   prontas, então o declaramos aqui e usamos `primary: custom` no
+   config/site.yml. É isto que pinta a barra superior e os links.
+   ------------------------------------------------------------------ */
+
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color:        #a32d2d;
+  --md-primary-fg-color--light: #e24b4a;
+  --md-primary-fg-color--dark:  #501313;
+  --md-primary-bg-color:        #ffffff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, .75);
+}
+
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color:            #a32d2d;
+  --md-accent-fg-color--transparent: rgba(163, 45, 45, .1);
+  --md-accent-bg-color:            #ffffff;
+}
+
+[data-md-color-scheme="slate"][data-md-color-accent="custom"] {
+  --md-accent-fg-color: #f09595;
+}
+
+/* Separador entre as fatias da rosca — sem ele, uma escala monocromática
+   vira um borrão. O contorno acompanha o fundo da página. */
+.loa-fatia { stroke-linejoin: round; }
+.loa-grafico--rosca path { paint-order: stroke; }
+.loa-figura .loa-grafico--rosca { --fatia-borda: var(--md-default-bg-color); }

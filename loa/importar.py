@@ -459,14 +459,60 @@ def _soma(*valores: str) -> str:
 # orquestração
 # --------------------------------------------------------------------------
 
+# Cada volume é reconhecido por uma ASSINATURA — um arquivo ou pasta que
+# só existe nele. Identificar por conteúdo, e não pelo nome da pasta, deixa
+# o importador funcionar tanto no repositório oficial (volume1/data/…)
+# quanto num zip baixado e renomeado (data-volume 1/…).
+ASSINATURAS = {
+    1: ("T4_DEMONSTRATIVO_DESPESA_POR_ORGAOS*", "T1_DEMONSTRATIVO_CONSOLIDADO*"),
+    2: ("tabela4",),
+    3: ("consolidado",),
+    4: ("tabela2",),
+    5: ("qdd*",),
+    6: ("qdd*",),
+    7: ("qdd*",),
+}
+
+# Nomes de pasta esperados, na ordem em que são tentados.
+PADROES_NOME = (
+    "volume{n}/data", "volume {n}/data", "volume_{n}/data",
+    "data-volume {n}", "data-volume{n}", "data_volume_{n}",
+    "volume{n}", "volume {n}", "volume_{n}",
+)
+
+
+def _tem_assinatura(pasta: Path, numero: int) -> bool:
+    """A pasta contém o que caracteriza o volume `numero`?"""
+    for padrao in ASSINATURAS.get(numero, ()):
+        if any(pasta.glob(padrao)):
+            # tabela2 existe nos volumes 2 e 4; o 2 também tem tabela4
+            if numero == 4 and any(pasta.glob("tabela4")):
+                return False
+            return True
+    return False
+
+
 def _achar_volume(raiz: Path, numero: int) -> Path | None:
-    """Localiza 'data-volume N' em qualquer nível abaixo da raiz."""
-    alvo = f"data-volume {numero}"
-    if (raiz / alvo).is_dir():
-        return raiz / alvo
-    for caminho in raiz.rglob(alvo):
-        if caminho.is_dir():
-            return caminho
+    """Localiza a pasta de dados do volume `numero` abaixo de `raiz`.
+
+    Tenta primeiro os nomes conhecidos; se nenhum servir, varre as pastas
+    procurando a assinatura de conteúdo. Assim uma renomeação no
+    repositório de origem não quebra a importação.
+    """
+    for molde in PADROES_NOME:
+        candidato = raiz / molde.format(n=numero)
+        if candidato.is_dir() and _tem_assinatura(candidato, numero):
+            return candidato
+
+    # busca ampla, limitada a três níveis para não varrer o repositório todo
+    for profundidade in ("*", "*/*", "*/*/*"):
+        for candidato in sorted(raiz.glob(profundidade)):
+            if not candidato.is_dir():
+                continue
+            if candidato.name in (".git", "pdf", "img", "logs", "capas", "wiki"):
+                continue
+            if _tem_assinatura(candidato, numero):
+                return candidato
     return None
 
 
@@ -476,6 +522,26 @@ IMPORTADORES = {
     3: ("Anexo III — investimento das estatais", importar_anexo_iii),
     4: ("Anexo IV — regionalizado e obras", importar_anexo_iv),
 }
+
+
+def inspecionar(origem: Path) -> list[tuple[int, str, str]]:
+    """Diz onde cada volume foi encontrado, sem importar nada.
+
+    Serve para conferir o caminho antes de configurar o GitHub Actions —
+    e para descobrir o que mudou quando a importação parar de achar algo.
+    """
+    relatorio = []
+    for numero, (titulo, _) in IMPORTADORES.items():
+        volume = _achar_volume(origem, numero)
+        if volume is None:
+            relatorio.append((numero, titulo, ""))
+            continue
+        try:
+            caminho = str(volume.relative_to(origem))
+        except ValueError:
+            caminho = str(volume)
+        relatorio.append((numero, titulo, caminho))
+    return relatorio
 
 
 def importar(origem: Path, destino: Path) -> list[tuple[str, str, int]]:

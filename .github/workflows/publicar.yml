@@ -22,8 +22,12 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  # Mesmo grupo do atualizar-dados.yml: os dois publicam no Pages, então
+  # devem entrar em fila em vez de disputar o deploy.
+  # cancel-in-progress false porque o outro workflow grava dados/ e faz
+  # commit — cancelá-lo no meio deixaria o repositório inconsistente.
+  group: publicacao-pages
+  cancel-in-progress: false
 
 jobs:
   publicar:

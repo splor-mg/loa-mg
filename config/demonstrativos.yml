@@ -235,13 +235,15 @@ anexos:
           - {campo: terceirizados, titulo: "Terceirizados", tipo: quantidade}
           - {campo: total, titulo: "Total", tipo: quantidade}
         cards:
-          - {titulo: "Total de pessoal", campo: total, funcao: soma}
+          - {titulo: "Total de pessoal", campo: total, funcao: soma, tipo: quantidade,
+             nota: "servidores e terceirizados"}
           - {titulo: "Órgãos", funcao: contagem}
         graficos:
           - tipo: barras
             titulo: "Órgãos com mais pessoal"
             rotulo: orgao_nome
             valor: total
+            tipo_valor: quantidade
             limite: 12
 
   # -------------------------------------------------------------------
@@ -376,13 +378,14 @@ anexos:
           - {campo: quantidade, titulo: "Cargos previstos", tipo: quantidade}
         ordenar_resumo: quantidade
         cards:
-          - {titulo: "Cargos previstos", campo: quantidade, funcao: soma}
+          - {titulo: "Cargos previstos", campo: quantidade, funcao: soma, tipo: quantidade}
           - {titulo: "Unidades detalhadas", funcao: contagem}
         graficos:
           - tipo: barras
             titulo: "Categorias com mais cargos"
             rotulo: categoria
             valor: quantidade
+            tipo_valor: quantidade
             limite: 10
         validacoes:
           - {tipo: sem_vazios, campos: [uo_nome, categoria],

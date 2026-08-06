@@ -1,0 +1,168 @@
+# =====================================================================
+#  ATUALIZAÇÃO AUTOMÁTICA DOS DADOS DA LOA
+#
+#  Busca os dados no repositório de origem (privado), reimporta, confere
+#  se as somas fecham e publica o site.
+#
+#  Se alguma validação falhar, NADA vai ao ar: o site continua exibindo a
+#  última versão consistente. É de propósito — é melhor um painel um dia
+#  atrasado que um painel com números que não fecham.
+#
+#  PRECISA DE UM SEGREDO: DADOS_TOKEN
+#  Como criar: ver o README, seção "Atualização automática dos dados".
+#
+#  Três formas de disparar:
+#    1. Botão "Run workflow" na aba Actions   (para testar agora)
+#    2. Agendado, de hora em hora em dia útil (rede de segurança)
+#    3. Aviso do repositório de origem        (atualização na hora)
+# =====================================================================
+
+name: Atualizar dados da LOA
+
+on:
+  workflow_dispatch:
+    inputs:
+      referencia:
+        description: "Branch ou tag do repositório de dados"
+        default: main
+        required: false
+
+  schedule:
+    # O cron do GitHub usa UTC. 11h-23h UTC = 8h-20h em Brasília.
+    - cron: "0 11-23 * * 1-5"
+
+  repository_dispatch:
+    types: [dados-atualizados]
+
+permissions:
+  contents: write      # para gravar os CSV reimportados
+  pages: write
+  id-token: write
+
+concurrency:
+  group: publicacao-pages
+  cancel-in-progress: false
+
+env:
+  # Repositório onde vivem os dados oficiais.
+  REPO_DADOS: splor-mg/volumes-loa
+
+  # Onde procurar os volumes DENTRO do repositório de origem.
+  # No splor-mg/volumes-loa os dados ficam em volume1/data, volume2/data…
+  # na raiz, então o ponto (a raiz do checkout) é o valor certo.
+  # O importador localiza cada volume pelo conteúdo, não pelo nome da
+  # pasta — se a estrutura mudar, ele continua achando.
+  PASTA_DADOS: "."
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.publicar.outputs.page_url }}
+
+    steps:
+      - name: Baixar o painel
+        uses: actions/checkout@v4
+
+      - name: Baixar os dados oficiais (repositório privado)
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.REPO_DADOS }}
+          token: ${{ secrets.DADOS_TOKEN }}
+          ref: ${{ github.event.inputs.referencia || 'main' }}
+          path: origem
+          fetch-depth: 1
+
+      - name: Identificar a versão de origem
+        id: origem
+        working-directory: origem
+        run: |
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "assunto=$(git log -1 --pretty=%s | cut -c1-160)" >> "$GITHUB_OUTPUT"
+
+      - name: Instalar o Poetry
+        run: pipx install poetry
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: poetry
+
+      - name: Instalar o projeto
+        run: poetry install --no-interaction
+
+      # Confere que os volumes estão onde se espera ANTES de importar.
+      # Se algum não for encontrado, o log mostra as pastas disponíveis —
+      # o suficiente para corrigir PASTA_DADOS sem adivinhação.
+      - name: Localizar os volumes da LOA
+        run: poetry run loa inspecionar "origem/${PASTA_DADOS}"
+
+      - name: Importar os dados
+        run: poetry run loa importar "origem/${PASTA_DADOS}"
+
+      - name: Registrar a procedência
+        run: |
+          poetry run loa procedencia \
+            --origem "${REPO_DADOS}" \
+            --commit "${{ steps.origem.outputs.sha }}" \
+            --mensagem "${{ steps.origem.outputs.assunto }}" \
+            --disparo "${DISPARO}"
+        env:
+          DISPARO: >-
+            ${{ github.event_name == 'schedule' && 'verificação periódica agendada'
+            || github.event_name == 'workflow_dispatch' && 'execução manual na aba Actions'
+            || format('aviso enviado por {0}', env.REPO_DADOS) }}
+
+      # O passo que protege o site: se as somas não fecharem, para aqui.
+      - name: Conferir a consistência dos dados
+        run: poetry run loa check
+
+      - name: Verificar se algo mudou de fato
+        id: mudou
+        run: |
+          if git diff --quiet -- dados/; then
+            echo "houve=nao" >> "$GITHUB_OUTPUT"
+            echo "### Nenhuma mudança nos dados" >> "$GITHUB_STEP_SUMMARY"
+            echo "A origem está igual à última publicação. Nada a fazer." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "houve=sim" >> "$GITHUB_OUTPUT"
+            {
+              echo "### Dados atualizados"
+              echo ""
+              echo "Origem: \`${REPO_DADOS}@${GITHUB_SHA:0:7}\`"
+              echo ""
+              echo '```'
+              git diff --stat -- dados/ | tail -25
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Guardar os dados importados
+        if: steps.mudou.outputs.houve == 'sim'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados/
+          git commit -m "Atualiza dados da LOA a partir de ${REPO_DADOS}" \
+                     -m "Commit de origem: ${SHA}" \
+                     -m "Alteração: ${ASSUNTO}"
+          git push
+        env:
+          SHA: ${{ steps.origem.outputs.sha }}
+          ASSUNTO: ${{ steps.origem.outputs.assunto }}
+
+      - name: Gerar o site
+        if: steps.mudou.outputs.houve == 'sim'
+        run: poetry run loa build --estrito
+
+      - name: Preparar a publicação
+        if: steps.mudou.outputs.houve == 'sim'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Publicar no GitHub Pages
+        id: publicar
+        if: steps.mudou.outputs.houve == 'sim'
+        uses: actions/deploy-pages@v4

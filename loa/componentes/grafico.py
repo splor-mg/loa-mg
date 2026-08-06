@@ -18,7 +18,7 @@ import html
 from decimal import Decimal
 
 from ..dados import filtrar, ordenar
-from ..formato import para_decimal, percentual, resumido
+from ..formato import para_decimal, percentual, resumido, resumido_quantidade
 
 # Escala da bandeira de Minas: do vermelho profundo ao quase-branco.
 # A ordem importa — as barras saem ordenadas do maior para o menor, então
@@ -27,6 +27,13 @@ PALETA = [
     "#501313", "#791f1f", "#a32d2d", "#c23c3a", "#e24b4a",
     "#ea6f6d", "#f09595", "#f4abab", "#f7c1c1", "#fbdada",
 ]
+
+
+def _curto(valor, config) -> str:
+    """Formata o valor conforme o tipo declarado no gráfico."""
+    if config.get("tipo_valor") == "quantidade":
+        return resumido_quantidade(valor)
+    return resumido(valor)
 
 
 def _preparar(linhas, config):
@@ -51,8 +58,24 @@ def barras(linhas, config) -> str:
 
     maior = max(v for _, v in dados)
     total = sum((v for _, v in dados), start=Decimal(0))
-    altura_barra, espaco = 26, 10
-    largura, margem_esq = 900, 330
+
+    # Medidas em unidades do viewBox — o SVG é escalado para a largura
+    # disponível, então elas se comportam como proporções.
+    altura_barra, espaco = 30, 12
+    largura = 1000
+    margem_esq = 400            # faixa reservada aos nomes
+    faixa_valor = 230           # faixa reservada ao valor + percentual
+
+    # Estimar a largura de um texto em SVG é impreciso — nomes de órgãos vêm
+    # em CAIXA ALTA, cujas letras são bem mais largas que a média. Por isso
+    # há duas defesas: cortar nomes muito longos por estimativa generosa, e
+    # usar `textLength` para garantir que o que sobrou caiba na faixa.
+    # `textLength` faz o navegador ajustar o texto à largura exata, então
+    # nada vaza, mesmo que a estimativa erre.
+    faixa_nome = margem_esq - 16
+    LARGURA_CARACTERE = 17 * 0.62      # caixa alta é larga
+    max_letras = int(faixa_nome / LARGURA_CARACTERE)
+
     altura = len(dados) * (altura_barra + espaco) + 20
 
     partes = [
@@ -61,16 +84,28 @@ def barras(linhas, config) -> str:
     ]
     for i, (rotulo, valor) in enumerate(dados):
         y = i * (altura_barra + espaco) + 8
-        comprimento = int((valor / maior) * (largura - margem_esq - 190)) if maior else 0
-        curto = rotulo if len(rotulo) <= 46 else rotulo[:44] + "…"
+        disponivel = largura - margem_esq - faixa_valor
+        comprimento = int((valor / maior) * disponivel) if maior else 0
+        curto = (rotulo if len(rotulo) <= max_letras
+                 else rotulo[:max_letras - 1].rstrip() + "…")
+
+        # Comprime só quando a estimativa indica que não cabe; textos
+        # curtos ficam com o espaçamento natural.
+        # Margem de 10%: a estimativa erra para mais e para menos conforme
+        # as letras do nome, então o textLength entra um pouco antes do
+        # limite teórico em vez de só quando a conta estoura.
+        estimado = len(curto) * LARGURA_CARACTERE
+        ajuste = (f' textLength="{faixa_nome}" lengthAdjust="spacingAndGlyphs"'
+                  if estimado > faixa_nome * 0.9 else "")
         cor = PALETA[i % len(PALETA)]
         partes.append(
-            f'<text x="{margem_esq - 10}" y="{y + 18}" text-anchor="end" '
-            f'class="loa-grafico__rotulo">{html.escape(curto)}<title>{html.escape(rotulo)}</title></text>'
+            f'<text x="{margem_esq - 12}" y="{y + 20}" text-anchor="end"{ajuste} '
+            f'class="loa-grafico__rotulo">{html.escape(curto)}'
+            f'<title>{html.escape(rotulo)}</title></text>'
             f'<rect x="{margem_esq}" y="{y}" width="{max(comprimento, 2)}" height="{altura_barra}" '
-            f'rx="3" fill="{cor}"><title>{html.escape(rotulo)}: {resumido(valor)}</title></rect>'
-            f'<text x="{margem_esq + max(comprimento, 2) + 8}" y="{y + 18}" '
-            f'class="loa-grafico__valor">{resumido(valor)} '
+            f'rx="3" fill="{cor}"><title>{html.escape(rotulo)}: {_curto(valor, config)}</title></rect>'
+            f'<text x="{margem_esq + max(comprimento, 2) + 10}" y="{y + 20}" '
+            f'class="loa-grafico__valor">{_curto(valor, config)} '
             f'({percentual(valor, total)})</text>'
         )
     partes.append("</svg>")
@@ -88,9 +123,19 @@ def rosca(linhas, config) -> str:
     if total == 0:
         return ""
 
-    cx, cy, raio, grossura = 150, 150, 120, 46
+    # A altura acompanha o número de itens da legenda, senão as últimas
+    # linhas ficam de fora do viewBox quando há muitas fatias.
+    cx, cy, raio, grossura = 170, 180, 130, 52
+    largura, legenda_x = 1000, 370
+    faixa_legenda = largura - legenda_x - 10
+    altura = max(360, 44 + len(dados) * 30)
+
+    # Mesma proteção das barras: corta por estimativa e usa textLength
+    # como garantia de que nada escapa da caixa.
+    LARGURA_CARACTERE = 17 * 0.58
+
     partes = [
-        f'<svg class="loa-grafico loa-grafico--rosca" viewBox="0 0 640 300" '
+        f'<svg class="loa-grafico loa-grafico--rosca" viewBox="0 0 {largura} {altura}" '
         f'role="img" aria-label="{html.escape(config["titulo"])}">'
     ]
     angulo = -math.pi / 2
@@ -105,18 +150,27 @@ def rosca(linhas, config) -> str:
             f'<path d="M {x1:.2f} {y1:.2f} A {raio} {raio} 0 {grande} 1 {x2:.2f} {y2:.2f}" '
             f'fill="none" stroke="{cor}" stroke-width="{grossura}" '
             f'stroke-linecap="butt" class="loa-fatia">'
-            f"<title>{html.escape(rotulo)}: {resumido(valor)} ({percentual(valor, total)})</title></path>"
+            f"<title>{html.escape(rotulo)}: {_curto(valor, config)} ({percentual(valor, total)})</title></path>"
         )
-        y = 30 + i * 26
+        y = 34 + i * 30
+        texto = f"{rotulo} — {_curto(valor, config)} ({percentual(valor, total)})"
+        max_letras = int(faixa_legenda / LARGURA_CARACTERE)
+        if len(texto) > max_letras:
+            # encurta o NOME, nunca o valor: o número é o que interessa
+            sobra = max_letras - len(texto) + len(rotulo) - 1
+            curto = rotulo[:max(sobra, 8)].rstrip() + "…"
+            texto = f"{curto} — {_curto(valor, config)} ({percentual(valor, total)})"
+        ajuste = (f' textLength="{faixa_legenda}" lengthAdjust="spacingAndGlyphs"'
+                  if len(texto) * LARGURA_CARACTERE > faixa_legenda * 0.95 else "")
         partes.append(
-            f'<rect x="320" y="{y - 11}" width="13" height="13" rx="2" fill="{cor}"/>'
-            f'<text x="342" y="{y}" class="loa-grafico__rotulo">'
-            f"{html.escape(rotulo[:38])} — {resumido(valor)} ({percentual(valor, total)})</text>"
+            f'<rect x="{legenda_x - 24}" y="{y - 13}" width="15" height="15" rx="3" fill="{cor}"/>'
+            f'<text x="{legenda_x}" y="{y}"{ajuste} class="loa-grafico__rotulo">'
+            f"{html.escape(texto)}<title>{html.escape(rotulo)}</title></text>"
         )
     partes.append(
-        f'<text x="{cx}" y="{cy - 4}" text-anchor="middle" class="loa-grafico__centro">'
-        f"{resumido(total)}</text>"
-        f'<text x="{cx}" y="{cy + 18}" text-anchor="middle" class="loa-grafico__rotulo">total</text>'
+        f'<text x="{cx}" y="{cy - 2}" text-anchor="middle" class="loa-grafico__centro">'
+        f"{_curto(total, config)}</text>"
+        f'<text x="{cx}" y="{cy + 24}" text-anchor="middle" class="loa-grafico__rotulo">total</text>'
     )
     partes.append("</svg>")
     return "".join(partes)

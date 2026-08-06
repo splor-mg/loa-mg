@@ -1,10 +1,37 @@
-docs/
-site/
-mkdocs.yml
+# ----------------------------------------------------- gerados
+docs/            # páginas markdown criadas por `loa build`
+site/            # site HTML pronto
+mkdocs.yml       # montado a partir de config/site.yml
+dist/
+
+# ----------------------------------------------------- Python
 __pycache__/
 *.pyc
 .venv/
-dist/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# ------------------------------------------- segredos e cópias
+# O token NUNCA entra no repositório: ele vive em
+# Settings > Secrets and variables > Actions, como DADOS_TOKEN.
+.env
+.env.*
+*.pem
+*.key
+
+# Pasta onde o GitHub Actions clona o repositório de dados.
+# Se você clonar o volumes-loa aqui para testar, esta linha impede
+# que um repositório PRIVADO acabe publicado neste, que é PÚBLICO.
+origem/
+
+# ------------------------------------------------- editor e SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*~
 
 # poetry.lock NÃO entra aqui: ele é versionado de propósito,
 # para todo mundo instalar exatamente as mesmas versões.

@@ -17,7 +17,8 @@ Transforma os anexos da Lei Orçamentária Anual — hoje **1.793 páginas em
 6. [Referência da configuração](#6-referência-da-configuração)
 7. [As validações](#7-as-validações)
 8. [Publicando no GitHub Pages](#8-publicando-no-github-pages)
-9. [Perguntas frequentes](#9-perguntas-frequentes)
+9. [Atualização automática dos dados](#9-atualização-automática-dos-dados)
+10. [Perguntas frequentes](#10-perguntas-frequentes)
 
 ---
 
@@ -148,6 +149,7 @@ maquinário.
 | Comando | O que faz |
 | --- | --- |
 | `poetry run loa importar <pasta>` | Converte os sete volumes do datapackage em CSV. |
+| `poetry run loa procedencia` | Mostra de onde vieram os dados publicados. |
 | `poetry run loa serve` | Gera o site e abre no navegador, recarregando sozinho. É o comando do dia a dia. |
 | `poetry run loa build` | Gera o site final na pasta `site/`. |
 | `poetry run loa check` | Só roda as conferências de consistência, sem gerar nada. Rápido. |
@@ -357,7 +359,236 @@ precisar rodar nada.
 
 ---
 
-## 9. Perguntas frequentes
+## 9. Atualização automática dos dados
+
+Os dados da LOA mudam ao longo da tramitação. O painel busca a versão nova
+sozinho, reimporta, confere se as somas fecham e republica — sem ninguém
+rodar nada.
+
+### O que acontece a cada atualização
+
+```
+repositório de dados muda
+        ↓
+painel baixa os dados oficiais
+        ↓
+poetry run loa importar        →  converte os volumes em CSV
+        ↓
+poetry run loa procedencia     →  registra origem, commit e data
+        ↓
+poetry run loa check           →  AS SOMAS FECHAM?
+        ↓                              ↓ não
+     sim                          para aqui; o site continua
+        ↓                          exibindo a versão anterior
+publica no GitHub Pages
+```
+
+O `loa check` no meio do caminho é o ponto importante: **se os números não
+fecharem, nada vai ao ar**. É melhor um painel um dia atrasado que um
+painel com números inconsistentes.
+
+### Passo a passo
+
+Onde estão os dados no repositório de origem: em `splor-mg/volumes-loa` os
+volumes ficam em `volume1/data/`, `volume2/data/` … na raiz. Não existe uma
+pasta `data/` única. O importador localiza cada volume **pelo conteúdo**,
+não pelo nome da pasta, então uma renomeação futura não quebra nada.
+
+---
+
+**Passo 1 — Criar o token de leitura.**
+
+Abra <https://github.com/settings/personal-access-tokens/new> e preencha:
+
+| Campo | Valor |
+| --- | --- |
+| Token name | `painel-loa-leitura-dados` |
+| Resource owner | **`splor-mg`** (não o seu usuário) |
+| Expiration | 90 dias — anote a data |
+| Repository access | Only select repositories → `splor-mg/volumes-loa` |
+| Permissions → Repository permissions → Contents | **Read-only** |
+
+Clique em *Generate token* e copie o valor. Ele aparece **uma vez só**.
+
+Use um token *fine-grained*, não um clássico: o fine-grained dá leitura a um
+repositório específico, o clássico daria acesso a tudo que você tem.
+
+Sobre o *Resource owner*: como `volumes-loa` pertence à organização
+`splor-mg`, o token precisa ser emitido no contexto dela. Se a organização
+exigir aprovação de administrador, o token fica "pending" até alguém
+aprovar — o botão de aprovação está em Settings da organização →
+Personal access tokens.
+
+---
+
+**Passo 2 — Guardar o token no repositório do painel.**
+
+No **seu** repositório do painel: Settings → Secrets and variables →
+Actions → *New repository secret*.
+
+- Name: `DADOS_TOKEN`
+- Secret: cole o token
+
+Depois de salvar, ninguém consegue ler o valor de volta — nem você. Se
+perder, gere outro.
+
+---
+
+**Passo 3 — Ajustar as URLs do site.**
+
+Em `config/site.yml`, troque `SEU-USUARIO/loa-mg` pelo seu repositório nas
+três linhas indicadas. O `site_url` precisa bater com a URL do Pages e
+terminar com barra, senão os links internos apontam para o lugar errado.
+
+Em `.github/workflows/atualizar-dados.yml`, confira o topo:
+
+```yaml
+env:
+  REPO_DADOS: splor-mg/volumes-loa
+  PASTA_DADOS: "."      # a raiz do repositório de origem
+```
+
+O ponto está certo para a estrutura atual do `volumes-loa`.
+
+---
+
+**Passo 4 — Ligar o GitHub Pages.**
+
+Settings → Pages → Source: **GitHub Actions**.
+
+---
+
+**Passo 5 — Rodar e ver.**
+
+Actions → **Atualizar dados da LOA** → *Run workflow* → Run.
+
+Acompanhe os passos. O que esperar de cada um:
+
+| Passo | O que confirma |
+| --- | --- |
+| Baixar os dados oficiais | o token funciona e tem acesso |
+| Localizar os volumes da LOA | achou `volume1/data`, `volume2/data`… |
+| Importar os dados | converteu os volumes em CSV |
+| Registrar a procedência | gravou origem, commit e data |
+| Conferir a consistência | as somas do orçamento fecham |
+| Verificar se algo mudou | há dado novo a publicar |
+| Publicar no GitHub Pages | site no ar |
+
+Ao final, abra a página **Dados abertos** do site: o bloco "Procedência
+desta versão" mostra a data, o commit de origem e o que disparou a
+atualização. O rodapé de cada demonstrativo traz a mesma informação.
+
+**É esse bloco que prova a automação.** Faça uma alteração qualquer no
+`volumes-loa` — inclusive num PDF, como sua equipe sugeriu — rode o
+workflow e o commit exibido muda. É a demonstração que você queria, sem
+apoiar o painel numa fonte frágil.
+
+---
+
+### Se algo der errado
+
+| Sintoma no log | Causa provável | O que fazer |
+| --- | --- | --- |
+| `Repository not found` ou 404 no checkout | token sem acesso, expirado, ou pendente de aprovação da organização | conferir o *Resource owner* e a aprovação |
+| `Volumes não encontrados: 1, 2, …` | `PASTA_DADOS` errado | o log lista as pastas disponíveis; ajuste o valor |
+| Falha em "Conferir a consistência" | os dados de origem estão inconsistentes | é o sistema fazendo o trabalho dele; o site continua na versão anterior |
+| `Permission denied` ao dar push | o workflow não pode escrever | Settings → Actions → General → Workflow permissions → *Read and write* |
+| Site publica mas sem estilo | `site_url` diferente da URL real do Pages | corrigir em `config/site.yml` |
+
+Para conferir os caminhos antes de subir qualquer coisa, rode na sua
+máquina, com o `volumes-loa` clonado ao lado:
+
+```bash
+poetry run loa inspecionar ../volumes-loa
+```
+
+---
+
+### Um alerta que não é técnico
+
+O repositório do painel é **público** e o `volumes-loa` é **privado**. Ao
+publicar, os CSVs importados passam a ficar visíveis para qualquer pessoa.
+
+Para a LOA já enviada à Assembleia isso é justamente o objetivo — são dados
+públicos, e o projeto existe para torná-los acessíveis. Mas vale confirmar
+com a sua chefia antes de publicar num repositório pessoal, especialmente
+se houver alguma remessa ainda não protocolada. É uma conversa de cinco
+minutos que evita um problema grande.
+
+Enquanto isso, para testar sem publicar nada: deixe o Pages desligado. O
+workflow roda, importa, valida e mostra o resumo — só não publica.
+
+---
+
+### Quando roda sozinho
+
+| Disparo | Quando | Para quê |
+| --- | --- | --- |
+| Manual | botão na aba Actions | testar, ou publicar na hora |
+| Agendado | de hora em hora, 8h–20h, dias úteis | rede de segurança |
+| Aviso da origem | segundos após o dado mudar | atualização imediata |
+
+Os dois primeiros já funcionam. O terceiro é opcional e exige instalar um
+arquivo no `volumes-loa` — está em
+`exemplos/aviso-para-o-repo-de-dados.yml`. Recomendação: deixe para depois
+que o fluxo estiver rodando. A diferença é esperar minutos em vez de
+segundos, e mexer num repositório de produção para isso não vale o risco de
+estreia.
+
+Se nada mudou na origem, o workflow encerra sem publicar. Não gera commits
+nem publicações vazias.
+
+### Quando o token expira
+
+O workflow falha no passo "Baixar os dados oficiais" com erro de
+autenticação — não silenciosamente. Gere um novo e substitua o segredo.
+
+Anote a validade no calendário da equipe: um token de 90 dias vence
+justamente quando ninguém está olhando.
+
+### Por que não buscar direto no site da ALMG
+
+A página da lei no site da Assembleia parece a fonte mais natural, mas não
+serve como fonte de dados:
+
+- **Ela publica o texto da lei, não os anexos tabulares.** Os números que o
+  painel exibe — demonstrativos por unidade orçamentária, por região, por
+  município — não estão no HTML da página.
+- **Não existe API.** Só há a página feita para leitura humana. Ler dados
+  dela significa raspar HTML, que quebra a cada mudança de layout do site,
+  sem aviso e sem controle nosso.
+- **O acesso automatizado é bloqueado.** Uma requisição simples à página
+  devolve HTTP 403.
+- **A lei sancionada é publicada uma vez.** O que muda ao longo da
+  tramitação são as remessas de dados — e essas nascem no datapackage, não
+  no site.
+
+O caminho correto é o inverso: o dado nasce no datapackage da SPLOR, gera o
+PDF que vai à Assembleia *e* alimenta o painel. Uma fonte, dois destinos.
+
+Se um dia for útil monitorar a página da ALMG, o lugar disso é um aviso
+("a página da lei mudou, confira"), nunca uma fonte de números.
+
+### Por que não usar a pasta de PDF como fonte
+
+A sugestão de acompanhar `volumes-loa/pdf` é boa na intenção — é onde a
+mudança fica visível — mas o painel não consegue se alimentar dali:
+
+- **Extrair dados de PDF perde linhas.** Nós medimos: na primeira versão
+  deste projeto, a extração dos PDF deixou 5 hierarquias sem fechar em
+  1.226 linhas. Com os dados tabulares, as 16 validações fecham.
+- **O PDF é o produto, não a fonte.** Ele é gerado *a partir* dos dados.
+  Ler o PDF para reconstruir os dados é fotografar um documento para
+  redigitá-lo.
+- **Um PDF alterado nem sempre significa dado alterado.** Um ajuste de
+  formatação mudaria o arquivo sem mudar um número.
+
+A parte aproveitável da sugestão — **ver a automação funcionando ao mexer
+no repositório de origem** — está atendida: o workflow observa o
+repositório inteiro, e o bloco de procedência muda a cada execução. Você
+consegue a demonstração sem apoiar o painel numa fonte frágil.
+
+## 10. Perguntas frequentes
 
 **Preciso saber programar para manter isso?**
 Não. Para publicar demonstrativos, basta editar YAML e escrever texto. O
