@@ -288,19 +288,39 @@ article abbr {
 
 /* --------------------------------------------------- gráficos e mapa */
 
+/* O Material aplica `width: fit-content` a toda <figure>. Como o nosso SVG
+   pede width:100%, ele passa a medir 100% de uma caixa que já encolheu até
+   o conteúdo — e o gráfico sai minúsculo, ilegível sem zoom. O seletor
+   abaixo tem especificidade maior e devolve a largura total. */
+.md-typeset .loa-figura,
 .loa-figura {
+  width: 100%;
+  max-width: 100%;
   margin: 1.6rem 0 2rem;
-  padding: 1rem;
+  padding: 1.2rem;
   border: 1px solid var(--loa-borda);
   border-radius: .75rem;
+  box-sizing: border-box;
 }
 
 .loa-figura figcaption { margin-bottom: .8rem; font-weight: 700; font-size: .88rem; }
 .loa-figura__nota { margin-top: .7rem; font-size: .74rem; color: var(--loa-texto-fraco); }
-.loa-grafico { width: 100%; height: auto; }
-.loa-grafico__rotulo { font-size: 13px; fill: currentColor; }
-.loa-grafico__valor  { font-size: 13px; fill: currentColor; font-weight: 600; }
-.loa-grafico__centro { font-size: 22px; fill: currentColor; font-weight: 700; }
+.md-typeset .loa-grafico,
+.loa-grafico {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Os tamanhos de fonte estão em unidades do viewBox do SVG, não em pixels
+   de tela: como o SVG é escalado para a largura disponível, o texto
+   acompanha. Os valores abaixo foram calibrados para ficarem legíveis a
+   partir de uns 700 px de largura de gráfico. */
+.loa-grafico__rotulo { font-size: 17px; fill: currentColor; }
+.loa-grafico__valor  { font-size: 17px; fill: currentColor; font-weight: 600; }
+.loa-grafico__centro { font-size: 26px; fill: currentColor; font-weight: 700; }
 
 .loa-mapa { width: 100%; height: auto; max-width: 780px; margin: 0 auto; display: block; }
 

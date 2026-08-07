@@ -62,8 +62,7 @@ markdown_extensions:
 - md_in_html
 - tables
 - toc:
-    permalink: ¶
-    permalink_title: Link permanente para esta seção
+    permalink: false
 - pymdownx.details
 - pymdownx.superfences
 - pymdownx.emoji:
