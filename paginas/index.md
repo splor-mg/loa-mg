@@ -7,11 +7,7 @@ hide:
 
 Esta é a **Lei Orçamentária Anual** do Estado de Minas Gerais — o documento
 que decide quanto o Estado espera arrecadar no ano e como esse dinheiro
-será gasto em saúde, educação, segurança, estradas e em tudo o mais.
-
-Até agora ela chegava até você como **1.793 páginas de PDF**. Aqui está o
-mesmo conteúdo, inteiro, sem um número a menos — só que navegável,
-pesquisável e com download dos dados.
+será gasto em saúde, educação, segurança, estradas e tudo mais.
 
 !!! tip "Comece por aqui"
     Se você nunca leu um orçamento público, a página
@@ -80,20 +76,6 @@ pesquisável e com download dos dados.
     [:octicons-arrow-right-24: Ver as empresas](anexo-iii/investimento-estatais/)
 
 </div>
-
-## Como este site funciona
-
-* **Nenhum dado foi retirado.** Cada tabela do PDF está aqui na íntegra. O
-  que mudou foi a apresentação: resumos e gráficos vêm primeiro, a tabela
-  completa vem logo abaixo.
-* **Cada demonstrativo tem endereço próprio.** Em vez de citar "página 352
-  do Anexo II-A", você compartilha um link.
-* **Os dados são abertos.** Todas as tabelas podem ser baixadas em CSV,
-  planilha por planilha ou de uma vez só, na página
-  [Dados abertos](dados-abertos.md).
-* **Os números se conferem sozinhos.** Antes de o site ir ao ar, o
-  programa verifica se as somas fecham. Se não fecharem, a publicação
-  falha.
 
 !!! warning "Documento em tramitação"
     Este site apresenta o **projeto de lei** enviado à Assembleia
