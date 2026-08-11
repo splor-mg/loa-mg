@@ -25,6 +25,7 @@ packages = [
 # Instale com `poetry install --with dev`.
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0"
+watchdog = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core>=2.0"]

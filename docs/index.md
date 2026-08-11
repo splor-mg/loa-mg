@@ -46,7 +46,7 @@ será gasto em saúde, educação, segurança, estradas e tudo mais.
 
     ---
 
-    Os investimentos previstos nas 13 regiões de Minas, no mapa — e a lista de obras do seu município.
+    Os investimentos previstos nas principais regiões de Minas no mapa e a lista de obras do seu município.
 
     [:octicons-arrow-right-24: Ver o mapa](anexo-iv/regionalizado/)
 
@@ -62,8 +62,7 @@ será gasto em saúde, educação, segurança, estradas e tudo mais.
 
     ---
 
-    A árvore completa da receita, unidade por unidade — 622 páginas de PDF
-    em uma tabela que abre e fecha.
+    A árvore completa da receita, unidade por unidade.
 
     [:octicons-arrow-right-24: Ver as receitas](anexo-ii-a/recursos-financeiros/)
 
