@@ -31,7 +31,7 @@ anexos:
       - id: consolidado-receita
         titulo: "Demonstrativo Consolidado do Orçamento Fiscal — Receita"
         base_legal: "Art. 7º, inciso I, da Lei estadual nº 25.440/2025 (LDO)"
-        resumo: "De onde vem todo o dinheiro que o Estado espera arrecadar em 2026."
+        resumo: "De onde vem o dinheiro que o Estado espera arrecadar em 2026."
         explicacao: |
           A receita aparece dividida em **ordinária** (o Estado decide onde
           aplicar) e **vinculada** (já tem destino definido por lei — saúde,
@@ -73,7 +73,7 @@ anexos:
       - id: consolidado-despesa
         titulo: "Demonstrativo Consolidado do Orçamento Fiscal — Despesa"
         base_legal: "Art. 7º, inciso I, da Lei estadual nº 25.440/2025 (LDO)"
-        resumo: "Para onde vai o dinheiro do Estado em 2026, por natureza do gasto."
+        resumo: "Para onde vai o dinheiro do Estado em 2026."
         explicacao: |
           **Despesas correntes** mantêm a máquina funcionando: salários,
           contas de luz, medicamentos, merenda. **Despesas de capital** são
@@ -109,7 +109,7 @@ anexos:
       - id: categorias-economicas
         titulo: "Resumo da Receita e da Despesa segundo as Categorias Econômicas"
         base_legal: "Art. 2º, §1º, inciso II, da Lei federal nº 4.320/1964"
-        resumo: "O quadro clássico da Lei 4.320: receita de um lado, despesa do outro."
+        resumo: "Quadro receita x despesa."
         explicacao: |
           Este é o formato exigido pela Lei federal nº 4.320/1964 para todo
           orçamento público do país — o que permite comparar Minas com outros
@@ -147,7 +147,7 @@ anexos:
       - id: despesa-por-unidade
         titulo: "Despesa por Unidade Orçamentária segundo os Grupos de Despesa"
         base_legal: "Art. 2º, §2º, inciso II, da Lei federal nº 4.320/1964"
-        resumo: "Quanto cada órgão do Estado tem para gastar em 2026, e com o quê."
+        resumo: "Quanto cada órgão do Estado tem para gastar em 2026."
         explicacao: |
           Cada linha é uma **unidade orçamentária** — a menor unidade que
           recebe dotação própria na lei. Uma secretaria pode ter várias
@@ -194,7 +194,7 @@ anexos:
       - id: quadro-geral-receita
         titulo: "Quadro Geral da Receita"
         base_legal: "Art. 2º, §1º, inciso I, da Lei federal nº 4.320/1964"
-        resumo: "A árvore inteira da receita do Estado, do total ao centavo classificado."
+        resumo: "Receita total do Estado."
         explicacao: |
           O **código** de nove posições é a classificação oficial da receita,
           usada em todo o país. Ele é hierárquico: os primeiros dígitos dizem a
@@ -227,7 +227,7 @@ anexos:
       - id: pessoal-consolidado
         titulo: "Demonstrativo Consolidado da Categoria de Pessoal"
         base_legal: "Art. 22, parágrafo único, inciso I, da Lei federal nº 4.320/1964"
-        resumo: "Quantas pessoas trabalham para o Estado, órgão por órgão."
+        resumo: "Quadro de funcionários do Estado."
         explicacao: |
           **Ativos** são os servidores em exercício. **Inativos** são
           aposentados e pensionistas pagos pelo órgão. **Terceirizados** são
