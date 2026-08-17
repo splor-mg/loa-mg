@@ -1,58 +1,25 @@
-# Sobre o projeto
+# Sobre
 
-## O que é
+## LOA de Minas Gerais
 
-Este site é a Lei Orçamentária Anual do Estado de Minas Gerais publicada
-como **documento navegável** em vez de arquivo para impressão.
+A Lei Orçamentária Anual (LOA) é o instrumento que estima quanto o Estado de Minas Gerais espera arrecadar e fixa quanto poderá gastar ao longo de cada exercício financeiro. Ela transforma as diretrizes do planejamento público em valores destinados às diferentes áreas, órgãos, programas e ações do Governo.
 
-Ele é gerado automaticamente a partir das mesmas bases de dados que
-produzem o PDF oficial enviado à Assembleia Legislativa. Não há
-digitação manual, não há recorte e cola, não há número que exista aqui e
-não exista na origem.
+Para 2026, a Lei nº 25.698, de 14 de janeiro de 2026, estabelece o Orçamento Fiscal do Estado e o Orçamento de Investimento das empresas controladas pelo Estado. A LOA 2026 estima R$ 141,75 bilhões em receitas e fixa R$ 146,97 bilhões em despesas, além de prever R$ 11,2 bilhões em investimentos das empresas estatais.
 
-## O que mudou em relação ao PDF
+Este painel foi desenvolvido para facilitar a consulta e a compreensão dos dados do orçamento estadual, apresentando as informações da LOA 2026 de forma mais acessível, visual e organizada.
 
-| Antes | Agora |
-| --- | --- |
-| 5 arquivos, 1.793 páginas | Um site, 409 páginas navegáveis |
-| Citação por número de página | Link permanente para cada quadro |
-| Busca só dentro de cada arquivo | Busca em todo o orçamento |
-| Tabela como única forma de ver | Resumo, gráfico e mapa antes da tabela |
-| Copiar número a número | Download em CSV em qualquer tabela |
-| Somas conferidas a olho | Somas conferidas automaticamente a cada publicação |
-| Difícil de ler no celular | Feito para o celular |
+Aqui é possível explorar dados sobre receitas, despesas, órgãos e unidades orçamentárias, investimentos e sua distribuição regional, permitindo uma visão mais clara de como os recursos públicos estão previstos no orçamento de Minas Gerais.
 
-## Como é feito
+## Como o orçamento se organiza
 
-* **Python** para ler os dados, calcular, validar e gerar as páginas.
-* **Poetry** para fixar as versões das bibliotecas.
-* **MkDocs Material** para o site estático.
-* **GitHub Actions** para publicar sozinho quando os dados mudam.
+A LOA está relacionada a outros instrumentos de planejamento público. O PPAG (Plano Plurianual de Ação Governamental) estabelece o planejamento de médio prazo do Estado; a LDO (Lei de Diretrizes Orçamentárias) define prioridades e orienta a elaboração do orçamento; e a LOA detalha os valores destinados às receitas, despesas, programas e ações para o exercício.
 
-Os dados vêm dos sete volumes do datapackage que a SPLOR já usa para
-gerar os PDFs. Um comando (`poetry run loa importar`) os converte; nada é
-digitado à mão.
+## Transparência e acesso à informação
 
-Os gráficos e o mapa são desenhados em SVG pelo próprio Python — o site
-não depende de nenhuma biblioteca de gráficos em JavaScript. O único
-arquivo JavaScript do projeto cuida do filtro, da ordenação e da
-exportação das tabelas, e é genérico: serve para todas.
+O objetivo deste projeto é contribuir para uma leitura mais simples e transparente do orçamento público, aproximando os dados orçamentários da sociedade e facilitando a identificação de onde os recursos estão previstos, quanto cada área recebe e como os investimentos são distribuídos pelo Estado.
 
-Para publicar um demonstrativo novo não é preciso programar. Basta
-descrever a tabela em um arquivo de configuração e rodar um comando.
-
-## Transparência e limites
-
-* Este site apresenta o **projeto de lei**. Os valores podem mudar durante
-  a tramitação na Assembleia.
-* O orçamento é uma **autorização de gasto**, não um registro do que foi
-  gasto. Para acompanhar a execução, consulte o Portal da Transparência do
-  Estado.
-* Encontrou uma divergência entre este site e o documento oficial? Isso é
-  um erro e queremos saber: abra uma questão no repositório do projeto.
+Fonte dos dados: Lei Orçamentária Anual de Minas Gerais — LOA 2026, Lei nº 25.698/2026, e seus documentos e anexos oficiais.
 
 ## Créditos
 
-Superintendência Central de Planejamento e Orçamento — Subsecretaria de
-Planejamento e Orçamento — Secretaria de Estado de Planejamento e Gestão de
-Minas Gerais.
+Superintendência Central de Planejamento e Orçamento - Subsecretaria de Planejamento e Orçamento - Secretaria de Estado de Planejamento e Gestão de Minas Gerais.

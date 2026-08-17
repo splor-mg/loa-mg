@@ -6,7 +6,7 @@ hide:
 # Resumo da Receita e da Despesa segundo as Categorias Econômicas
 
 !!! abstract "Em uma frase"
-    O quadro clássico da Lei 4.320: receita de um lado, despesa do outro.
+    Quadro receita x despesa.
 
 **Base legal:** Art. 2º, §1º, inciso II, da Lei federal nº 4.320/1964
 

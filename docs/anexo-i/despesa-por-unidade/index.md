@@ -6,7 +6,7 @@ hide:
 # Despesa por Unidade Orçamentária segundo os Grupos de Despesa
 
 !!! abstract "Em uma frase"
-    Quanto cada órgão do Estado tem para gastar em 2026, e com o quê.
+    Quanto cada órgão do Estado tem para gastar em 2026.
 
 **Base legal:** Art. 2º, §2º, inciso II, da Lei federal nº 4.320/1964
 

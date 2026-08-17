@@ -6,7 +6,7 @@ hide:
 # Demonstrativo Consolidado da Categoria de Pessoal
 
 !!! abstract "Em uma frase"
-    Quantas pessoas trabalham para o Estado, órgão por órgão.
+    Quadro de funcionários do Estado.
 
 **Base legal:** Art. 22, parágrafo único, inciso I, da Lei federal nº 4.320/1964
 

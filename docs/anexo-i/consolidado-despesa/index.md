@@ -6,7 +6,7 @@ hide:
 # Demonstrativo Consolidado do Orçamento Fiscal — Despesa
 
 !!! abstract "Em uma frase"
-    Para onde vai o dinheiro do Estado em 2026, por natureza do gasto.
+    Para onde vai o dinheiro do Estado em 2026.
 
 **Base legal:** Art. 7º, inciso I, da Lei estadual nº 25.440/2025 (LDO)
 

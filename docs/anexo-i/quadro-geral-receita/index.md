@@ -6,7 +6,7 @@ hide:
 # Quadro Geral da Receita
 
 !!! abstract "Em uma frase"
-    A árvore inteira da receita do Estado, do total ao centavo classificado.
+    Receita total do Estado.
 
 **Base legal:** Art. 2º, §1º, inciso I, da Lei federal nº 4.320/1964
 

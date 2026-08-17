@@ -6,7 +6,7 @@ hide:
 # Demonstrativo Consolidado do Orçamento Fiscal — Receita
 
 !!! abstract "Em uma frase"
-    De onde vem todo o dinheiro que o Estado espera arrecadar em 2026.
+    De onde vem o dinheiro que o Estado espera arrecadar em 2026.
 
 **Base legal:** Art. 7º, inciso I, da Lei estadual nº 25.440/2025 (LDO)
 
