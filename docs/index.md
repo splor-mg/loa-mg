@@ -7,7 +7,7 @@ hide:
 
 Esta é a **Lei Orçamentária Anual** do Estado de Minas Gerais — o documento
 que decide quanto o Estado espera arrecadar no ano e como esse dinheiro
-será gasto em saúde, educação, segurança, estradas e tudo mais.
+será gasto em saúde, educação, segurança, estradas, etc.
 
 !!! tip "Comece por aqui"
     Se você nunca leu um orçamento público, a página

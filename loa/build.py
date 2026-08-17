@@ -20,7 +20,6 @@ from .componentes import cards, grafico, mapa, tabela
 from .dados import filtrar, ler, valores_distintos
 from .glossario import Glossario
 
-
 # --------------------------------------------------------------------------
 # utilidades
 # --------------------------------------------------------------------------
@@ -100,7 +99,7 @@ class Gerador:
         partes = ["---", "hide:", "  - toc", "---", "", f"# {titulo}", ""]
 
         if dem.get("resumo"):
-            partes += [f"!!! abstract \"Em uma frase\"", f"    {dem['resumo']}", ""]
+            partes += ["!!! abstract \"Em uma frase\"", f"    {dem['resumo']}", ""]
         if dem.get("base_legal"):
             partes += [f"**Base legal:** {dem['base_legal']}", ""]
         if dem.get("explicacao"):
@@ -378,7 +377,7 @@ class Gerador:
         extras = [{"Como ler o orçamento": "como-ler.md"},
                   {"Glossário": "glossario.md"},
                   {"Dados abertos": "dados-abertos.md"},
-                  {"Sobre o projeto": "sobre.md"}]
+                  {"Sobre a LOA": "sobre.md"}]
         self.nav += [e for e in extras if (self.pasta_docs / list(e.values())[0]).exists()]
 
         self._escrever_mkdocs()
