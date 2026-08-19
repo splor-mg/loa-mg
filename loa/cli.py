@@ -4,9 +4,6 @@
     loa serve              gera e abre no navegador com recarga automática
     loa check              só roda as validações de consistência
     loa new <arquivo.csv>  cria um bloco de config pronto para colar
-
-Os nomes dos comandos seguem o padrão do MkDocs, em inglês, de propósito:
-quem já usa `mkdocs build` não precisa aprender nada novo.
 """
 
 import argparse
