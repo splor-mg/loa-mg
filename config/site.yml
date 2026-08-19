@@ -14,15 +14,15 @@ mkdocs:
 
   # AJUSTE ESTAS TRÊS LINHAS para o seu repositório.
   # Se o painel está em github.com/SEU-USUARIO/loa-mg, então:
-  site_url:  https://lorenadecastro.github.io/loa-mg/
-  repo_url:  https://github.com/LorenadeCastro/loa-mg
-  repo_name: LorenadeCastro/loa-mg
+  site_url:  https://splor-mg.github.io/loa-mg/
+  repo_url:  https://github.com/splor-mg/loa-mg
+  repo_name: splor-mg/loa-mg
 
   # O site_url precisa terminar com barra e bater com a URL do Pages,
   # senão os links internos apontam para o lugar errado.
-  site_url: https://LorenadeCastro.github.io/loa-mg/
-  repo_url: https://github.com/LorenadeCastro/loa-mg
-  repo_name: LorenadeCastro/loa-mg
+  site_url: https://splor-mg.github.io/loa-mg/
+  repo_url: https://github.com/splor-mg/loa-mg
+  repo_name: splor-mg/loa-mg
   edit_uri: ""
 
   theme:

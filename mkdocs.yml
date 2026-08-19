@@ -7,9 +7,9 @@ site_description: Lei Orçamentária Anual do Estado de Minas Gerais, exercício
 site_author: SEPLAG-MG / Subsecretaria de Planejamento e Orçamento
 copyright: 'Governo do Estado de Minas Gerais — dados públicos, uso livre. Elaboração:
   SCPO/SEPLAG.'
-site_url: https://LorenadeCastro.github.io/loa-mg/
-repo_url: https://github.com/LorenadeCastro/loa-mg
-repo_name: LorenadeCastro/loa-mg
+site_url: https://splor-mg.github.io/loa-mg/
+repo_url: https://github.com/splor-mg/loa-mg
+repo_name: splor-mg/loa-mg
 edit_uri: ''
 theme:
   name: material
