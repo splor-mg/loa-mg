@@ -301,16 +301,7 @@ class Gerador:
 
         linhas += [
             "",
-            "## Reprodutibilidade",
-            "",
-            "O site inteiro é gerado por um comando:",
-            "",
-            "```bash",
-            "loa build",
-            "```",
-            "",
-            "Se um arquivo de dados mudar, o site muda junto — não existe número "
-            "digitado à mão em nenhuma página.",
+
             "",
         ]
         (self.pasta_docs / "dados-abertos.md").write_text("\n".join(linhas), encoding="utf-8")

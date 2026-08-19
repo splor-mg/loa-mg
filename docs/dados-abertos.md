@@ -1,12 +1,10 @@
 # Dados abertos
 
-!!! warning "Procedência não registrada"
-    Este site foi gerado a partir dos arquivos locais em `dados/`,
-    sem passar pela automação. Rode `poetry run loa importar` e
-    publique pelo GitHub Actions para que a origem seja registrada.
+!!! warning "Procedência"
+    Todo conteúdo exibido nesta página vem dos arquivos abaixo.
+    São os mesmos que geram o PDF oficial enviado à Assembleia
+    Legislativa.
 
-
-Todo número exibido neste site vem dos arquivos abaixo — são os mesmos que geram o PDF oficial enviado à Assembleia Legislativa. Estão em CSV (separador `;`, decimal `,`, codificação UTF-8), abrem no Excel, no LibreOffice, no Python e no R.
 
 | Arquivo | Linhas | Colunas | Download |
 | --- | ---: | --- | --- |
