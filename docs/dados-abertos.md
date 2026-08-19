@@ -1,8 +1,12 @@
 # Dados abertos
 
-!!! warning "Procedência"
-    Esta página foi gerada a partir dos arquivos que geraram os PDFs enviados à Assembleia Legislativa de Minas Gerais.
+!!! warning "Procedência não registrada"
+    Este site foi gerado a partir dos arquivos locais em `dados/`,
+    sem passar pela automação. Rode `poetry run loa importar` e
+    publique pelo GitHub Actions para que a origem seja registrada.
 
+
+Todo número exibido neste site vem dos arquivos abaixo — são os mesmos que geram o PDF oficial enviado à Assembleia Legislativa. Estão em CSV (separador `;`, decimal `,`, codificação UTF-8), abrem no Excel, no LibreOffice, no Python e no R.
 
 | Arquivo | Linhas | Colunas | Download |
 | --- | ---: | --- | --- |
@@ -18,3 +22,13 @@
 | `receita_geral.csv` | 1348 | `codigo`, `nivel`, `especificacao`, `fonte`, `valor` | [baixar](arquivos/receita_geral.csv) |
 | `recursos_financeiros.csv` | 3421 | `orgao_nome`, `uo_nome`, `codigo`, `nivel`, `fonte`, `especificacao`, `valor` | [baixar](arquivos/recursos_financeiros.csv) |
 | `regionalizado.csv` | 93 | `orgao_nome`, `uo_nome`, `regiao`, `valor` | [baixar](arquivos/regionalizado.csv) |
+
+## Reprodutibilidade
+
+O site inteiro é gerado por um comando:
+
+```bash
+loa build
+```
+
+Se um arquivo de dados mudar, o site muda junto — não existe número digitado à mão em nenhuma página.

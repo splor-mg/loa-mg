@@ -19,7 +19,7 @@ hide:
     
     A mesma receita aparece em vários níveis com valores iguais: não é
     repetição, é o mesmo dinheiro visto com mais ou menos detalhe.
-    **Somar todas as linhas dá um número sem sentido** — some apenas as
+    **Somar todas as linhas dá um número sem sentido** -, some apenas as
     linhas de um mesmo nível.
 
 <div class="loa-cards">

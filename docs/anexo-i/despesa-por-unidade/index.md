@@ -12,14 +12,12 @@ hide:
 
 ??? question "Como ler este demonstrativo"
 
-    Cada linha é uma **unidade orçamentária** — a menor unidade que
-    recebe dotação própria na lei. Uma secretaria pode ter várias
-    (a secretaria em si, suas fundações, seus fundos).
+    Cada linha é uma **unidade orçamentária** -, a menor unidade que
+    recebe dotação própria na lei. Uma secretaria pode ter várias, a
+    secretaria em si, suas fundações, seus fundos.
     
     As colunas são os **grupos de natureza da despesa**, a classificação
-    oficial do que se pode fazer com o dinheiro. Clique no título de uma
-    coluna para ordenar; use o filtro para achar um órgão pelo nome ou
-    pela sigla.
+    oficial do que se pode fazer com o dinheiro.
 
 <div class="loa-cards">
 <div class="loa-card">

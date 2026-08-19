@@ -13,11 +13,8 @@ hide:
 ??? question "Como ler este demonstrativo"
 
     Este é o formato exigido pela Lei federal nº 4.320/1964 para todo
-    orçamento público do país — o que permite comparar Minas com outros
+    orçamento público do país -, o que permite comparar Minas com outros
     estados.
-    
-    Use o campo de filtro acima da tabela para ver só a receita ou só a
-    despesa.
 
 <div class="loa-cards">
 <div class="loa-card">

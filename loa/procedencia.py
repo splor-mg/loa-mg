@@ -84,10 +84,10 @@ class Procedencia:
         """Bloco completo para a página de dados abertos."""
         if not self.existe():
             return (
-                '!!! warning "Procedência não registrada"\n'
-                "    Este site foi gerado a partir dos arquivos locais em `dados/`,\n"
-                "    sem passar pela automação. Rode `poetry run loa importar` e\n"
-                "    publique pelo GitHub Actions para que a origem seja registrada.\n"
+                '!!! warning "Procedência"\n'
+                "    Todo conteúdo exibido nesta página vem dos arquivos abaixo.\n"
+                "    São os mesmos que geram o PDF oficial enviado à Assembleia\n"
+                "    Legislativa.\n"
             )
 
         # Uma linha de tabela por campo: no admonition do Material, linhas

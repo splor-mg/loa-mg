@@ -25,7 +25,7 @@ hide:
     paga a outro. Aparece separada para que o mesmo real não seja
     contado duas vezes.
     
-    Clique em uma linha com seta para abrir o detalhamento.
+    Clique em uma **linha com seta** para abrir o detalhamento.
 
 <div class="loa-cards">
 <div class="loa-card">

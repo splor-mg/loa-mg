@@ -1,6 +1,6 @@
 # Anexo I — Demonstrativos
 
-Visão consolidada do Orçamento Fiscal e do Orçamento de Investimento das empresas controladas pelo Estado. É por aqui que se começa: os grandes números do orçamento de Minas em 2026.
+Visão consolidada do Orçamento Fiscal e do Orçamento de Investimento das empresas controladas pelo Estado. É aqui que se verifica os grandes números do orçamento de Minas em 2026.
 
 ## Demonstrativos deste anexo
 
