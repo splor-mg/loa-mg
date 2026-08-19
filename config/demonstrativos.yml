@@ -23,7 +23,7 @@ anexos:
     titulo: "Anexo I — Demonstrativos"
     descricao: >-
       Visão consolidada do Orçamento Fiscal e do Orçamento de Investimento
-      das empresas controladas pelo Estado. É por aqui que se começa: os
+      das empresas controladas pelo Estado. É aqui que se verifica os
       grandes números do orçamento de Minas em 2026.
 
     demonstrativos:
@@ -46,7 +46,7 @@ anexos:
           paga a outro. Aparece separada para que o mesmo real não seja
           contado duas vezes.
 
-          Clique em uma linha com seta para abrir o detalhamento.
+          Clique em uma **linha com seta** para abrir o detalhamento.
         dados: consolidado_fiscal.csv
         filtro: {lado: receita}
         hierarquia: {campo_nivel: nivel}
@@ -112,11 +112,9 @@ anexos:
         resumo: "Quadro receita x despesa."
         explicacao: |
           Este é o formato exigido pela Lei federal nº 4.320/1964 para todo
-          orçamento público do país — o que permite comparar Minas com outros
+          orçamento público do país -, o que permite comparar Minas com outros
           estados.
 
-          Use o campo de filtro acima da tabela para ver só a receita ou só a
-          despesa.
         dados: categorias_economicas.csv
         mostrar_total: false
         colunas:
@@ -149,14 +147,12 @@ anexos:
         base_legal: "Art. 2º, §2º, inciso II, da Lei federal nº 4.320/1964"
         resumo: "Quanto cada órgão do Estado tem para gastar em 2026."
         explicacao: |
-          Cada linha é uma **unidade orçamentária** — a menor unidade que
-          recebe dotação própria na lei. Uma secretaria pode ter várias
-          (a secretaria em si, suas fundações, seus fundos).
+          Cada linha é uma **unidade orçamentária** -, a menor unidade que
+          recebe dotação própria na lei. Uma secretaria pode ter várias, a
+          secretaria em si, suas fundações, seus fundos.
 
           As colunas são os **grupos de natureza da despesa**, a classificação
-          oficial do que se pode fazer com o dinheiro. Clique no título de uma
-          coluna para ordenar; use o filtro para achar um órgão pelo nome ou
-          pela sigla.
+          oficial do que se pode fazer com o dinheiro.
         dados: despesa_uo_grupo.csv
         ordenar_por: total
         colunas:
@@ -203,7 +199,7 @@ anexos:
 
           A mesma receita aparece em vários níveis com valores iguais: não é
           repetição, é o mesmo dinheiro visto com mais ou menos detalhe.
-          **Somar todas as linhas dá um número sem sentido** — some apenas as
+          **Somar todas as linhas dá um número sem sentido** -, some apenas as
           linhas de um mesmo nível.
         dados: receita_geral.csv
         hierarquia: {campo_nivel: nivel}
