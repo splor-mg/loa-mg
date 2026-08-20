@@ -536,3 +536,46 @@ article abbr {
 .loa-fatia { stroke-linejoin: round; }
 .loa-grafico--rosca path { paint-order: stroke; }
 .loa-figura .loa-grafico--rosca { --fatia-borda: var(--md-default-bg-color); }
+
+/* ------------------------------------------------ mapa municipal IBGE */
+.loa-figura--mapa-municipios { overflow: hidden; }
+.loa-mapa-municipios {
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: .5rem;
+  background: var(--loa-fundo, #fff);
+}
+.loa-mapa-municipios svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 680px;
+}
+.loa-mapa-municipios__status {
+  padding: 2rem;
+  color: var(--loa-texto-fraco);
+  text-align: center;
+}
+.loa-municipio {
+  stroke: #fff;
+  stroke-width: .45;
+  vector-effect: non-scaling-stroke;
+  transition: opacity .12s ease, filter .12s ease;
+}
+.loa-municipio--ativo { cursor: pointer; }
+.loa-municipio--ativo:hover,
+.loa-municipio--ativo:focus {
+  opacity: .72;
+  filter: brightness(.88);
+  outline: none;
+}
+.loa-legenda--mapa-municipios i {
+  width: 28px;
+  height: 12px;
+  border-radius: 2px;
+}

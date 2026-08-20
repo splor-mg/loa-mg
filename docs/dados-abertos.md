@@ -21,12 +21,3 @@
 | `recursos_financeiros.csv` | 3421 | `orgao_nome`, `uo_nome`, `codigo`, `nivel`, `fonte`, `especificacao`, `valor` | [baixar](arquivos/recursos_financeiros.csv) |
 | `regionalizado.csv` | 93 | `orgao_nome`, `uo_nome`, `regiao`, `valor` | [baixar](arquivos/regionalizado.csv) |
 
-## Reprodutibilidade
-
-O site inteiro é gerado por um comando:
-
-```bash
-loa build
-```
-
-Se um arquivo de dados mudar, o site muda junto — não existe número digitado à mão em nenhuma página.

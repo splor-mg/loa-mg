@@ -531,9 +531,12 @@ anexos:
           - {titulo: "Investimento regionalizado", campo: valor, funcao: soma}
           - {titulo: "Territórios atendidos", funcao: contagem}
         mapa:
-          titulo: "Investimento previsto por região geográfica intermediária"
-          regiao: regiao
-          valor: valor
+          tipo: municipios
+          titulo: "Investimento previsto por município"
+          dados: obras_municipio.csv
+          campo_nome: municipio
+          campo_valor: total
+          href_base: "../obras-municipio/municipio-"
         graficos:
           - tipo: barras
             titulo: "Ranking dos territórios"

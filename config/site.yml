@@ -55,7 +55,7 @@ mkdocs:
     features:
       - navigation.instant        # navegação sem recarregar a página
       - navigation.tracking
-      - navigation.tabs           # anexos como abas no topo
+      - navigation.tabs           # somente os 5 itens principais ficam no topo
       - navigation.sections
       - navigation.top
       - navigation.indexes

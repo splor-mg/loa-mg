@@ -536,3 +536,99 @@ article abbr {
 .loa-fatia { stroke-linejoin: round; }
 .loa-grafico--rosca path { paint-order: stroke; }
 .loa-figura .loa-grafico--rosca { --fatia-borda: var(--md-default-bg-color); }
+
+
+/* Tooltip do mapa municipal */
+.loa-mapa-municipios {
+  position: relative;
+}
+
+.loa-mapa-municipios__svg {
+  position: relative;
+  z-index: 1;
+}
+
+.loa-mapa-municipios__tooltip {
+  position: absolute;
+  z-index: 20;
+  max-width: 240px;
+  padding: .55rem .7rem;
+  border-radius: .35rem;
+  background: rgba(30, 30, 30, .95);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .22);
+  pointer-events: none;
+  font-size: .74rem;
+  line-height: 1.35;
+}
+
+.loa-mapa-municipios__tooltip strong,
+.loa-mapa-municipios__tooltip span {
+  display: block;
+}
+
+.loa-mapa-municipios__tooltip strong {
+  margin-bottom: .2rem;
+  font-size: .8rem;
+}
+
+.loa-municipio {
+  cursor: default;
+}
+
+.loa-municipio--ativo {
+  cursor: pointer;
+}
+
+.loa-municipio--ativo:hover {
+  opacity: .72;
+  filter: brightness(.88);
+}
+
+.loa-municipio--ativo:focus {
+  outline: 3px solid var(--loa-vermelho);
+  outline-offset: 1px;
+}
+
+/* ------------------------------------------------ mapa municipal IBGE */
+.loa-figura--mapa-municipios { overflow: hidden; }
+.loa-mapa-municipios {
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: .5rem;
+  background: var(--loa-fundo, #fff);
+}
+.loa-mapa-municipios svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 680px;
+}
+.loa-mapa-municipios__status {
+  padding: 2rem;
+  color: var(--loa-texto-fraco);
+  text-align: center;
+}
+.loa-municipio {
+  stroke: #fff;
+  stroke-width: .45;
+  vector-effect: non-scaling-stroke;
+  transition: opacity .12s ease, filter .12s ease;
+}
+.loa-municipio--ativo { cursor: pointer; }
+.loa-municipio--ativo:hover,
+.loa-municipio--ativo:focus {
+  opacity: .72;
+  filter: brightness(.88);
+  outline: none;
+}
+.loa-legenda--mapa-municipios i {
+  width: 28px;
+  height: 12px;
+  border-radius: 2px;
+}

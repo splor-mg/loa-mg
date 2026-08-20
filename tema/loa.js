@@ -343,35 +343,306 @@
       });
   }
 
-  /* ------------------------------------------------------------ mapa */
+  /* ------------------------------------------------------------ mapa municipal */
 
-  /* No mapa geográfico as regiões são <path> dentro de um SVG. Elas NÃO
-     podem ser envolvidas por <a>: um link dentro de SVG é um SVGAElement,
-     cuja propriedade `href` é somente leitura, e a navegação instantânea
-     do Material quebra ao tentar reescrevê-la. Por isso o Python emite
-     `data-href` e a navegação acontece aqui.
-     O mapa de blocos não passa por aqui: ele é HTML e usa <a> de verdade. */
-  function ativaMapa(mapa) {
-    if (mapa.hasAttribute("data-pronto")) return;
-    mapa.setAttribute("data-pronto", "");
+  function normalizaMapa(nome) {
+    return String(nome || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toUpperCase()
+      .replace(/[^A-Z0-9]+/g, " ")
+      .trim()
+      .replace(/\s+/g, " ");
+  }
 
-    mapa.querySelectorAll("[data-href]").forEach(function (area) {
-      function ir() {
-        window.location.href = area.getAttribute("data-href");
+  function escaparHtml(valor) {
+    return String(valor || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
+  function escaparSvg(valor) {
+    return escaparHtml(valor);
+  }
+
+  function caminhoGeoJSON(geometry, projetar) {
+    if (!geometry) return "";
+
+    function anelParaPath(anel) {
+      if (!anel || !anel.length) return "";
+      return "M " + anel.map(function (ponto) {
+        var p = projetar(ponto[0], ponto[1]);
+        return p[0].toFixed(2) + " " + p[1].toFixed(2);
+      }).join(" L ") + " Z";
+    }
+
+    if (geometry.type === "Polygon") {
+      return geometry.coordinates.map(anelParaPath).join(" ");
+    }
+
+    if (geometry.type === "MultiPolygon") {
+      return geometry.coordinates.map(function (poligono) {
+        return poligono.map(anelParaPath).join(" ");
+      }).join(" ");
+    }
+
+    return "";
+  }
+
+  function todosOsPontos(geometry, destino) {
+    if (!geometry) return;
+
+    function adicionarAnel(anel) {
+      anel.forEach(function (ponto) {
+        destino.push(ponto);
+      });
+    }
+
+    if (geometry.type === "Polygon") {
+      geometry.coordinates.forEach(adicionarAnel);
+    } else if (geometry.type === "MultiPolygon") {
+      geometry.coordinates.forEach(function (poligono) {
+        poligono.forEach(adicionarAnel);
+      });
+    }
+  }
+
+  function escalaMapa(valor, valores) {
+    if (!valores.length) return 0;
+    var ordenados = valores.slice().sort(function (a, b) { return a - b; });
+    if (ordenados.length === 1) return 5;
+
+    var pos = ordenados.indexOf(valor);
+    if (pos < 0) {
+      pos = 0;
+      for (var i = 0; i < ordenados.length; i++) {
+        if (ordenados[i] <= valor) pos = i;
       }
-      area.addEventListener("click", ir);
-      area.addEventListener("keydown", function (e) {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          ir();
+    }
+
+    return Math.min(5, Math.floor((pos / (ordenados.length - 1)) * 5));
+  }
+
+  function nomeFeature(feature) {
+    var p = feature.properties || {};
+    return p.name || p.nome || p.NM_MUN || p.NM_MUNICIP || p.description || "";
+  }
+
+  function idFeature(feature) {
+    var p = feature.properties || {};
+    return String(p.id || feature.id || p.CD_MUN || p.codarea || "").replace(/[^0-9]/g, "");
+  }
+
+  function criaTooltip(container) {
+    var tooltip = document.createElement("div");
+    tooltip.className = "loa-mapa-municipios__tooltip";
+    tooltip.hidden = true;
+    container.appendChild(tooltip);
+    return tooltip;
+  }
+
+  function mostraTooltip(tooltip, container, nome, item, evento) {
+    tooltip.innerHTML =
+      '<strong>' + escaparHtml(nome) + '</strong>' +
+      '<span>' + (item ? 'Investimento: ' + escaparHtml(item.valorFormatado) : 'Sem investimento localizado') + '</span>' +
+      (item ? '<span>Participação: ' + escaparHtml(item.percentual) + '</span>' : '');
+
+    tooltip.hidden = false;
+
+    var rect = container.getBoundingClientRect();
+    var x = evento.clientX - rect.left + 14;
+    var y = evento.clientY - rect.top + 14;
+
+    var limiteX = container.clientWidth - tooltip.offsetWidth - 8;
+    var limiteY = container.clientHeight - tooltip.offsetHeight - 8;
+
+    tooltip.style.left = Math.max(8, Math.min(x, limiteX)) + "px";
+    tooltip.style.top = Math.max(8, Math.min(y, limiteY)) + "px";
+  }
+
+  function escondeTooltip(tooltip) {
+    tooltip.hidden = true;
+  }
+
+  function montaMapaMunicipios(container) {
+    if (container.hasAttribute("data-pronto")) return;
+    container.setAttribute("data-pronto", "");
+
+    var status = container.querySelector(".loa-mapa-municipios__status");
+    var url = container.getAttribute("data-geojson-url");
+    var bruto = container.getAttribute("data-map-data") || "[]";
+    var dados;
+
+    try {
+      dados = JSON.parse(bruto);
+    } catch (erro) {
+      if (status) status.textContent = "Não foi possível ler os dados do mapa.";
+      return;
+    }
+
+    var porNome = {};
+    var porId = {};
+    var valores = [];
+
+    dados.forEach(function (item) {
+      porNome[normalizaMapa(item.nome)] = item;
+      if (item.id) porId[String(item.id)] = item;
+      valores.push(Number(item.valor) || 0);
+    });
+
+    var tooltip = criaTooltip(container);
+
+    function carregar(urlAtual) {
+      return fetch(urlAtual, {
+        mode: "cors",
+        cache: "force-cache",
+        headers: { "Accept": "application/geo+json, application/json" }
+      }).then(function (resposta) {
+        if (!resposta.ok) throw new Error("HTTP " + resposta.status);
+        return resposta.json();
+      });
+    }
+
+    carregar(url)
+      .catch(function () {
+        var fallback = container.getAttribute("data-geojson-fallback");
+        if (!fallback) throw new Error("A malha municipal não respondeu.");
+        return carregar(fallback);
+      })
+      .then(function (geo) {
+        if (!geo || !geo.features || !geo.features.length) {
+          throw new Error("A malha municipal veio vazia.");
+        }
+
+        var pontos = [];
+        geo.features.forEach(function (feature) {
+          todosOsPontos(feature.geometry, pontos);
+        });
+
+        if (!pontos.length) throw new Error("A malha municipal não possui geometria.");
+
+        var minX = Infinity, maxX = -Infinity;
+        var minY = Infinity, maxY = -Infinity;
+        pontos.forEach(function (ponto) {
+          minX = Math.min(minX, ponto[0]);
+          maxX = Math.max(maxX, ponto[0]);
+          minY = Math.min(minY, ponto[1]);
+          maxY = Math.max(maxY, ponto[1]);
+        });
+
+        var largura = 1000;
+        var altura = 700;
+        var margem = 18;
+        var escalaX = (largura - margem * 2) / Math.max(0.000001, maxX - minX);
+        var escalaY = (altura - margem * 2) / Math.max(0.000001, maxY - minY);
+        var escala = Math.min(escalaX, escalaY);
+        var usadoX = (maxX - minX) * escala;
+        var usadoY = (maxY - minY) * escala;
+        var offsetX = (largura - usadoX) / 2;
+        var offsetY = (altura - usadoY) / 2;
+
+        function projetar(x, y) {
+          return [
+            offsetX + (x - minX) * escala,
+            altura - (offsetY + (y - minY) * escala)
+          ];
+        }
+
+        var cores = ["#f7eeee", "#f0caca", "#e7a0a0", "#d96b6b", "#b83d3d", "#7f1717"];
+        var partes = [
+          '<svg class="loa-mapa-municipios__svg" viewBox="0 0 ' + largura + ' ' + altura + '" role="img" aria-label="Mapa dos 853 municípios de Minas Gerais">'
+        ];
+
+        var ativos = 0;
+
+        geo.features.forEach(function (feature) {
+          var nome = nomeFeature(feature);
+          var id = idFeature(feature);
+
+          /* A malha geográfica do GitHub/IBGE traz o código IBGE no campo
+             `properties.id` e o nome em `properties.name`. Usamos o código
+             primeiro e o nome como fallback para evitar o mapa todo cinza
+             quando a fonte geográfica mudar a forma dos atributos. */
+          var item = porId[id] || porNome[normalizaMapa(nome)];
+          var valor = item ? Number(item.valor) || 0 : 0;
+          var faixa = item ? escalaMapa(valor, valores) : -1;
+          var cor = faixa >= 0 ? cores[faixa] : "#e5e5e5";
+          var d = caminhoGeoJSON(feature.geometry, projetar);
+          if (!d) return;
+
+          if (item) ativos++;
+
+          var classe = item ? "loa-municipio loa-municipio--ativo" : "loa-municipio";
+          var atributos =
+            'class="' + classe + '"' +
+            ' fill="' + cor + '"' +
+            ' data-nome="' + escaparSvg(nome) + '"';
+
+          if (item) {
+            atributos +=
+              ' data-href="' + escaparSvg(item.href) + '"' +
+              ' tabindex="0"' +
+              ' aria-label="' + escaparSvg(nome + ': ' + item.valorFormatado) + '"';
+          } else {
+            atributos += ' aria-label="' + escaparSvg(nome + ': sem investimento localizado') + '"';
+          }
+
+          partes.push('<path d="' + d + '" ' + atributos + '></path>');
+        });
+
+        partes.push("</svg>");
+        container.innerHTML = partes.join("");
+        container.appendChild(tooltip);
+
+        if (status) status.remove();
+
+        container.querySelectorAll(".loa-municipio").forEach(function (area) {
+          var nome = area.getAttribute("data-nome") || "Município";
+          var item = porNome[normalizaMapa(nome)];
+
+          area.addEventListener("mouseenter", function (e) {
+            mostraTooltip(tooltip, container, nome, item, e);
+          });
+
+          area.addEventListener("mousemove", function (e) {
+            mostraTooltip(tooltip, container, nome, item, e);
+          });
+
+          area.addEventListener("mouseleave", function () {
+            escondeTooltip(tooltip);
+          });
+
+          if (item) {
+            function abrir() {
+              window.location.href = area.getAttribute("data-href");
+            }
+
+            area.addEventListener("click", abrir);
+            area.addEventListener("keydown", function (e) {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                abrir();
+              }
+            });
+          }
+        });
+
+        container.setAttribute("data-municipios-com-investimento", String(ativos));
+      })
+      .catch(function (erro) {
+        console.error("Mapa municipal:", erro);
+        if (status) {
+          status.textContent = "Não foi possível carregar a malha municipal de Minas Gerais.";
         }
       });
-    });
   }
 
   function ativarTudo() {
     document.querySelectorAll(".loa-tabela").forEach(ativaTabela);
-    document.querySelectorAll(".loa-mapa").forEach(ativaMapa);
+    document.querySelectorAll(".loa-mapa-municipios").forEach(montaMapaMunicipios);
   }
 
   /* `document$` é o fluxo do Material que emite a cada troca de página,

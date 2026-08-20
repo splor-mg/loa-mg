@@ -335,7 +335,7 @@ class Gerador:
         self._copiar_tema()
         self._copiar_paginas_fixas()
 
-        self.nav = [{"Início": "index.md"}]
+        self.nav = [{"Início": [{"Início": "index.md"}]}]
 
         for anexo in self.estrutura.get("anexos", []):
             pasta = self.pasta_docs / slug(anexo["id"])
@@ -355,7 +355,7 @@ class Gerador:
                 titulo, destino = self._gerar_demonstrativo(anexo, dem)
                 filhos.append({titulo: destino})
 
-            self.nav.append({anexo["titulo"]: filhos})
+            self.nav[0]["Início"].append({anexo["titulo"]: filhos})
 
         self._gerar_glossario()
         self._gerar_dados_abertos()

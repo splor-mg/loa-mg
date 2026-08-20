@@ -81,422 +81,423 @@ extra:
     link: https://www.mg.gov.br
     name: Portal do Governo de Minas Gerais
 nav:
-- Início: index.md
-- Anexo I — Demonstrativos:
-  - Sobre o anexo: anexo-i/index.md
-  - Demonstrativo Consolidado do Orçamento Fiscal — Receita: anexo-i/consolidado-receita/index.md
-  - Demonstrativo Consolidado do Orçamento Fiscal — Despesa: anexo-i/consolidado-despesa/index.md
-  - Resumo da Receita e da Despesa segundo as Categorias Econômicas: anexo-i/categorias-economicas/index.md
-  - Despesa por Unidade Orçamentária segundo os Grupos de Despesa: anexo-i/despesa-por-unidade/index.md
-  - Quadro Geral da Receita: anexo-i/quadro-geral-receita/index.md
-  - Demonstrativo Consolidado da Categoria de Pessoal: anexo-i/pessoal-consolidado/index.md
-- Anexo II-A — Orçamento Fiscal (receitas):
-  - Sobre o anexo: anexo-ii-a/index.md
-  - Demonstrativo dos Recursos Financeiros:
-    - Visão geral: anexo-ii-a/recursos-financeiros/index.md
-    - Advocacia Geral do Estado - AGE: anexo-ii-a/recursos-financeiros/advocacia-geral-do-estado-age/index.md
-    - Agência de Desenvolvimento da Região Metropolitana de Belo Horizonte - AGÊNCIA RMBH: anexo-ii-a/recursos-financeiros/agencia-de-desenvolvimento-da-regiao-metropolitana-de-belo-horizonte-a/index.md
-    - Agência de Desenvolvimento da Região Metropolitana do Vale do Aço - ARMVA: anexo-ii-a/recursos-financeiros/agencia-de-desenvolvimento-da-regiao-metropolitana-do-vale-do-aco-armv/index.md
-    - Agência Reguladora de Serviços de Abastecimento de Água e de Esgotamento Sanitário do Estado de Minas Gerais - ARSAE -MG: anexo-ii-a/recursos-financeiros/agencia-reguladora-de-servicos-de-abastecimento-de-agua-e-de-esgotamen/index.md
-    - Assembleia Legislativa do Estado de Minas Gerais - ALMG: anexo-ii-a/recursos-financeiros/assembleia-legislativa-do-estado-de-minas-gerais-almg/index.md
-    - Controladoria-geral do Estado - CGE: anexo-ii-a/recursos-financeiros/controladoria-geral-do-estado-cge/index.md
-    - Corpo de Bombeiros Militar do Estado de Minas Gerais - CBMMG: anexo-ii-a/recursos-financeiros/corpo-de-bombeiros-militar-do-estado-de-minas-gerais-cbmmg/index.md
-    - Defensoria Publica do Estado de Minas Gerais - DEF PUB: anexo-ii-a/recursos-financeiros/defensoria-publica-do-estado-de-minas-gerais-def-pub/index.md
-    - Departamento de Estradas de Rodagem do Estado de Minas Gerais - DER-MG: anexo-ii-a/recursos-financeiros/departamento-de-estradas-de-rodagem-do-estado-de-minas-gerais-der-mg/index.md
-    - Empresa de Assistência Técnica e Extensão Rural do Estado de Minas Gerais - EMATER: anexo-ii-a/recursos-financeiros/empresa-de-assistencia-tecnica-e-extensao-rural-do-estado-de-minas-ger/index.md
-    - Empresa de Pesquisa Agropecuária de Minas Gerais - EPAMIG: anexo-ii-a/recursos-financeiros/empresa-de-pesquisa-agropecuaria-de-minas-gerais-epamig/index.md
-    - Empresa Mineira de Comunicação - EMC: anexo-ii-a/recursos-financeiros/empresa-mineira-de-comunicacao-emc/index.md
-    - Escola de Saúde Pública do Estado de Minas Gerais - ESP MG: anexo-ii-a/recursos-financeiros/escola-de-saude-publica-do-estado-de-minas-gerais-esp-mg/index.md
-    - Fundação Centro de Hematologia e Hemoterapia de Minas Gerais - HEMOMINAS: anexo-ii-a/recursos-financeiros/fundacao-centro-de-hematologia-e-hemoterapia-de-minas-gerais-hemominas/index.md
-    - Fundação Clóvis Salgado - FCS: anexo-ii-a/recursos-financeiros/fundacao-clovis-salgado-fcs/index.md
-    - Fundação de Amparo À Pesquisa do Estado de Minas Gerais - FAPEMIG: anexo-ii-a/recursos-financeiros/fundacao-de-amparo-a-pesquisa-do-estado-de-minas-gerais-fapemig/index.md
-    - Fundação de Arte de Ouro Preto - FAOP: anexo-ii-a/recursos-financeiros/fundacao-de-arte-de-ouro-preto-faop/index.md
-    - Fundação de Educação para o Trabalho de Minas Gerais - UTRAMIG: anexo-ii-a/recursos-financeiros/fundacao-de-educacao-para-o-trabalho-de-minas-gerais-utramig/index.md
-    - Fundação Estadual do Meio Ambiente - FEAM: anexo-ii-a/recursos-financeiros/fundacao-estadual-do-meio-ambiente-feam/index.md
-    - Fundação Ezequiel Dias - FUNED: anexo-ii-a/recursos-financeiros/fundacao-ezequiel-dias-funed/index.md
-    - Fundação Helena Antipoff - FHA: anexo-ii-a/recursos-financeiros/fundacao-helena-antipoff-fha/index.md
-    - Fundação Hospitalar do Estado de Minas Gerais - FHEMIG: anexo-ii-a/recursos-financeiros/fundacao-hospitalar-do-estado-de-minas-gerais-fhemig/index.md
-    - Fundação João Pinheiro - FJP: anexo-ii-a/recursos-financeiros/fundacao-joao-pinheiro-fjp/index.md
-    - Fundação Tv Minas Cultural e Educativa - TV MINAS: anexo-ii-a/recursos-financeiros/fundacao-tv-minas-cultural-e-educativa-tv-minas/index.md
-    - Fundo de Apoio Habitacional Aos Militares do Estado de Minas Gerais - FAHMEMG: anexo-ii-a/recursos-financeiros/fundo-de-apoio-habitacional-aos-militares-do-estado-de-minas-gerais-fa/index.md
-    - Fundo de Assistência ao Pecúlio dos Servidores do Estado de Minas Gerais - FUNAPEC: anexo-ii-a/recursos-financeiros/fundo-de-assistencia-ao-peculio-dos-servidores-do-estado-de-minas-gera/index.md
-    - Fundo de Ativos Imobiliários de Minas Gerais - FAIMG: anexo-ii-a/recursos-financeiros/fundo-de-ativos-imobiliarios-de-minas-gerais-faimg/index.md
-    - Fundo de Desenvolvimento do Ministério Público - FDMP: anexo-ii-a/recursos-financeiros/fundo-de-desenvolvimento-do-ministerio-publico-fdmp/index.md
-    - Fundo de Desenvolvimento Metropolitano - FDM: anexo-ii-a/recursos-financeiros/fundo-de-desenvolvimento-metropolitano-fdm/index.md
-    - Fundo de Fomento e Desenvolvimento Socioeconômico do Estado de Minas Gerais - FUNDESE: anexo-ii-a/recursos-financeiros/fundo-de-fomento-e-desenvolvimento-socioeconomico-do-estado-de-minas-g/index.md
-    - Fundo de Investimento do Estado de Minas Gerais - MG INVESTE: anexo-ii-a/recursos-financeiros/fundo-de-investimento-do-estado-de-minas-gerais-mg-investe/index.md
-    - Fundo de Pagamento de Parcerias Público - PRIVADAS DE MINAS GERAIS - FPP - MG: anexo-ii-a/recursos-financeiros/fundo-de-pagamento-de-parcerias-publico-privadas-de-minas-gerais-fpp-m/index.md
-    - Fundo de Recuperação, Proteção e Desenvolvimento Sustentável das Bacias Hidrográficas do Estado de Minas Gerais - FHIDRO: anexo-ii-a/recursos-financeiros/fundo-de-recuperacao-protecao-e-desenvolvimento-sustentavel-das-bacias/index.md
-    - Fundo do Tribunal de Contas do Estado de Minas Gerais - FUNCONTAS: anexo-ii-a/recursos-financeiros/fundo-do-tribunal-de-contas-do-estado-de-minas-gerais-funcontas/index.md
-    - Fundo Especial da Advocacia-geral do Estado - FEAGE: anexo-ii-a/recursos-financeiros/fundo-especial-da-advocacia-geral-do-estado-feage/index.md
-    - Fundo Especial da Assembleia Legislativa do Estado de Minas Gerais - FUNDALEMG: anexo-ii-a/recursos-financeiros/fundo-especial-da-assembleia-legislativa-do-estado-de-minas-gerais-fun/index.md
-    - Fundo Especial de Garantia de Acesso À Justiça - FEGAJ: anexo-ii-a/recursos-financeiros/fundo-especial-de-garantia-de-acesso-a-justica-fegaj/index.md
-    - Fundo Especial do Ministério Público do Estado de Minas Gerais - FUNEMP: anexo-ii-a/recursos-financeiros/fundo-especial-do-ministerio-publico-do-estado-de-minas-gerais-funemp/index.md
-    - Fundo Especial do Poder Judiciário do Estado de Minas Gerais - FEPJ: anexo-ii-a/recursos-financeiros/fundo-especial-do-poder-judiciario-do-estado-de-minas-gerais-fepj/index.md
-    - Fundo Estadual de Assistência Social - FEAS: anexo-ii-a/recursos-financeiros/fundo-estadual-de-assistencia-social-feas/index.md
-    - Fundo Estadual de Cultura - FEC: anexo-ii-a/recursos-financeiros/fundo-estadual-de-cultura-fec/index.md
-    - Fundo Estadual de Defesa de Direitos Difusos - FUNDIF: anexo-ii-a/recursos-financeiros/fundo-estadual-de-defesa-de-direitos-difusos-fundif/index.md
-    - Fundo Estadual de Desenvolvimento de Transportes - FUNTRANS: anexo-ii-a/recursos-financeiros/fundo-estadual-de-desenvolvimento-de-transportes-funtrans/index.md
-    - Fundo Estadual de Habitação - FEH: anexo-ii-a/recursos-financeiros/fundo-estadual-de-habitacao-feh/index.md
-    - Fundo Estadual de Proteção e Defesa do Consumidor - FEPDC: anexo-ii-a/recursos-financeiros/fundo-estadual-de-protecao-e-defesa-do-consumidor-fepdc/index.md
-    - Fundo Estadual de Saúde - FES: anexo-ii-a/recursos-financeiros/fundo-estadual-de-saude-fes/index.md
-    - Fundo Estadual de Segurança Pública de Minas Gerais - FESP-MG: anexo-ii-a/recursos-financeiros/fundo-estadual-de-seguranca-publica-de-minas-gerais-fesp-mg/index.md
-    - Fundo Estadual do Trabalho de Minas Gerais - FET-MG: anexo-ii-a/recursos-financeiros/fundo-estadual-do-trabalho-de-minas-gerais-fet-mg/index.md
-    - Fundo Estadual dos Direitos do Idoso - FEI: anexo-ii-a/recursos-financeiros/fundo-estadual-dos-direitos-do-idoso-fei/index.md
-    - Fundo Financeiro de Previdência do Estado de Minas Gerais - FFP - MG: anexo-ii-a/recursos-financeiros/fundo-financeiro-de-previdencia-do-estado-de-minas-gerais-ffp-mg/index.md
-    - Fundo para a Infância e a Adolescência - FIA: anexo-ii-a/recursos-financeiros/fundo-para-a-infancia-e-a-adolescencia-fia/index.md
-    - Fundo Penitenciário Estadual - FPE: anexo-ii-a/recursos-financeiros/fundo-penitenciario-estadual-fpe/index.md
-    - Gabinete Militar do Governador do Estado de Minas Gerais - GABINETE MILITAR: anexo-ii-a/recursos-financeiros/gabinete-militar-do-governador-do-estado-de-minas-gerais-gabinete-mili/index.md
-    - Instituto de Desenvolvimento do Norte e Nordeste de Minas Gerais - IDENE: anexo-ii-a/recursos-financeiros/instituto-de-desenvolvimento-do-norte-e-nordeste-de-minas-gerais-idene/index.md
-    - Instituto de Metrologia e Qualidade do Estado de Minas Gerais - IPEMMG: anexo-ii-a/recursos-financeiros/instituto-de-metrologia-e-qualidade-do-estado-de-minas-gerais-ipemmg/index.md
-    - Instituto de Previdência do Legislativo do Estado de Minas Gerais - IPLEMG: anexo-ii-a/recursos-financeiros/instituto-de-previdencia-do-legislativo-do-estado-de-minas-gerais-iple/index.md
-    - Instituto de Previdência dos Servidores do Estado de Minas Gerais - IPSEMG: anexo-ii-a/recursos-financeiros/instituto-de-previdencia-dos-servidores-do-estado-de-minas-gerais-ipse/index.md
-    - Instituto de Previdência dos Servidores Militares do Estado de Minas Gerais - IPSM: anexo-ii-a/recursos-financeiros/instituto-de-previdencia-dos-servidores-militares-do-estado-de-minas-g/index.md
-    - Instituto Estadual de Florestas - IEF: anexo-ii-a/recursos-financeiros/instituto-estadual-de-florestas-ief/index.md
-    - Instituto Estadual do Patrimônio Histórico e Artístico de Minas Gerais - IEPHA: anexo-ii-a/recursos-financeiros/instituto-estadual-do-patrimonio-historico-e-artistico-de-minas-gerais/index.md
-    - Instituto Mineiro de Agropecuária - IMA: anexo-ii-a/recursos-financeiros/instituto-mineiro-de-agropecuaria-ima/index.md
-    - Instituto Mineiro de Gestão das Águas - IGAM: anexo-ii-a/recursos-financeiros/instituto-mineiro-de-gestao-das-aguas-igam/index.md
-    - Junta Comercial do Estado de Minas Gerais - JUCEMG: anexo-ii-a/recursos-financeiros/junta-comercial-do-estado-de-minas-gerais-jucemg/index.md
-    - Loteria do Estado de Minas Gerais - LEMG: anexo-ii-a/recursos-financeiros/loteria-do-estado-de-minas-gerais-lemg/index.md
-    - Polícia Civil do Estado de Minas Gerais - PCMG: anexo-ii-a/recursos-financeiros/policia-civil-do-estado-de-minas-gerais-pcmg/index.md
-    - Polícia Militar do Estado de Minas Gerais - PMMG: anexo-ii-a/recursos-financeiros/policia-militar-do-estado-de-minas-gerais-pmmg/index.md
-    - Procuradoria Geral de Justiça - PGJ: anexo-ii-a/recursos-financeiros/procuradoria-geral-de-justica-pgj/index.md
-    - Secretaria de Estado de Agricultura, Pecuária e Abastecimento - SEAPA: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-agricultura-pecuaria-e-abastecimento-seapa/index.md
-    - Secretaria de Estado de Cultura e Turismo - SECULT: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-cultura-e-turismo-secult/index.md
-    - Secretaria de Estado de Desenvolvimento Econômico - SEDE: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-desenvolvimento-economico-sede/index.md
-    - Secretaria de Estado de Desenvolvimento Social - SEDESE: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-desenvolvimento-social-sedese/index.md
-    - Secretaria de Estado de Educação - SEE: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-educacao-see/index.md
-    - Secretaria de Estado de Fazenda - SEF: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-fazenda-sef/index.md
-    - Secretaria de Estado de Infraestrutura, Mobilidade e Parcerias - SEINFRA: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-infraestrutura-mobilidade-e-parcerias-seinfra/index.md
-    - Secretaria de Estado de Justiça e Segurança Pública - SEJUSP: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-justica-e-seguranca-publica-sejusp/index.md
-    - Secretaria de Estado de Meio Ambiente e Desenvolvimento Sustentável - SEMAD: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-meio-ambiente-e-desenvolvimento-sustentavel-se/index.md
-    - Tribunal de Contas do Estado de Minas Gerais - TCEMG: anexo-ii-a/recursos-financeiros/tribunal-de-contas-do-estado-de-minas-gerais-tcemg/index.md
-    - Tribunal de Justiça do Estado de Minas Gerais - TJMG: anexo-ii-a/recursos-financeiros/tribunal-de-justica-do-estado-de-minas-gerais-tjmg/index.md
-    - Tribunal de Justiça Militar do Estado de Minas Gerais - TJMMG: anexo-ii-a/recursos-financeiros/tribunal-de-justica-militar-do-estado-de-minas-gerais-tjmmg/index.md
-    - Universidade do Estado de Minas Gerais - UEMG: anexo-ii-a/recursos-financeiros/universidade-do-estado-de-minas-gerais-uemg/index.md
-    - Universidade Estadual de Montes Claros - UNIMONTES: anexo-ii-a/recursos-financeiros/universidade-estadual-de-montes-claros-unimontes/index.md
-  - Fonte de Recursos e Grupos de Despesa:
-    - Visão geral: anexo-ii-a/fonte-grupo-despesa/index.md
-    - Advocacia Geral do Estado - AGE: anexo-ii-a/fonte-grupo-despesa/advocacia-geral-do-estado-age/index.md
-    - Agência de Desenvolvimento da Região Metropolitana de Belo Horizonte - AGÊNCIA RMBH: anexo-ii-a/fonte-grupo-despesa/agencia-de-desenvolvimento-da-regiao-metropolitana-de-belo-horizonte-a/index.md
-    - Agência de Desenvolvimento da Região Metropolitana do Vale do Aço - ARMVA: anexo-ii-a/fonte-grupo-despesa/agencia-de-desenvolvimento-da-regiao-metropolitana-do-vale-do-aco-armv/index.md
-    - Agência Reguladora de Serviços de Abastecimento de Água e de Esgotamento Sanitário do Estado de Minas Gerais - ARSAE -MG: anexo-ii-a/fonte-grupo-despesa/agencia-reguladora-de-servicos-de-abastecimento-de-agua-e-de-esgotamen/index.md
-    - Agência Reguladora de Transportes do Estado de Minas Gerais - ARTEMIG: anexo-ii-a/fonte-grupo-despesa/agencia-reguladora-de-transportes-do-estado-de-minas-gerais-artemig/index.md
-    - Assembleia Legislativa do Estado de Minas Gerais - ALMG: anexo-ii-a/fonte-grupo-despesa/assembleia-legislativa-do-estado-de-minas-gerais-almg/index.md
-    - Controladoria-geral do Estado - CGE: anexo-ii-a/fonte-grupo-despesa/controladoria-geral-do-estado-cge/index.md
-    - Corpo de Bombeiros Militar do Estado de Minas Gerais - CBMMG: anexo-ii-a/fonte-grupo-despesa/corpo-de-bombeiros-militar-do-estado-de-minas-gerais-cbmmg/index.md
-    - Defensoria Publica do Estado de Minas Gerais - DEF PUB: anexo-ii-a/fonte-grupo-despesa/defensoria-publica-do-estado-de-minas-gerais-def-pub/index.md
-    - Departamento de Estradas de Rodagem do Estado de Minas Gerais - DER-MG: anexo-ii-a/fonte-grupo-despesa/departamento-de-estradas-de-rodagem-do-estado-de-minas-gerais-der-mg/index.md
-    - Ege Sec.fazenda-encargos Diversos - EGE - SEF: anexo-ii-a/fonte-grupo-despesa/ege-sec-fazenda-encargos-diversos-ege-sef/index.md
-    - Ege-secretaria de Estado de Planejamento e Gestão - EGE-SEPLAG: anexo-ii-a/fonte-grupo-despesa/ege-secretaria-de-estado-de-planejamento-e-gestao-ege-seplag/index.md
-    - Empresa de Assistência Técnica e Extensão Rural do Estado de Minas Gerais - EMATER: anexo-ii-a/fonte-grupo-despesa/empresa-de-assistencia-tecnica-e-extensao-rural-do-estado-de-minas-ger/index.md
-    - Empresa de Pesquisa Agropecuária de Minas Gerais - EPAMIG: anexo-ii-a/fonte-grupo-despesa/empresa-de-pesquisa-agropecuaria-de-minas-gerais-epamig/index.md
-    - Empresa Mineira de Comunicação - EMC: anexo-ii-a/fonte-grupo-despesa/empresa-mineira-de-comunicacao-emc/index.md
-    - Encargos Gerais do Estado - INSTRUMENTOS DE ENTRADA DE RECURSOS - EGE - CASA CIVIL: anexo-ii-a/fonte-grupo-despesa/encargos-gerais-do-estado-instrumentos-de-entrada-de-recursos-ege-casa/index.md
-    - Escola de Saúde Pública do Estado de Minas Gerais - ESP MG: anexo-ii-a/fonte-grupo-despesa/escola-de-saude-publica-do-estado-de-minas-gerais-esp-mg/index.md
-    - Fundação Centro de Hematologia e Hemoterapia de Minas Gerais - HEMOMINAS: anexo-ii-a/fonte-grupo-despesa/fundacao-centro-de-hematologia-e-hemoterapia-de-minas-gerais-hemominas/index.md
-    - Fundação Clóvis Salgado - FCS: anexo-ii-a/fonte-grupo-despesa/fundacao-clovis-salgado-fcs/index.md
-    - Fundação de Amparo À Pesquisa do Estado de Minas Gerais - FAPEMIG: anexo-ii-a/fonte-grupo-despesa/fundacao-de-amparo-a-pesquisa-do-estado-de-minas-gerais-fapemig/index.md
-    - Fundação de Arte de Ouro Preto - FAOP: anexo-ii-a/fonte-grupo-despesa/fundacao-de-arte-de-ouro-preto-faop/index.md
-    - Fundação de Educação para o Trabalho de Minas Gerais - UTRAMIG: anexo-ii-a/fonte-grupo-despesa/fundacao-de-educacao-para-o-trabalho-de-minas-gerais-utramig/index.md
-    - Fundação Educacional Caio Martins - FUCAM: anexo-ii-a/fonte-grupo-despesa/fundacao-educacional-caio-martins-fucam/index.md
-    - Fundação Estadual do Meio Ambiente - FEAM: anexo-ii-a/fonte-grupo-despesa/fundacao-estadual-do-meio-ambiente-feam/index.md
-    - Fundação Ezequiel Dias - FUNED: anexo-ii-a/fonte-grupo-despesa/fundacao-ezequiel-dias-funed/index.md
-    - Fundação Helena Antipoff - FHA: anexo-ii-a/fonte-grupo-despesa/fundacao-helena-antipoff-fha/index.md
-    - Fundação Hospitalar do Estado de Minas Gerais - FHEMIG: anexo-ii-a/fonte-grupo-despesa/fundacao-hospitalar-do-estado-de-minas-gerais-fhemig/index.md
-    - Fundação João Pinheiro - FJP: anexo-ii-a/fonte-grupo-despesa/fundacao-joao-pinheiro-fjp/index.md
-    - Fundação Tv Minas Cultural e Educativa - TV MINAS: anexo-ii-a/fonte-grupo-despesa/fundacao-tv-minas-cultural-e-educativa-tv-minas/index.md
-    - Fundo de Apoio Habitacional Aos Militares do Estado de Minas Gerais - FAHMEMG: anexo-ii-a/fonte-grupo-despesa/fundo-de-apoio-habitacional-aos-militares-do-estado-de-minas-gerais-fa/index.md
-    - Fundo de Assistência ao Pecúlio dos Servidores do Estado de Minas Gerais - FUNAPEC: anexo-ii-a/fonte-grupo-despesa/fundo-de-assistencia-ao-peculio-dos-servidores-do-estado-de-minas-gera/index.md
-    - Fundo de Assistência ao Turismo - FASTUR: anexo-ii-a/fonte-grupo-despesa/fundo-de-assistencia-ao-turismo-fastur/index.md
-    - Fundo de Ativos Imobiliários de Minas Gerais - FAIMG: anexo-ii-a/fonte-grupo-despesa/fundo-de-ativos-imobiliarios-de-minas-gerais-faimg/index.md
-    - Fundo de Desenvolvimento do Ministério Público - FDMP: anexo-ii-a/fonte-grupo-despesa/fundo-de-desenvolvimento-do-ministerio-publico-fdmp/index.md
-    - Fundo de Desenvolvimento Metropolitano - FDM: anexo-ii-a/fonte-grupo-despesa/fundo-de-desenvolvimento-metropolitano-fdm/index.md
-    - Fundo de Fomento e Desenvolvimento Socioeconômico do Estado de Minas Gerais - FUNDESE: anexo-ii-a/fonte-grupo-despesa/fundo-de-fomento-e-desenvolvimento-socioeconomico-do-estado-de-minas-g/index.md
-    - Fundo de Garantias de Parcerias Público - PRIVADAS DE MINAS GERAIS - FGP - MG: anexo-ii-a/fonte-grupo-despesa/fundo-de-garantias-de-parcerias-publico-privadas-de-minas-gerais-fgp-m/index.md
-    - Fundo de Investimento do Estado de Minas Gerais - MG INVESTE: anexo-ii-a/fonte-grupo-despesa/fundo-de-investimento-do-estado-de-minas-gerais-mg-investe/index.md
-    - Fundo de Investimentos Imobiliários de Minas Gerais - FIIMG: anexo-ii-a/fonte-grupo-despesa/fundo-de-investimentos-imobiliarios-de-minas-gerais-fiimg/index.md
-    - Fundo de Pagamento de Parcerias Público - PRIVADAS DE MINAS GERAIS - FPP - MG: anexo-ii-a/fonte-grupo-despesa/fundo-de-pagamento-de-parcerias-publico-privadas-de-minas-gerais-fpp-m/index.md
-    - Fundo de Recuperação, Proteção e Desenvolvimento Sustentável das Bacias Hidrográficas do Estado de Minas Gerais - FHIDRO: anexo-ii-a/fonte-grupo-despesa/fundo-de-recuperacao-protecao-e-desenvolvimento-sustentavel-das-bacias/index.md
-    - Fundo do Tribunal de Contas do Estado de Minas Gerais - FUNCONTAS: anexo-ii-a/fonte-grupo-despesa/fundo-do-tribunal-de-contas-do-estado-de-minas-gerais-funcontas/index.md
-    - Fundo Especial da Advocacia-geral do Estado - FEAGE: anexo-ii-a/fonte-grupo-despesa/fundo-especial-da-advocacia-geral-do-estado-feage/index.md
-    - Fundo Especial da Assembleia Legislativa do Estado de Minas Gerais - FUNDALEMG: anexo-ii-a/fonte-grupo-despesa/fundo-especial-da-assembleia-legislativa-do-estado-de-minas-gerais-fun/index.md
-    - Fundo Especial de Créditos Inadimplidos e Dívida Ativa - FECIDAT: anexo-ii-a/fonte-grupo-despesa/fundo-especial-de-creditos-inadimplidos-e-divida-ativa-fecidat/index.md
-    - Fundo Especial de Garantia de Acesso À Justiça - FEGAJ: anexo-ii-a/fonte-grupo-despesa/fundo-especial-de-garantia-de-acesso-a-justica-fegaj/index.md
-    - Fundo Especial do Ministério Público do Estado de Minas Gerais - FUNEMP: anexo-ii-a/fonte-grupo-despesa/fundo-especial-do-ministerio-publico-do-estado-de-minas-gerais-funemp/index.md
-    - Fundo Especial do Poder Judiciário do Estado de Minas Gerais - FEPJ: anexo-ii-a/fonte-grupo-despesa/fundo-especial-do-poder-judiciario-do-estado-de-minas-gerais-fepj/index.md
-    - Fundo Estadual de Assistência Social - FEAS: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-assistencia-social-feas/index.md
-    - Fundo Estadual de Cultura - FEC: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-cultura-fec/index.md
-    - Fundo Estadual de Defesa de Direitos Difusos - FUNDIF: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-defesa-de-direitos-difusos-fundif/index.md
-    - Fundo Estadual de Desenvolvimento de Transportes - FUNTRANS: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-desenvolvimento-de-transportes-funtrans/index.md
-    - Fundo Estadual de Habitação - FEH: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-habitacao-feh/index.md
-    - Fundo Estadual de Prevenção, Fiscalização e Repressão de Entorpecentes - FUNPREN: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-prevencao-fiscalizacao-e-repressao-de-entorpecentes-/index.md
-    - Fundo Estadual de Previdência do Estado de Minas Gerais - FEPREMG: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-previdencia-do-estado-de-minas-gerais-fepremg/index.md
-    - Fundo Estadual de Proteção e Defesa do Consumidor - FEPDC: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-protecao-e-defesa-do-consumidor-fepdc/index.md
-    - Fundo Estadual de Saúde - FES: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-saude-fes/index.md
-    - Fundo Estadual de Segurança Pública de Minas Gerais - FESP-MG: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-seguranca-publica-de-minas-gerais-fesp-mg/index.md
-    - Fundo Estadual do Trabalho de Minas Gerais - FET-MG: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-do-trabalho-de-minas-gerais-fet-mg/index.md
-    - Fundo Estadual dos Direitos do Idoso - FEI: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-dos-direitos-do-idoso-fei/index.md
-    - Fundo Financeiro de Previdência do Estado de Minas Gerais - FFP - MG: anexo-ii-a/fonte-grupo-despesa/fundo-financeiro-de-previdencia-do-estado-de-minas-gerais-ffp-mg/index.md
-    - Fundo para a Infância e a Adolescência - FIA: anexo-ii-a/fonte-grupo-despesa/fundo-para-a-infancia-e-a-adolescencia-fia/index.md
-    - Fundo Penitenciário Estadual - FPE: anexo-ii-a/fonte-grupo-despesa/fundo-penitenciario-estadual-fpe/index.md
-    - Gabinete Militar do Governador do Estado de Minas Gerais - GABINETE MILITAR: anexo-ii-a/fonte-grupo-despesa/gabinete-militar-do-governador-do-estado-de-minas-gerais-gabinete-mili/index.md
-    - Gestão da Dívida Pública Estadual - GDPE - SEF: anexo-ii-a/fonte-grupo-despesa/gestao-da-divida-publica-estadual-gdpe-sef/index.md
-    - Instituto de Desenvolvimento do Norte e Nordeste de Minas Gerais - IDENE: anexo-ii-a/fonte-grupo-despesa/instituto-de-desenvolvimento-do-norte-e-nordeste-de-minas-gerais-idene/index.md
-    - Instituto de Metrologia e Qualidade do Estado de Minas Gerais - IPEMMG: anexo-ii-a/fonte-grupo-despesa/instituto-de-metrologia-e-qualidade-do-estado-de-minas-gerais-ipemmg/index.md
-    - Instituto de Previdência do Legislativo do Estado de Minas Gerais - IPLEMG: anexo-ii-a/fonte-grupo-despesa/instituto-de-previdencia-do-legislativo-do-estado-de-minas-gerais-iple/index.md
-    - Instituto de Previdência dos Servidores do Estado de Minas Gerais - IPSEMG: anexo-ii-a/fonte-grupo-despesa/instituto-de-previdencia-dos-servidores-do-estado-de-minas-gerais-ipse/index.md
-    - Instituto de Previdência dos Servidores Militares do Estado de Minas Gerais - IPSM: anexo-ii-a/fonte-grupo-despesa/instituto-de-previdencia-dos-servidores-militares-do-estado-de-minas-g/index.md
-    - Instituto Estadual de Florestas - IEF: anexo-ii-a/fonte-grupo-despesa/instituto-estadual-de-florestas-ief/index.md
-    - Instituto Estadual do Patrimônio Histórico e Artístico de Minas Gerais - IEPHA: anexo-ii-a/fonte-grupo-despesa/instituto-estadual-do-patrimonio-historico-e-artistico-de-minas-gerais/index.md
-    - Instituto Mineiro de Agropecuária - IMA: anexo-ii-a/fonte-grupo-despesa/instituto-mineiro-de-agropecuaria-ima/index.md
-    - Instituto Mineiro de Gestão das Águas - IGAM: anexo-ii-a/fonte-grupo-despesa/instituto-mineiro-de-gestao-das-aguas-igam/index.md
-    - Junta Comercial do Estado de Minas Gerais - JUCEMG: anexo-ii-a/fonte-grupo-despesa/junta-comercial-do-estado-de-minas-gerais-jucemg/index.md
-    - Loteria do Estado de Minas Gerais - LEMG: anexo-ii-a/fonte-grupo-despesa/loteria-do-estado-de-minas-gerais-lemg/index.md
-    - Ouvidoria-geral do Estado de Minas Gerais - OGE: anexo-ii-a/fonte-grupo-despesa/ouvidoria-geral-do-estado-de-minas-gerais-oge/index.md
-    - Participação no Aumento do Capital Social de Empresas - PARTICIPAÇÃO EMPRESAS: anexo-ii-a/fonte-grupo-despesa/participacao-no-aumento-do-capital-social-de-empresas-participacao-emp/index.md
-    - Polícia Civil do Estado de Minas Gerais - PCMG: anexo-ii-a/fonte-grupo-despesa/policia-civil-do-estado-de-minas-gerais-pcmg/index.md
-    - Polícia Militar do Estado de Minas Gerais - PMMG: anexo-ii-a/fonte-grupo-despesa/policia-militar-do-estado-de-minas-gerais-pmmg/index.md
-    - Procuradoria Geral de Justiça - PGJ: anexo-ii-a/fonte-grupo-despesa/procuradoria-geral-de-justica-pgj/index.md
-    - Reserva de Contingência - RC: anexo-ii-a/fonte-grupo-despesa/reserva-de-contingencia-rc/index.md
-    - Secretaria de Estado da Casa Civil - SCC: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-da-casa-civil-scc/index.md
-    - Secretaria de Estado de Agricultura, Pecuária e Abastecimento - SEAPA: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-agricultura-pecuaria-e-abastecimento-seapa/index.md
-    - Secretaria de Estado de Comunicação Social - SECOM: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-comunicacao-social-secom/index.md
-    - Secretaria de Estado de Cultura e Turismo - SECULT: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-cultura-e-turismo-secult/index.md
-    - Secretaria de Estado de Desenvolvimento Econômico - SEDE: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-desenvolvimento-economico-sede/index.md
-    - Secretaria de Estado de Desenvolvimento Social - SEDESE: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-desenvolvimento-social-sedese/index.md
-    - Secretaria de Estado de Educação - SEE: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-educacao-see/index.md
-    - Secretaria de Estado de Fazenda - SEF: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-fazenda-sef/index.md
-    - Secretaria de Estado de Governo - SEGOV: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-governo-segov/index.md
-    - Secretaria de Estado de Infraestrutura, Mobilidade e Parcerias - SEINFRA: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-infraestrutura-mobilidade-e-parcerias-seinfra/index.md
-    - Secretaria de Estado de Justiça e Segurança Pública - SEJUSP: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-justica-e-seguranca-publica-sejusp/index.md
-    - Secretaria de Estado de Meio Ambiente e Desenvolvimento Sustentável - SEMAD: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-meio-ambiente-e-desenvolvimento-sustentavel-se/index.md
-    - Secretaria de Estado de Planejamento e Gestão - SEPLAG: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-planejamento-e-gestao-seplag/index.md
-    - Secretaria-geral - SEC. GERAL: anexo-ii-a/fonte-grupo-despesa/secretaria-geral-sec-geral/index.md
-    - Tribunal de Contas do Estado de Minas Gerais - TCEMG: anexo-ii-a/fonte-grupo-despesa/tribunal-de-contas-do-estado-de-minas-gerais-tcemg/index.md
-    - Tribunal de Justiça do Estado de Minas Gerais - TJMG: anexo-ii-a/fonte-grupo-despesa/tribunal-de-justica-do-estado-de-minas-gerais-tjmg/index.md
-    - Tribunal de Justiça Militar do Estado de Minas Gerais - TJMMG: anexo-ii-a/fonte-grupo-despesa/tribunal-de-justica-militar-do-estado-de-minas-gerais-tjmmg/index.md
-    - Universidade do Estado de Minas Gerais - UEMG: anexo-ii-a/fonte-grupo-despesa/universidade-do-estado-de-minas-gerais-uemg/index.md
-    - Universidade Estadual de Montes Claros - UNIMONTES: anexo-ii-a/fonte-grupo-despesa/universidade-estadual-de-montes-claros-unimontes/index.md
-- Anexo II-B — Orçamento Fiscal (pessoal):
-  - Sobre o anexo: anexo-ii-b/index.md
-  - Detalhamento da Categoria de Pessoal:
-    - Visão geral: anexo-ii-b/pessoal/index.md
-    - Advocacia Geral do Estado - AGE: anexo-ii-b/pessoal/advocacia-geral-do-estado-age/index.md
-    - Agência de Desenvolvimento da Região Metropolitana de Belo Horizonte - AGÊNCIA RMBH: anexo-ii-b/pessoal/agencia-de-desenvolvimento-da-regiao-metropolitana-de-belo-horizonte-a/index.md
-    - Agência de Desenvolvimento da Região Metropolitana do Vale do Aço - ARMVA: anexo-ii-b/pessoal/agencia-de-desenvolvimento-da-regiao-metropolitana-do-vale-do-aco-armv/index.md
-    - Agência Reguladora de Serviços de Abastecimento de Água e de Esgotamento Sanitário do Estado de Minas Gerais - ARSAE -MG: anexo-ii-b/pessoal/agencia-reguladora-de-servicos-de-abastecimento-de-agua-e-de-esgotamen/index.md
-    - Agência Reguladora de Transportes do Estado de Minas Gerais - ARTEMIG: anexo-ii-b/pessoal/agencia-reguladora-de-transportes-do-estado-de-minas-gerais-artemig/index.md
-    - Assembleia Legislativa do Estado de Minas Gerais - ALMG: anexo-ii-b/pessoal/assembleia-legislativa-do-estado-de-minas-gerais-almg/index.md
-    - Controladoria-geral do Estado - CGE: anexo-ii-b/pessoal/controladoria-geral-do-estado-cge/index.md
-    - Corpo de Bombeiros Militar do Estado de Minas Gerais - CBMMG: anexo-ii-b/pessoal/corpo-de-bombeiros-militar-do-estado-de-minas-gerais-cbmmg/index.md
-    - Defensoria Publica do Estado de Minas Gerais - DEF PUB: anexo-ii-b/pessoal/defensoria-publica-do-estado-de-minas-gerais-def-pub/index.md
-    - Departamento de Estradas de Rodagem do Estado de Minas Gerais - DER-MG: anexo-ii-b/pessoal/departamento-de-estradas-de-rodagem-do-estado-de-minas-gerais-der-mg/index.md
-    - Empresa de Assistência Técnica e Extensão Rural do Estado de Minas Gerais - EMATER: anexo-ii-b/pessoal/empresa-de-assistencia-tecnica-e-extensao-rural-do-estado-de-minas-ger/index.md
-    - Empresa de Pesquisa Agropecuária de Minas Gerais - EPAMIG: anexo-ii-b/pessoal/empresa-de-pesquisa-agropecuaria-de-minas-gerais-epamig/index.md
-    - Empresa Mineira de Comunicação - EMC: anexo-ii-b/pessoal/empresa-mineira-de-comunicacao-emc/index.md
-    - Escola de Saúde Pública do Estado de Minas Gerais - ESP MG: anexo-ii-b/pessoal/escola-de-saude-publica-do-estado-de-minas-gerais-esp-mg/index.md
-    - Fundação Centro de Hematologia e Hemoterapia de Minas Gerais - HEMOMINAS: anexo-ii-b/pessoal/fundacao-centro-de-hematologia-e-hemoterapia-de-minas-gerais-hemominas/index.md
-    - Fundação Clóvis Salgado - FCS: anexo-ii-b/pessoal/fundacao-clovis-salgado-fcs/index.md
-    - Fundação de Amparo À Pesquisa do Estado de Minas Gerais - FAPEMIG: anexo-ii-b/pessoal/fundacao-de-amparo-a-pesquisa-do-estado-de-minas-gerais-fapemig/index.md
-    - Fundação de Arte de Ouro Preto - FAOP: anexo-ii-b/pessoal/fundacao-de-arte-de-ouro-preto-faop/index.md
-    - Fundação de Educação para o Trabalho de Minas Gerais - UTRAMIG: anexo-ii-b/pessoal/fundacao-de-educacao-para-o-trabalho-de-minas-gerais-utramig/index.md
-    - Fundação Educacional Caio Martins - FUCAM: anexo-ii-b/pessoal/fundacao-educacional-caio-martins-fucam/index.md
-    - Fundação Estadual do Meio Ambiente - FEAM: anexo-ii-b/pessoal/fundacao-estadual-do-meio-ambiente-feam/index.md
-    - Fundação Ezequiel Dias - FUNED: anexo-ii-b/pessoal/fundacao-ezequiel-dias-funed/index.md
-    - Fundação Helena Antipoff - FHA: anexo-ii-b/pessoal/fundacao-helena-antipoff-fha/index.md
-    - Fundação Hospitalar do Estado de Minas Gerais - FHEMIG: anexo-ii-b/pessoal/fundacao-hospitalar-do-estado-de-minas-gerais-fhemig/index.md
-    - Fundação João Pinheiro - FJP: anexo-ii-b/pessoal/fundacao-joao-pinheiro-fjp/index.md
-    - Fundação Tv Minas Cultural e Educativa - TV MINAS: anexo-ii-b/pessoal/fundacao-tv-minas-cultural-e-educativa-tv-minas/index.md
-    - Fundo Estadual de Saúde - FES: anexo-ii-b/pessoal/fundo-estadual-de-saude-fes/index.md
-    - Gabinete Militar do Governador do Estado de Minas Gerais - GABINETE MILITAR: anexo-ii-b/pessoal/gabinete-militar-do-governador-do-estado-de-minas-gerais-gabinete-mili/index.md
-    - Instituto de Desenvolvimento do Norte e Nordeste de Minas Gerais - IDENE: anexo-ii-b/pessoal/instituto-de-desenvolvimento-do-norte-e-nordeste-de-minas-gerais-idene/index.md
-    - Instituto de Metrologia e Qualidade do Estado de Minas Gerais - IPEMMG: anexo-ii-b/pessoal/instituto-de-metrologia-e-qualidade-do-estado-de-minas-gerais-ipemmg/index.md
-    - Instituto de Previdência do Legislativo do Estado de Minas Gerais - IPLEMG: anexo-ii-b/pessoal/instituto-de-previdencia-do-legislativo-do-estado-de-minas-gerais-iple/index.md
-    - Instituto de Previdência dos Servidores do Estado de Minas Gerais - IPSEMG: anexo-ii-b/pessoal/instituto-de-previdencia-dos-servidores-do-estado-de-minas-gerais-ipse/index.md
-    - Instituto de Previdência dos Servidores Militares do Estado de Minas Gerais - IPSM: anexo-ii-b/pessoal/instituto-de-previdencia-dos-servidores-militares-do-estado-de-minas-g/index.md
-    - Instituto Estadual de Florestas - IEF: anexo-ii-b/pessoal/instituto-estadual-de-florestas-ief/index.md
-    - Instituto Estadual do Patrimônio Histórico e Artístico de Minas Gerais - IEPHA: anexo-ii-b/pessoal/instituto-estadual-do-patrimonio-historico-e-artistico-de-minas-gerais/index.md
-    - Instituto Mineiro de Agropecuária - IMA: anexo-ii-b/pessoal/instituto-mineiro-de-agropecuaria-ima/index.md
-    - Instituto Mineiro de Gestão das Águas - IGAM: anexo-ii-b/pessoal/instituto-mineiro-de-gestao-das-aguas-igam/index.md
-    - Junta Comercial do Estado de Minas Gerais - JUCEMG: anexo-ii-b/pessoal/junta-comercial-do-estado-de-minas-gerais-jucemg/index.md
-    - Loteria do Estado de Minas Gerais - LEMG: anexo-ii-b/pessoal/loteria-do-estado-de-minas-gerais-lemg/index.md
-    - Ouvidoria-geral do Estado de Minas Gerais - OGE: anexo-ii-b/pessoal/ouvidoria-geral-do-estado-de-minas-gerais-oge/index.md
-    - Polícia Civil do Estado de Minas Gerais - PCMG: anexo-ii-b/pessoal/policia-civil-do-estado-de-minas-gerais-pcmg/index.md
-    - Polícia Militar do Estado de Minas Gerais - PMMG: anexo-ii-b/pessoal/policia-militar-do-estado-de-minas-gerais-pmmg/index.md
-    - Procuradoria Geral de Justiça - PGJ: anexo-ii-b/pessoal/procuradoria-geral-de-justica-pgj/index.md
-    - Secretaria de Estado da Casa Civil - SCC: anexo-ii-b/pessoal/secretaria-de-estado-da-casa-civil-scc/index.md
-    - Secretaria de Estado de Agricultura, Pecuária e Abastecimento - SEAPA: anexo-ii-b/pessoal/secretaria-de-estado-de-agricultura-pecuaria-e-abastecimento-seapa/index.md
-    - Secretaria de Estado de Comunicação Social - SECOM: anexo-ii-b/pessoal/secretaria-de-estado-de-comunicacao-social-secom/index.md
-    - Secretaria de Estado de Cultura e Turismo - SECULT: anexo-ii-b/pessoal/secretaria-de-estado-de-cultura-e-turismo-secult/index.md
-    - Secretaria de Estado de Desenvolvimento Econômico - SEDE: anexo-ii-b/pessoal/secretaria-de-estado-de-desenvolvimento-economico-sede/index.md
-    - Secretaria de Estado de Desenvolvimento Social - SEDESE: anexo-ii-b/pessoal/secretaria-de-estado-de-desenvolvimento-social-sedese/index.md
-    - Secretaria de Estado de Educação - SEE: anexo-ii-b/pessoal/secretaria-de-estado-de-educacao-see/index.md
-    - Secretaria de Estado de Fazenda - SEF: anexo-ii-b/pessoal/secretaria-de-estado-de-fazenda-sef/index.md
-    - Secretaria de Estado de Governo - SEGOV: anexo-ii-b/pessoal/secretaria-de-estado-de-governo-segov/index.md
-    - Secretaria de Estado de Infraestrutura, Mobilidade e Parcerias - SEINFRA: anexo-ii-b/pessoal/secretaria-de-estado-de-infraestrutura-mobilidade-e-parcerias-seinfra/index.md
-    - Secretaria de Estado de Justiça e Segurança Pública - SEJUSP: anexo-ii-b/pessoal/secretaria-de-estado-de-justica-e-seguranca-publica-sejusp/index.md
-    - Secretaria de Estado de Meio Ambiente e Desenvolvimento Sustentável - SEMAD: anexo-ii-b/pessoal/secretaria-de-estado-de-meio-ambiente-e-desenvolvimento-sustentavel-se/index.md
-    - Secretaria de Estado de Planejamento e Gestão - SEPLAG: anexo-ii-b/pessoal/secretaria-de-estado-de-planejamento-e-gestao-seplag/index.md
-    - Secretaria-geral - SEC. GERAL: anexo-ii-b/pessoal/secretaria-geral-sec-geral/index.md
-    - Tribunal de Contas do Estado de Minas Gerais - TCEMG: anexo-ii-b/pessoal/tribunal-de-contas-do-estado-de-minas-gerais-tcemg/index.md
-    - Tribunal de Justiça do Estado de Minas Gerais - TJMG: anexo-ii-b/pessoal/tribunal-de-justica-do-estado-de-minas-gerais-tjmg/index.md
-    - Tribunal de Justiça Militar do Estado de Minas Gerais - TJMMG: anexo-ii-b/pessoal/tribunal-de-justica-militar-do-estado-de-minas-gerais-tjmmg/index.md
-    - Universidade do Estado de Minas Gerais - UEMG: anexo-ii-b/pessoal/universidade-do-estado-de-minas-gerais-uemg/index.md
-    - Universidade Estadual de Montes Claros - UNIMONTES: anexo-ii-b/pessoal/universidade-estadual-de-montes-claros-unimontes/index.md
-- Anexo III — Investimento das estatais:
-  - Sobre o anexo: anexo-iii/index.md
-  - Investimento por Empresa segundo as Fontes de Financiamento: anexo-iii/investimento-estatais/index.md
-  - Investimento segundo o Detalhamento:
-    - Visão geral: anexo-iii/investimento-detalhe/index.md
-    - Agência de Promoção de Investimentos de Minas Gerais - INVEST MINAS: anexo-iii/investimento-detalhe/agencia-de-promocao-de-investimentos-de-minas-gerais-invest-minas/index.md
-    - Banco de Desenvolvimento de Minas Gerais S.A - BDMG: anexo-iii/investimento-detalhe/banco-de-desenvolvimento-de-minas-gerais-s-a-bdmg/index.md
-    - Cemig Distribuição S.A - CEMIG DISTRIBUIDORA: anexo-iii/investimento-detalhe/cemig-distribuicao-s-a-cemig-distribuidora/index.md
-    - Cemig Geração e Transmissão S.A - CEMIG GERAÇÃO E TRANSMISSÃO: anexo-iii/investimento-detalhe/cemig-geracao-e-transmissao-s-a-cemig-geracao-e-transmissao/index.md
-    - Companhia de Desenvolvimento de Minas Gerais - CODEMGE: anexo-iii/investimento-detalhe/companhia-de-desenvolvimento-de-minas-gerais-codemge/index.md
-    - Companhia de Desenvolvimento Econômico de Minas Gerais - CODEMIG: anexo-iii/investimento-detalhe/companhia-de-desenvolvimento-economico-de-minas-gerais-codemig/index.md
-    - Companhia de Gás de Minas Gerais - GASMIG: anexo-iii/investimento-detalhe/companhia-de-gas-de-minas-gerais-gasmig/index.md
-    - Companhia de Habitação do Estado de Minas Gerais - COHAB: anexo-iii/investimento-detalhe/companhia-de-habitacao-do-estado-de-minas-gerais-cohab/index.md
-    - Companhia de Saneamento de Minas Gerais - COPASA: anexo-iii/investimento-detalhe/companhia-de-saneamento-de-minas-gerais-copasa/index.md
-    - Companhia de Tecnologia da Informação do Estado de Minas Gerais - PRODEMGE: anexo-iii/investimento-detalhe/companhia-de-tecnologia-da-informacao-do-estado-de-minas-gerais-prodem/index.md
-    - Companhia Energética de Minas Gerais - CEMIG HOLDING: anexo-iii/investimento-detalhe/companhia-energetica-de-minas-gerais-cemig-holding/index.md
-    - Copasa - SERVIÇOS DE SANEAMENTO INTEGRADO DO NORTE E NORDESTE DE MINAS GERAIS S/A - COPANOR: anexo-iii/investimento-detalhe/copasa-servicos-de-saneamento-integrado-do-norte-e-nordeste-de-minas-g/index.md
-    - Minas Gerais Administração e Serviços S.A - MGS: anexo-iii/investimento-detalhe/minas-gerais-administracao-e-servicos-s-a-mgs/index.md
-    - Minas Gerais Participações S.A - MGI: anexo-iii/investimento-detalhe/minas-gerais-participacoes-s-a-mgi/index.md
-    - Trem Metropolitano de Belo Horizonte S.A - TREM METROPOLITANO: anexo-iii/investimento-detalhe/trem-metropolitano-de-belo-horizonte-s-a-trem-metropolitano/index.md
-- Anexo IV — Investimentos por região:
-  - Sobre o anexo: anexo-iv/index.md
-  - Obras por Unidade Orçamentária segundo as Regiões Geográficas Intermediárias:
-    - Visão geral: anexo-iv/regionalizado/index.md
-    - Barbacena: anexo-iv/regionalizado/regiao-barbacena/index.md
-    - Belo Horizonte: anexo-iv/regionalizado/regiao-belo-horizonte/index.md
-    - Divinópolis: anexo-iv/regionalizado/regiao-divinopolis/index.md
-    - Estadual: anexo-iv/regionalizado/regiao-estadual/index.md
-    - Governador Valadares: anexo-iv/regionalizado/regiao-governador-valadares/index.md
-    - Ipatinga: anexo-iv/regionalizado/regiao-ipatinga/index.md
-    - Juíz de Fora: anexo-iv/regionalizado/regiao-juiz-de-fora/index.md
-    - Montes Claros: anexo-iv/regionalizado/regiao-montes-claros/index.md
-    - Patos de Minas: anexo-iv/regionalizado/regiao-patos-de-minas/index.md
-    - Pouso Alegre: anexo-iv/regionalizado/regiao-pouso-alegre/index.md
-    - Teófilo Otoni: anexo-iv/regionalizado/regiao-teofilo-otoni/index.md
-    - Uberaba: anexo-iv/regionalizado/regiao-uberaba/index.md
-    - Uberlândia: anexo-iv/regionalizado/regiao-uberlandia/index.md
-    - Varginha: anexo-iv/regionalizado/regiao-varginha/index.md
-  - Obras por Município:
-    - Visão geral: anexo-iv/obras-municipio/index.md
-    - Além Paraíba: anexo-iv/obras-municipio/municipio-alem-paraiba/index.md
-    - Araguari: anexo-iv/obras-municipio/municipio-araguari/index.md
-    - Araçuaí: anexo-iv/obras-municipio/municipio-aracuai/index.md
-    - Areado: anexo-iv/obras-municipio/municipio-areado/index.md
-    - Bambuí: anexo-iv/obras-municipio/municipio-bambui/index.md
-    - Barbacena: anexo-iv/obras-municipio/municipio-barbacena/index.md
-    - Belo Horizonte: anexo-iv/obras-municipio/municipio-belo-horizonte/index.md
-    - Betim: anexo-iv/obras-municipio/municipio-betim/index.md
-    - Caldas: anexo-iv/obras-municipio/municipio-caldas/index.md
-    - Camanducaia: anexo-iv/obras-municipio/municipio-camanducaia/index.md
-    - Cambuí: anexo-iv/obras-municipio/municipio-cambui/index.md
-    - Campina Verde: anexo-iv/obras-municipio/municipio-campina-verde/index.md
-    - Campo Belo: anexo-iv/obras-municipio/municipio-campo-belo/index.md
-    - Canápolis: anexo-iv/obras-municipio/municipio-canapolis/index.md
-    - Capela Nova: anexo-iv/obras-municipio/municipio-capela-nova/index.md
-    - Carangola: anexo-iv/obras-municipio/municipio-carangola/index.md
-    - Conceição do Mato Dentro: anexo-iv/obras-municipio/municipio-conceicao-do-mato-dentro/index.md
-    - Congonhas: anexo-iv/obras-municipio/municipio-congonhas/index.md
-    - Conquista: anexo-iv/obras-municipio/municipio-conquista/index.md
-    - Contagem: anexo-iv/obras-municipio/municipio-contagem/index.md
-    - Cordislândia: anexo-iv/obras-municipio/municipio-cordislandia/index.md
-    - Coronel Fabriciano: anexo-iv/obras-municipio/municipio-coronel-fabriciano/index.md
-    - Curral de Dentro: anexo-iv/obras-municipio/municipio-curral-de-dentro/index.md
-    - Cássia: anexo-iv/obras-municipio/municipio-cassia/index.md
-    - Diamantina: anexo-iv/obras-municipio/municipio-diamantina/index.md
-    - Diversos Municípios - Estadual: anexo-iv/obras-municipio/municipio-diversos-municipios-estadual/index.md
-    - Diversos Municípios - Região Intermediária de Barbacena: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-barbacena/index.md
-    - Diversos Municípios - Região Intermediária de Belo Horizonte: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-belo-horizonte/index.md
-    - Diversos Municípios - Região Intermediária de Divinópolis: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-divinopolis/index.md
-    - Diversos Municípios - Região Intermediária de Governador Valadares: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-governador-valadares/index.md
-    - Diversos Municípios - Região Intermediária de Ipatinga: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-ipatinga/index.md
-    - Diversos Municípios - Região Intermediária de Juíz de Fora: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-juiz-de-fora/index.md
-    - Diversos Municípios - Região Intermediária de Montes Claros: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-montes-claros/index.md
-    - Diversos Municípios - Região Intermediária de Patos de Minas: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-patos-de-minas/index.md
-    - Diversos Municípios - Região Intermediária de Pouso Alegre: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-pouso-alegre/index.md
-    - Diversos Municípios - Região Intermediária de Teófilo Otoni: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-teofilo-otoni/index.md
-    - Diversos Municípios - Região Intermediária de Uberaba: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-uberaba/index.md
-    - Diversos Municípios - Região Intermediária de Uberlândia: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-uberlandia/index.md
-    - Diversos Municípios - Região Intermediária de Varginha: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-varginha/index.md
-    - Formiga: anexo-iv/obras-municipio/municipio-formiga/index.md
-    - Formoso: anexo-iv/obras-municipio/municipio-formoso/index.md
-    - Governador Valadares: anexo-iv/obras-municipio/municipio-governador-valadares/index.md
-    - Guanhães: anexo-iv/obras-municipio/municipio-guanhaes/index.md
-    - Ibirité: anexo-iv/obras-municipio/municipio-ibirite/index.md
-    - Ipatinga: anexo-iv/obras-municipio/municipio-ipatinga/index.md
-    - Itabira: anexo-iv/obras-municipio/municipio-itabira/index.md
-    - Itabirito: anexo-iv/obras-municipio/municipio-itabirito/index.md
-    - Itajubá: anexo-iv/obras-municipio/municipio-itajuba/index.md
-    - Itaobim: anexo-iv/obras-municipio/municipio-itaobim/index.md
-    - Itapagipe: anexo-iv/obras-municipio/municipio-itapagipe/index.md
-    - Itaúna: anexo-iv/obras-municipio/municipio-itauna/index.md
-    - Ituiutaba: anexo-iv/obras-municipio/municipio-ituiutaba/index.md
-    - Iturama: anexo-iv/obras-municipio/municipio-iturama/index.md
-    - Jaboticatubas: anexo-iv/obras-municipio/municipio-jaboticatubas/index.md
-    - Janaúba: anexo-iv/obras-municipio/municipio-janauba/index.md
-    - Januária: anexo-iv/obras-municipio/municipio-januaria/index.md
-    - Joaíma: anexo-iv/obras-municipio/municipio-joaima/index.md
-    - João Monlevade: anexo-iv/obras-municipio/municipio-joao-monlevade/index.md
-    - Juiz de Fora: anexo-iv/obras-municipio/municipio-juiz-de-fora/index.md
-    - Lavras: anexo-iv/obras-municipio/municipio-lavras/index.md
-    - Luz: anexo-iv/obras-municipio/municipio-luz/index.md
-    - Manga: anexo-iv/obras-municipio/municipio-manga/index.md
-    - Manhumirim: anexo-iv/obras-municipio/municipio-manhumirim/index.md
-    - Marliéria: anexo-iv/obras-municipio/municipio-marlieria/index.md
-    - Medina: anexo-iv/obras-municipio/municipio-medina/index.md
-    - Monte Belo: anexo-iv/obras-municipio/municipio-monte-belo/index.md
-    - Monte Carmelo: anexo-iv/obras-municipio/municipio-monte-carmelo/index.md
-    - Montes Claros: anexo-iv/obras-municipio/municipio-montes-claros/index.md
-    - Morada Nova de Minas: anexo-iv/obras-municipio/municipio-morada-nova-de-minas/index.md
-    - Muriaé: anexo-iv/obras-municipio/municipio-muriae/index.md
-    - Nova Lima: anexo-iv/obras-municipio/municipio-nova-lima/index.md
-    - Nova Porteirinha: anexo-iv/obras-municipio/municipio-nova-porteirinha/index.md
-    - Ouro Preto: anexo-iv/obras-municipio/municipio-ouro-preto/index.md
-    - Paracatu: anexo-iv/obras-municipio/municipio-paracatu/index.md
-    - Pará de Minas: anexo-iv/obras-municipio/municipio-para-de-minas/index.md
-    - Passa Tempo: anexo-iv/obras-municipio/municipio-passa-tempo/index.md
-    - Passos: anexo-iv/obras-municipio/municipio-passos/index.md
-    - Patos de Minas: anexo-iv/obras-municipio/municipio-patos-de-minas/index.md
-    - Patrocínio: anexo-iv/obras-municipio/municipio-patrocinio/index.md
-    - Paula Cândido: anexo-iv/obras-municipio/municipio-paula-candido/index.md
-    - Pedra Bonita: anexo-iv/obras-municipio/municipio-pedra-bonita/index.md
-    - Peçanha: anexo-iv/obras-municipio/municipio-pecanha/index.md
-    - Pimenta: anexo-iv/obras-municipio/municipio-pimenta/index.md
-    - Pintópolis: anexo-iv/obras-municipio/municipio-pintopolis/index.md
-    - Pirapora: anexo-iv/obras-municipio/municipio-pirapora/index.md
-    - Pitangui: anexo-iv/obras-municipio/municipio-pitangui/index.md
-    - Ponte Nova: anexo-iv/obras-municipio/municipio-ponte-nova/index.md
-    - Ponto Chique: anexo-iv/obras-municipio/municipio-ponto-chique/index.md
-    - Poços de Caldas: anexo-iv/obras-municipio/municipio-pocos-de-caldas/index.md
-    - Presidente Bernardes: anexo-iv/obras-municipio/municipio-presidente-bernardes/index.md
-    - Prudente de Morais: anexo-iv/obras-municipio/municipio-prudente-de-morais/index.md
-    - Raul Soares: anexo-iv/obras-municipio/municipio-raul-soares/index.md
-    - Rio Casca: anexo-iv/obras-municipio/municipio-rio-casca/index.md
-    - Rio Pardo de Minas: anexo-iv/obras-municipio/municipio-rio-pardo-de-minas/index.md
-    - Sabará: anexo-iv/obras-municipio/municipio-sabara/index.md
-    - Sabinópolis: anexo-iv/obras-municipio/municipio-sabinopolis/index.md
-    - Salinas: anexo-iv/obras-municipio/municipio-salinas/index.md
-    - Santa Cruz do Escalvado: anexo-iv/obras-municipio/municipio-santa-cruz-do-escalvado/index.md
-    - Santa Luzia: anexo-iv/obras-municipio/municipio-santa-luzia/index.md
-    - Santa Rita do Itueto: anexo-iv/obras-municipio/municipio-santa-rita-do-itueto/index.md
-    - Sericita: anexo-iv/obras-municipio/municipio-sericita/index.md
-    - Serro: anexo-iv/obras-municipio/municipio-serro/index.md
-    - Sete Lagoas: anexo-iv/obras-municipio/municipio-sete-lagoas/index.md
-    - São Francisco: anexo-iv/obras-municipio/municipio-sao-francisco/index.md
-    - São Gonçalo do Sapucaí: anexo-iv/obras-municipio/municipio-sao-goncalo-do-sapucai/index.md
-    - São Romão: anexo-iv/obras-municipio/municipio-sao-romao/index.md
-    - Teófilo Otoni: anexo-iv/obras-municipio/municipio-teofilo-otoni/index.md
-    - Timóteo: anexo-iv/obras-municipio/municipio-timoteo/index.md
-    - Três Pontas: anexo-iv/obras-municipio/municipio-tres-pontas/index.md
-    - Uberaba: anexo-iv/obras-municipio/municipio-uberaba/index.md
-    - Uberlândia: anexo-iv/obras-municipio/municipio-uberlandia/index.md
-    - Unaí: anexo-iv/obras-municipio/municipio-unai/index.md
-    - Viçosa: anexo-iv/obras-municipio/municipio-vicosa/index.md
+- Início:
+  - Início: index.md
+  - Anexo I — Demonstrativos:
+    - Sobre o anexo: anexo-i/index.md
+    - Demonstrativo Consolidado do Orçamento Fiscal — Receita: anexo-i/consolidado-receita/index.md
+    - Demonstrativo Consolidado do Orçamento Fiscal — Despesa: anexo-i/consolidado-despesa/index.md
+    - Resumo da Receita e da Despesa segundo as Categorias Econômicas: anexo-i/categorias-economicas/index.md
+    - Despesa por Unidade Orçamentária segundo os Grupos de Despesa: anexo-i/despesa-por-unidade/index.md
+    - Quadro Geral da Receita: anexo-i/quadro-geral-receita/index.md
+    - Demonstrativo Consolidado da Categoria de Pessoal: anexo-i/pessoal-consolidado/index.md
+  - Anexo II-A — Orçamento Fiscal (receitas):
+    - Sobre o anexo: anexo-ii-a/index.md
+    - Demonstrativo dos Recursos Financeiros:
+      - Visão geral: anexo-ii-a/recursos-financeiros/index.md
+      - Advocacia Geral do Estado - AGE: anexo-ii-a/recursos-financeiros/advocacia-geral-do-estado-age/index.md
+      - Agência de Desenvolvimento da Região Metropolitana de Belo Horizonte - AGÊNCIA RMBH: anexo-ii-a/recursos-financeiros/agencia-de-desenvolvimento-da-regiao-metropolitana-de-belo-horizonte-a/index.md
+      - Agência de Desenvolvimento da Região Metropolitana do Vale do Aço - ARMVA: anexo-ii-a/recursos-financeiros/agencia-de-desenvolvimento-da-regiao-metropolitana-do-vale-do-aco-armv/index.md
+      - Agência Reguladora de Serviços de Abastecimento de Água e de Esgotamento Sanitário do Estado de Minas Gerais - ARSAE -MG: anexo-ii-a/recursos-financeiros/agencia-reguladora-de-servicos-de-abastecimento-de-agua-e-de-esgotamen/index.md
+      - Assembleia Legislativa do Estado de Minas Gerais - ALMG: anexo-ii-a/recursos-financeiros/assembleia-legislativa-do-estado-de-minas-gerais-almg/index.md
+      - Controladoria-geral do Estado - CGE: anexo-ii-a/recursos-financeiros/controladoria-geral-do-estado-cge/index.md
+      - Corpo de Bombeiros Militar do Estado de Minas Gerais - CBMMG: anexo-ii-a/recursos-financeiros/corpo-de-bombeiros-militar-do-estado-de-minas-gerais-cbmmg/index.md
+      - Defensoria Publica do Estado de Minas Gerais - DEF PUB: anexo-ii-a/recursos-financeiros/defensoria-publica-do-estado-de-minas-gerais-def-pub/index.md
+      - Departamento de Estradas de Rodagem do Estado de Minas Gerais - DER-MG: anexo-ii-a/recursos-financeiros/departamento-de-estradas-de-rodagem-do-estado-de-minas-gerais-der-mg/index.md
+      - Empresa de Assistência Técnica e Extensão Rural do Estado de Minas Gerais - EMATER: anexo-ii-a/recursos-financeiros/empresa-de-assistencia-tecnica-e-extensao-rural-do-estado-de-minas-ger/index.md
+      - Empresa de Pesquisa Agropecuária de Minas Gerais - EPAMIG: anexo-ii-a/recursos-financeiros/empresa-de-pesquisa-agropecuaria-de-minas-gerais-epamig/index.md
+      - Empresa Mineira de Comunicação - EMC: anexo-ii-a/recursos-financeiros/empresa-mineira-de-comunicacao-emc/index.md
+      - Escola de Saúde Pública do Estado de Minas Gerais - ESP MG: anexo-ii-a/recursos-financeiros/escola-de-saude-publica-do-estado-de-minas-gerais-esp-mg/index.md
+      - Fundação Centro de Hematologia e Hemoterapia de Minas Gerais - HEMOMINAS: anexo-ii-a/recursos-financeiros/fundacao-centro-de-hematologia-e-hemoterapia-de-minas-gerais-hemominas/index.md
+      - Fundação Clóvis Salgado - FCS: anexo-ii-a/recursos-financeiros/fundacao-clovis-salgado-fcs/index.md
+      - Fundação de Amparo À Pesquisa do Estado de Minas Gerais - FAPEMIG: anexo-ii-a/recursos-financeiros/fundacao-de-amparo-a-pesquisa-do-estado-de-minas-gerais-fapemig/index.md
+      - Fundação de Arte de Ouro Preto - FAOP: anexo-ii-a/recursos-financeiros/fundacao-de-arte-de-ouro-preto-faop/index.md
+      - Fundação de Educação para o Trabalho de Minas Gerais - UTRAMIG: anexo-ii-a/recursos-financeiros/fundacao-de-educacao-para-o-trabalho-de-minas-gerais-utramig/index.md
+      - Fundação Estadual do Meio Ambiente - FEAM: anexo-ii-a/recursos-financeiros/fundacao-estadual-do-meio-ambiente-feam/index.md
+      - Fundação Ezequiel Dias - FUNED: anexo-ii-a/recursos-financeiros/fundacao-ezequiel-dias-funed/index.md
+      - Fundação Helena Antipoff - FHA: anexo-ii-a/recursos-financeiros/fundacao-helena-antipoff-fha/index.md
+      - Fundação Hospitalar do Estado de Minas Gerais - FHEMIG: anexo-ii-a/recursos-financeiros/fundacao-hospitalar-do-estado-de-minas-gerais-fhemig/index.md
+      - Fundação João Pinheiro - FJP: anexo-ii-a/recursos-financeiros/fundacao-joao-pinheiro-fjp/index.md
+      - Fundação Tv Minas Cultural e Educativa - TV MINAS: anexo-ii-a/recursos-financeiros/fundacao-tv-minas-cultural-e-educativa-tv-minas/index.md
+      - Fundo de Apoio Habitacional Aos Militares do Estado de Minas Gerais - FAHMEMG: anexo-ii-a/recursos-financeiros/fundo-de-apoio-habitacional-aos-militares-do-estado-de-minas-gerais-fa/index.md
+      - Fundo de Assistência ao Pecúlio dos Servidores do Estado de Minas Gerais - FUNAPEC: anexo-ii-a/recursos-financeiros/fundo-de-assistencia-ao-peculio-dos-servidores-do-estado-de-minas-gera/index.md
+      - Fundo de Ativos Imobiliários de Minas Gerais - FAIMG: anexo-ii-a/recursos-financeiros/fundo-de-ativos-imobiliarios-de-minas-gerais-faimg/index.md
+      - Fundo de Desenvolvimento do Ministério Público - FDMP: anexo-ii-a/recursos-financeiros/fundo-de-desenvolvimento-do-ministerio-publico-fdmp/index.md
+      - Fundo de Desenvolvimento Metropolitano - FDM: anexo-ii-a/recursos-financeiros/fundo-de-desenvolvimento-metropolitano-fdm/index.md
+      - Fundo de Fomento e Desenvolvimento Socioeconômico do Estado de Minas Gerais - FUNDESE: anexo-ii-a/recursos-financeiros/fundo-de-fomento-e-desenvolvimento-socioeconomico-do-estado-de-minas-g/index.md
+      - Fundo de Investimento do Estado de Minas Gerais - MG INVESTE: anexo-ii-a/recursos-financeiros/fundo-de-investimento-do-estado-de-minas-gerais-mg-investe/index.md
+      - Fundo de Pagamento de Parcerias Público - PRIVADAS DE MINAS GERAIS - FPP - MG: anexo-ii-a/recursos-financeiros/fundo-de-pagamento-de-parcerias-publico-privadas-de-minas-gerais-fpp-m/index.md
+      - Fundo de Recuperação, Proteção e Desenvolvimento Sustentável das Bacias Hidrográficas do Estado de Minas Gerais - FHIDRO: anexo-ii-a/recursos-financeiros/fundo-de-recuperacao-protecao-e-desenvolvimento-sustentavel-das-bacias/index.md
+      - Fundo do Tribunal de Contas do Estado de Minas Gerais - FUNCONTAS: anexo-ii-a/recursos-financeiros/fundo-do-tribunal-de-contas-do-estado-de-minas-gerais-funcontas/index.md
+      - Fundo Especial da Advocacia-geral do Estado - FEAGE: anexo-ii-a/recursos-financeiros/fundo-especial-da-advocacia-geral-do-estado-feage/index.md
+      - Fundo Especial da Assembleia Legislativa do Estado de Minas Gerais - FUNDALEMG: anexo-ii-a/recursos-financeiros/fundo-especial-da-assembleia-legislativa-do-estado-de-minas-gerais-fun/index.md
+      - Fundo Especial de Garantia de Acesso À Justiça - FEGAJ: anexo-ii-a/recursos-financeiros/fundo-especial-de-garantia-de-acesso-a-justica-fegaj/index.md
+      - Fundo Especial do Ministério Público do Estado de Minas Gerais - FUNEMP: anexo-ii-a/recursos-financeiros/fundo-especial-do-ministerio-publico-do-estado-de-minas-gerais-funemp/index.md
+      - Fundo Especial do Poder Judiciário do Estado de Minas Gerais - FEPJ: anexo-ii-a/recursos-financeiros/fundo-especial-do-poder-judiciario-do-estado-de-minas-gerais-fepj/index.md
+      - Fundo Estadual de Assistência Social - FEAS: anexo-ii-a/recursos-financeiros/fundo-estadual-de-assistencia-social-feas/index.md
+      - Fundo Estadual de Cultura - FEC: anexo-ii-a/recursos-financeiros/fundo-estadual-de-cultura-fec/index.md
+      - Fundo Estadual de Defesa de Direitos Difusos - FUNDIF: anexo-ii-a/recursos-financeiros/fundo-estadual-de-defesa-de-direitos-difusos-fundif/index.md
+      - Fundo Estadual de Desenvolvimento de Transportes - FUNTRANS: anexo-ii-a/recursos-financeiros/fundo-estadual-de-desenvolvimento-de-transportes-funtrans/index.md
+      - Fundo Estadual de Habitação - FEH: anexo-ii-a/recursos-financeiros/fundo-estadual-de-habitacao-feh/index.md
+      - Fundo Estadual de Proteção e Defesa do Consumidor - FEPDC: anexo-ii-a/recursos-financeiros/fundo-estadual-de-protecao-e-defesa-do-consumidor-fepdc/index.md
+      - Fundo Estadual de Saúde - FES: anexo-ii-a/recursos-financeiros/fundo-estadual-de-saude-fes/index.md
+      - Fundo Estadual de Segurança Pública de Minas Gerais - FESP-MG: anexo-ii-a/recursos-financeiros/fundo-estadual-de-seguranca-publica-de-minas-gerais-fesp-mg/index.md
+      - Fundo Estadual do Trabalho de Minas Gerais - FET-MG: anexo-ii-a/recursos-financeiros/fundo-estadual-do-trabalho-de-minas-gerais-fet-mg/index.md
+      - Fundo Estadual dos Direitos do Idoso - FEI: anexo-ii-a/recursos-financeiros/fundo-estadual-dos-direitos-do-idoso-fei/index.md
+      - Fundo Financeiro de Previdência do Estado de Minas Gerais - FFP - MG: anexo-ii-a/recursos-financeiros/fundo-financeiro-de-previdencia-do-estado-de-minas-gerais-ffp-mg/index.md
+      - Fundo para a Infância e a Adolescência - FIA: anexo-ii-a/recursos-financeiros/fundo-para-a-infancia-e-a-adolescencia-fia/index.md
+      - Fundo Penitenciário Estadual - FPE: anexo-ii-a/recursos-financeiros/fundo-penitenciario-estadual-fpe/index.md
+      - Gabinete Militar do Governador do Estado de Minas Gerais - GABINETE MILITAR: anexo-ii-a/recursos-financeiros/gabinete-militar-do-governador-do-estado-de-minas-gerais-gabinete-mili/index.md
+      - Instituto de Desenvolvimento do Norte e Nordeste de Minas Gerais - IDENE: anexo-ii-a/recursos-financeiros/instituto-de-desenvolvimento-do-norte-e-nordeste-de-minas-gerais-idene/index.md
+      - Instituto de Metrologia e Qualidade do Estado de Minas Gerais - IPEMMG: anexo-ii-a/recursos-financeiros/instituto-de-metrologia-e-qualidade-do-estado-de-minas-gerais-ipemmg/index.md
+      - Instituto de Previdência do Legislativo do Estado de Minas Gerais - IPLEMG: anexo-ii-a/recursos-financeiros/instituto-de-previdencia-do-legislativo-do-estado-de-minas-gerais-iple/index.md
+      - Instituto de Previdência dos Servidores do Estado de Minas Gerais - IPSEMG: anexo-ii-a/recursos-financeiros/instituto-de-previdencia-dos-servidores-do-estado-de-minas-gerais-ipse/index.md
+      - Instituto de Previdência dos Servidores Militares do Estado de Minas Gerais - IPSM: anexo-ii-a/recursos-financeiros/instituto-de-previdencia-dos-servidores-militares-do-estado-de-minas-g/index.md
+      - Instituto Estadual de Florestas - IEF: anexo-ii-a/recursos-financeiros/instituto-estadual-de-florestas-ief/index.md
+      - Instituto Estadual do Patrimônio Histórico e Artístico de Minas Gerais - IEPHA: anexo-ii-a/recursos-financeiros/instituto-estadual-do-patrimonio-historico-e-artistico-de-minas-gerais/index.md
+      - Instituto Mineiro de Agropecuária - IMA: anexo-ii-a/recursos-financeiros/instituto-mineiro-de-agropecuaria-ima/index.md
+      - Instituto Mineiro de Gestão das Águas - IGAM: anexo-ii-a/recursos-financeiros/instituto-mineiro-de-gestao-das-aguas-igam/index.md
+      - Junta Comercial do Estado de Minas Gerais - JUCEMG: anexo-ii-a/recursos-financeiros/junta-comercial-do-estado-de-minas-gerais-jucemg/index.md
+      - Loteria do Estado de Minas Gerais - LEMG: anexo-ii-a/recursos-financeiros/loteria-do-estado-de-minas-gerais-lemg/index.md
+      - Polícia Civil do Estado de Minas Gerais - PCMG: anexo-ii-a/recursos-financeiros/policia-civil-do-estado-de-minas-gerais-pcmg/index.md
+      - Polícia Militar do Estado de Minas Gerais - PMMG: anexo-ii-a/recursos-financeiros/policia-militar-do-estado-de-minas-gerais-pmmg/index.md
+      - Procuradoria Geral de Justiça - PGJ: anexo-ii-a/recursos-financeiros/procuradoria-geral-de-justica-pgj/index.md
+      - Secretaria de Estado de Agricultura, Pecuária e Abastecimento - SEAPA: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-agricultura-pecuaria-e-abastecimento-seapa/index.md
+      - Secretaria de Estado de Cultura e Turismo - SECULT: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-cultura-e-turismo-secult/index.md
+      - Secretaria de Estado de Desenvolvimento Econômico - SEDE: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-desenvolvimento-economico-sede/index.md
+      - Secretaria de Estado de Desenvolvimento Social - SEDESE: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-desenvolvimento-social-sedese/index.md
+      - Secretaria de Estado de Educação - SEE: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-educacao-see/index.md
+      - Secretaria de Estado de Fazenda - SEF: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-fazenda-sef/index.md
+      - Secretaria de Estado de Infraestrutura, Mobilidade e Parcerias - SEINFRA: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-infraestrutura-mobilidade-e-parcerias-seinfra/index.md
+      - Secretaria de Estado de Justiça e Segurança Pública - SEJUSP: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-justica-e-seguranca-publica-sejusp/index.md
+      - Secretaria de Estado de Meio Ambiente e Desenvolvimento Sustentável - SEMAD: anexo-ii-a/recursos-financeiros/secretaria-de-estado-de-meio-ambiente-e-desenvolvimento-sustentavel-se/index.md
+      - Tribunal de Contas do Estado de Minas Gerais - TCEMG: anexo-ii-a/recursos-financeiros/tribunal-de-contas-do-estado-de-minas-gerais-tcemg/index.md
+      - Tribunal de Justiça do Estado de Minas Gerais - TJMG: anexo-ii-a/recursos-financeiros/tribunal-de-justica-do-estado-de-minas-gerais-tjmg/index.md
+      - Tribunal de Justiça Militar do Estado de Minas Gerais - TJMMG: anexo-ii-a/recursos-financeiros/tribunal-de-justica-militar-do-estado-de-minas-gerais-tjmmg/index.md
+      - Universidade do Estado de Minas Gerais - UEMG: anexo-ii-a/recursos-financeiros/universidade-do-estado-de-minas-gerais-uemg/index.md
+      - Universidade Estadual de Montes Claros - UNIMONTES: anexo-ii-a/recursos-financeiros/universidade-estadual-de-montes-claros-unimontes/index.md
+    - Fonte de Recursos e Grupos de Despesa:
+      - Visão geral: anexo-ii-a/fonte-grupo-despesa/index.md
+      - Advocacia Geral do Estado - AGE: anexo-ii-a/fonte-grupo-despesa/advocacia-geral-do-estado-age/index.md
+      - Agência de Desenvolvimento da Região Metropolitana de Belo Horizonte - AGÊNCIA RMBH: anexo-ii-a/fonte-grupo-despesa/agencia-de-desenvolvimento-da-regiao-metropolitana-de-belo-horizonte-a/index.md
+      - Agência de Desenvolvimento da Região Metropolitana do Vale do Aço - ARMVA: anexo-ii-a/fonte-grupo-despesa/agencia-de-desenvolvimento-da-regiao-metropolitana-do-vale-do-aco-armv/index.md
+      - Agência Reguladora de Serviços de Abastecimento de Água e de Esgotamento Sanitário do Estado de Minas Gerais - ARSAE -MG: anexo-ii-a/fonte-grupo-despesa/agencia-reguladora-de-servicos-de-abastecimento-de-agua-e-de-esgotamen/index.md
+      - Agência Reguladora de Transportes do Estado de Minas Gerais - ARTEMIG: anexo-ii-a/fonte-grupo-despesa/agencia-reguladora-de-transportes-do-estado-de-minas-gerais-artemig/index.md
+      - Assembleia Legislativa do Estado de Minas Gerais - ALMG: anexo-ii-a/fonte-grupo-despesa/assembleia-legislativa-do-estado-de-minas-gerais-almg/index.md
+      - Controladoria-geral do Estado - CGE: anexo-ii-a/fonte-grupo-despesa/controladoria-geral-do-estado-cge/index.md
+      - Corpo de Bombeiros Militar do Estado de Minas Gerais - CBMMG: anexo-ii-a/fonte-grupo-despesa/corpo-de-bombeiros-militar-do-estado-de-minas-gerais-cbmmg/index.md
+      - Defensoria Publica do Estado de Minas Gerais - DEF PUB: anexo-ii-a/fonte-grupo-despesa/defensoria-publica-do-estado-de-minas-gerais-def-pub/index.md
+      - Departamento de Estradas de Rodagem do Estado de Minas Gerais - DER-MG: anexo-ii-a/fonte-grupo-despesa/departamento-de-estradas-de-rodagem-do-estado-de-minas-gerais-der-mg/index.md
+      - Ege Sec.fazenda-encargos Diversos - EGE - SEF: anexo-ii-a/fonte-grupo-despesa/ege-sec-fazenda-encargos-diversos-ege-sef/index.md
+      - Ege-secretaria de Estado de Planejamento e Gestão - EGE-SEPLAG: anexo-ii-a/fonte-grupo-despesa/ege-secretaria-de-estado-de-planejamento-e-gestao-ege-seplag/index.md
+      - Empresa de Assistência Técnica e Extensão Rural do Estado de Minas Gerais - EMATER: anexo-ii-a/fonte-grupo-despesa/empresa-de-assistencia-tecnica-e-extensao-rural-do-estado-de-minas-ger/index.md
+      - Empresa de Pesquisa Agropecuária de Minas Gerais - EPAMIG: anexo-ii-a/fonte-grupo-despesa/empresa-de-pesquisa-agropecuaria-de-minas-gerais-epamig/index.md
+      - Empresa Mineira de Comunicação - EMC: anexo-ii-a/fonte-grupo-despesa/empresa-mineira-de-comunicacao-emc/index.md
+      - Encargos Gerais do Estado - INSTRUMENTOS DE ENTRADA DE RECURSOS - EGE - CASA CIVIL: anexo-ii-a/fonte-grupo-despesa/encargos-gerais-do-estado-instrumentos-de-entrada-de-recursos-ege-casa/index.md
+      - Escola de Saúde Pública do Estado de Minas Gerais - ESP MG: anexo-ii-a/fonte-grupo-despesa/escola-de-saude-publica-do-estado-de-minas-gerais-esp-mg/index.md
+      - Fundação Centro de Hematologia e Hemoterapia de Minas Gerais - HEMOMINAS: anexo-ii-a/fonte-grupo-despesa/fundacao-centro-de-hematologia-e-hemoterapia-de-minas-gerais-hemominas/index.md
+      - Fundação Clóvis Salgado - FCS: anexo-ii-a/fonte-grupo-despesa/fundacao-clovis-salgado-fcs/index.md
+      - Fundação de Amparo À Pesquisa do Estado de Minas Gerais - FAPEMIG: anexo-ii-a/fonte-grupo-despesa/fundacao-de-amparo-a-pesquisa-do-estado-de-minas-gerais-fapemig/index.md
+      - Fundação de Arte de Ouro Preto - FAOP: anexo-ii-a/fonte-grupo-despesa/fundacao-de-arte-de-ouro-preto-faop/index.md
+      - Fundação de Educação para o Trabalho de Minas Gerais - UTRAMIG: anexo-ii-a/fonte-grupo-despesa/fundacao-de-educacao-para-o-trabalho-de-minas-gerais-utramig/index.md
+      - Fundação Educacional Caio Martins - FUCAM: anexo-ii-a/fonte-grupo-despesa/fundacao-educacional-caio-martins-fucam/index.md
+      - Fundação Estadual do Meio Ambiente - FEAM: anexo-ii-a/fonte-grupo-despesa/fundacao-estadual-do-meio-ambiente-feam/index.md
+      - Fundação Ezequiel Dias - FUNED: anexo-ii-a/fonte-grupo-despesa/fundacao-ezequiel-dias-funed/index.md
+      - Fundação Helena Antipoff - FHA: anexo-ii-a/fonte-grupo-despesa/fundacao-helena-antipoff-fha/index.md
+      - Fundação Hospitalar do Estado de Minas Gerais - FHEMIG: anexo-ii-a/fonte-grupo-despesa/fundacao-hospitalar-do-estado-de-minas-gerais-fhemig/index.md
+      - Fundação João Pinheiro - FJP: anexo-ii-a/fonte-grupo-despesa/fundacao-joao-pinheiro-fjp/index.md
+      - Fundação Tv Minas Cultural e Educativa - TV MINAS: anexo-ii-a/fonte-grupo-despesa/fundacao-tv-minas-cultural-e-educativa-tv-minas/index.md
+      - Fundo de Apoio Habitacional Aos Militares do Estado de Minas Gerais - FAHMEMG: anexo-ii-a/fonte-grupo-despesa/fundo-de-apoio-habitacional-aos-militares-do-estado-de-minas-gerais-fa/index.md
+      - Fundo de Assistência ao Pecúlio dos Servidores do Estado de Minas Gerais - FUNAPEC: anexo-ii-a/fonte-grupo-despesa/fundo-de-assistencia-ao-peculio-dos-servidores-do-estado-de-minas-gera/index.md
+      - Fundo de Assistência ao Turismo - FASTUR: anexo-ii-a/fonte-grupo-despesa/fundo-de-assistencia-ao-turismo-fastur/index.md
+      - Fundo de Ativos Imobiliários de Minas Gerais - FAIMG: anexo-ii-a/fonte-grupo-despesa/fundo-de-ativos-imobiliarios-de-minas-gerais-faimg/index.md
+      - Fundo de Desenvolvimento do Ministério Público - FDMP: anexo-ii-a/fonte-grupo-despesa/fundo-de-desenvolvimento-do-ministerio-publico-fdmp/index.md
+      - Fundo de Desenvolvimento Metropolitano - FDM: anexo-ii-a/fonte-grupo-despesa/fundo-de-desenvolvimento-metropolitano-fdm/index.md
+      - Fundo de Fomento e Desenvolvimento Socioeconômico do Estado de Minas Gerais - FUNDESE: anexo-ii-a/fonte-grupo-despesa/fundo-de-fomento-e-desenvolvimento-socioeconomico-do-estado-de-minas-g/index.md
+      - Fundo de Garantias de Parcerias Público - PRIVADAS DE MINAS GERAIS - FGP - MG: anexo-ii-a/fonte-grupo-despesa/fundo-de-garantias-de-parcerias-publico-privadas-de-minas-gerais-fgp-m/index.md
+      - Fundo de Investimento do Estado de Minas Gerais - MG INVESTE: anexo-ii-a/fonte-grupo-despesa/fundo-de-investimento-do-estado-de-minas-gerais-mg-investe/index.md
+      - Fundo de Investimentos Imobiliários de Minas Gerais - FIIMG: anexo-ii-a/fonte-grupo-despesa/fundo-de-investimentos-imobiliarios-de-minas-gerais-fiimg/index.md
+      - Fundo de Pagamento de Parcerias Público - PRIVADAS DE MINAS GERAIS - FPP - MG: anexo-ii-a/fonte-grupo-despesa/fundo-de-pagamento-de-parcerias-publico-privadas-de-minas-gerais-fpp-m/index.md
+      - Fundo de Recuperação, Proteção e Desenvolvimento Sustentável das Bacias Hidrográficas do Estado de Minas Gerais - FHIDRO: anexo-ii-a/fonte-grupo-despesa/fundo-de-recuperacao-protecao-e-desenvolvimento-sustentavel-das-bacias/index.md
+      - Fundo do Tribunal de Contas do Estado de Minas Gerais - FUNCONTAS: anexo-ii-a/fonte-grupo-despesa/fundo-do-tribunal-de-contas-do-estado-de-minas-gerais-funcontas/index.md
+      - Fundo Especial da Advocacia-geral do Estado - FEAGE: anexo-ii-a/fonte-grupo-despesa/fundo-especial-da-advocacia-geral-do-estado-feage/index.md
+      - Fundo Especial da Assembleia Legislativa do Estado de Minas Gerais - FUNDALEMG: anexo-ii-a/fonte-grupo-despesa/fundo-especial-da-assembleia-legislativa-do-estado-de-minas-gerais-fun/index.md
+      - Fundo Especial de Créditos Inadimplidos e Dívida Ativa - FECIDAT: anexo-ii-a/fonte-grupo-despesa/fundo-especial-de-creditos-inadimplidos-e-divida-ativa-fecidat/index.md
+      - Fundo Especial de Garantia de Acesso À Justiça - FEGAJ: anexo-ii-a/fonte-grupo-despesa/fundo-especial-de-garantia-de-acesso-a-justica-fegaj/index.md
+      - Fundo Especial do Ministério Público do Estado de Minas Gerais - FUNEMP: anexo-ii-a/fonte-grupo-despesa/fundo-especial-do-ministerio-publico-do-estado-de-minas-gerais-funemp/index.md
+      - Fundo Especial do Poder Judiciário do Estado de Minas Gerais - FEPJ: anexo-ii-a/fonte-grupo-despesa/fundo-especial-do-poder-judiciario-do-estado-de-minas-gerais-fepj/index.md
+      - Fundo Estadual de Assistência Social - FEAS: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-assistencia-social-feas/index.md
+      - Fundo Estadual de Cultura - FEC: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-cultura-fec/index.md
+      - Fundo Estadual de Defesa de Direitos Difusos - FUNDIF: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-defesa-de-direitos-difusos-fundif/index.md
+      - Fundo Estadual de Desenvolvimento de Transportes - FUNTRANS: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-desenvolvimento-de-transportes-funtrans/index.md
+      - Fundo Estadual de Habitação - FEH: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-habitacao-feh/index.md
+      - Fundo Estadual de Prevenção, Fiscalização e Repressão de Entorpecentes - FUNPREN: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-prevencao-fiscalizacao-e-repressao-de-entorpecentes-/index.md
+      - Fundo Estadual de Previdência do Estado de Minas Gerais - FEPREMG: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-previdencia-do-estado-de-minas-gerais-fepremg/index.md
+      - Fundo Estadual de Proteção e Defesa do Consumidor - FEPDC: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-protecao-e-defesa-do-consumidor-fepdc/index.md
+      - Fundo Estadual de Saúde - FES: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-saude-fes/index.md
+      - Fundo Estadual de Segurança Pública de Minas Gerais - FESP-MG: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-de-seguranca-publica-de-minas-gerais-fesp-mg/index.md
+      - Fundo Estadual do Trabalho de Minas Gerais - FET-MG: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-do-trabalho-de-minas-gerais-fet-mg/index.md
+      - Fundo Estadual dos Direitos do Idoso - FEI: anexo-ii-a/fonte-grupo-despesa/fundo-estadual-dos-direitos-do-idoso-fei/index.md
+      - Fundo Financeiro de Previdência do Estado de Minas Gerais - FFP - MG: anexo-ii-a/fonte-grupo-despesa/fundo-financeiro-de-previdencia-do-estado-de-minas-gerais-ffp-mg/index.md
+      - Fundo para a Infância e a Adolescência - FIA: anexo-ii-a/fonte-grupo-despesa/fundo-para-a-infancia-e-a-adolescencia-fia/index.md
+      - Fundo Penitenciário Estadual - FPE: anexo-ii-a/fonte-grupo-despesa/fundo-penitenciario-estadual-fpe/index.md
+      - Gabinete Militar do Governador do Estado de Minas Gerais - GABINETE MILITAR: anexo-ii-a/fonte-grupo-despesa/gabinete-militar-do-governador-do-estado-de-minas-gerais-gabinete-mili/index.md
+      - Gestão da Dívida Pública Estadual - GDPE - SEF: anexo-ii-a/fonte-grupo-despesa/gestao-da-divida-publica-estadual-gdpe-sef/index.md
+      - Instituto de Desenvolvimento do Norte e Nordeste de Minas Gerais - IDENE: anexo-ii-a/fonte-grupo-despesa/instituto-de-desenvolvimento-do-norte-e-nordeste-de-minas-gerais-idene/index.md
+      - Instituto de Metrologia e Qualidade do Estado de Minas Gerais - IPEMMG: anexo-ii-a/fonte-grupo-despesa/instituto-de-metrologia-e-qualidade-do-estado-de-minas-gerais-ipemmg/index.md
+      - Instituto de Previdência do Legislativo do Estado de Minas Gerais - IPLEMG: anexo-ii-a/fonte-grupo-despesa/instituto-de-previdencia-do-legislativo-do-estado-de-minas-gerais-iple/index.md
+      - Instituto de Previdência dos Servidores do Estado de Minas Gerais - IPSEMG: anexo-ii-a/fonte-grupo-despesa/instituto-de-previdencia-dos-servidores-do-estado-de-minas-gerais-ipse/index.md
+      - Instituto de Previdência dos Servidores Militares do Estado de Minas Gerais - IPSM: anexo-ii-a/fonte-grupo-despesa/instituto-de-previdencia-dos-servidores-militares-do-estado-de-minas-g/index.md
+      - Instituto Estadual de Florestas - IEF: anexo-ii-a/fonte-grupo-despesa/instituto-estadual-de-florestas-ief/index.md
+      - Instituto Estadual do Patrimônio Histórico e Artístico de Minas Gerais - IEPHA: anexo-ii-a/fonte-grupo-despesa/instituto-estadual-do-patrimonio-historico-e-artistico-de-minas-gerais/index.md
+      - Instituto Mineiro de Agropecuária - IMA: anexo-ii-a/fonte-grupo-despesa/instituto-mineiro-de-agropecuaria-ima/index.md
+      - Instituto Mineiro de Gestão das Águas - IGAM: anexo-ii-a/fonte-grupo-despesa/instituto-mineiro-de-gestao-das-aguas-igam/index.md
+      - Junta Comercial do Estado de Minas Gerais - JUCEMG: anexo-ii-a/fonte-grupo-despesa/junta-comercial-do-estado-de-minas-gerais-jucemg/index.md
+      - Loteria do Estado de Minas Gerais - LEMG: anexo-ii-a/fonte-grupo-despesa/loteria-do-estado-de-minas-gerais-lemg/index.md
+      - Ouvidoria-geral do Estado de Minas Gerais - OGE: anexo-ii-a/fonte-grupo-despesa/ouvidoria-geral-do-estado-de-minas-gerais-oge/index.md
+      - Participação no Aumento do Capital Social de Empresas - PARTICIPAÇÃO EMPRESAS: anexo-ii-a/fonte-grupo-despesa/participacao-no-aumento-do-capital-social-de-empresas-participacao-emp/index.md
+      - Polícia Civil do Estado de Minas Gerais - PCMG: anexo-ii-a/fonte-grupo-despesa/policia-civil-do-estado-de-minas-gerais-pcmg/index.md
+      - Polícia Militar do Estado de Minas Gerais - PMMG: anexo-ii-a/fonte-grupo-despesa/policia-militar-do-estado-de-minas-gerais-pmmg/index.md
+      - Procuradoria Geral de Justiça - PGJ: anexo-ii-a/fonte-grupo-despesa/procuradoria-geral-de-justica-pgj/index.md
+      - Reserva de Contingência - RC: anexo-ii-a/fonte-grupo-despesa/reserva-de-contingencia-rc/index.md
+      - Secretaria de Estado da Casa Civil - SCC: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-da-casa-civil-scc/index.md
+      - Secretaria de Estado de Agricultura, Pecuária e Abastecimento - SEAPA: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-agricultura-pecuaria-e-abastecimento-seapa/index.md
+      - Secretaria de Estado de Comunicação Social - SECOM: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-comunicacao-social-secom/index.md
+      - Secretaria de Estado de Cultura e Turismo - SECULT: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-cultura-e-turismo-secult/index.md
+      - Secretaria de Estado de Desenvolvimento Econômico - SEDE: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-desenvolvimento-economico-sede/index.md
+      - Secretaria de Estado de Desenvolvimento Social - SEDESE: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-desenvolvimento-social-sedese/index.md
+      - Secretaria de Estado de Educação - SEE: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-educacao-see/index.md
+      - Secretaria de Estado de Fazenda - SEF: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-fazenda-sef/index.md
+      - Secretaria de Estado de Governo - SEGOV: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-governo-segov/index.md
+      - Secretaria de Estado de Infraestrutura, Mobilidade e Parcerias - SEINFRA: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-infraestrutura-mobilidade-e-parcerias-seinfra/index.md
+      - Secretaria de Estado de Justiça e Segurança Pública - SEJUSP: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-justica-e-seguranca-publica-sejusp/index.md
+      - Secretaria de Estado de Meio Ambiente e Desenvolvimento Sustentável - SEMAD: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-meio-ambiente-e-desenvolvimento-sustentavel-se/index.md
+      - Secretaria de Estado de Planejamento e Gestão - SEPLAG: anexo-ii-a/fonte-grupo-despesa/secretaria-de-estado-de-planejamento-e-gestao-seplag/index.md
+      - Secretaria-geral - SEC. GERAL: anexo-ii-a/fonte-grupo-despesa/secretaria-geral-sec-geral/index.md
+      - Tribunal de Contas do Estado de Minas Gerais - TCEMG: anexo-ii-a/fonte-grupo-despesa/tribunal-de-contas-do-estado-de-minas-gerais-tcemg/index.md
+      - Tribunal de Justiça do Estado de Minas Gerais - TJMG: anexo-ii-a/fonte-grupo-despesa/tribunal-de-justica-do-estado-de-minas-gerais-tjmg/index.md
+      - Tribunal de Justiça Militar do Estado de Minas Gerais - TJMMG: anexo-ii-a/fonte-grupo-despesa/tribunal-de-justica-militar-do-estado-de-minas-gerais-tjmmg/index.md
+      - Universidade do Estado de Minas Gerais - UEMG: anexo-ii-a/fonte-grupo-despesa/universidade-do-estado-de-minas-gerais-uemg/index.md
+      - Universidade Estadual de Montes Claros - UNIMONTES: anexo-ii-a/fonte-grupo-despesa/universidade-estadual-de-montes-claros-unimontes/index.md
+  - Anexo II-B — Orçamento Fiscal (pessoal):
+    - Sobre o anexo: anexo-ii-b/index.md
+    - Detalhamento da Categoria de Pessoal:
+      - Visão geral: anexo-ii-b/pessoal/index.md
+      - Advocacia Geral do Estado - AGE: anexo-ii-b/pessoal/advocacia-geral-do-estado-age/index.md
+      - Agência de Desenvolvimento da Região Metropolitana de Belo Horizonte - AGÊNCIA RMBH: anexo-ii-b/pessoal/agencia-de-desenvolvimento-da-regiao-metropolitana-de-belo-horizonte-a/index.md
+      - Agência de Desenvolvimento da Região Metropolitana do Vale do Aço - ARMVA: anexo-ii-b/pessoal/agencia-de-desenvolvimento-da-regiao-metropolitana-do-vale-do-aco-armv/index.md
+      - Agência Reguladora de Serviços de Abastecimento de Água e de Esgotamento Sanitário do Estado de Minas Gerais - ARSAE -MG: anexo-ii-b/pessoal/agencia-reguladora-de-servicos-de-abastecimento-de-agua-e-de-esgotamen/index.md
+      - Agência Reguladora de Transportes do Estado de Minas Gerais - ARTEMIG: anexo-ii-b/pessoal/agencia-reguladora-de-transportes-do-estado-de-minas-gerais-artemig/index.md
+      - Assembleia Legislativa do Estado de Minas Gerais - ALMG: anexo-ii-b/pessoal/assembleia-legislativa-do-estado-de-minas-gerais-almg/index.md
+      - Controladoria-geral do Estado - CGE: anexo-ii-b/pessoal/controladoria-geral-do-estado-cge/index.md
+      - Corpo de Bombeiros Militar do Estado de Minas Gerais - CBMMG: anexo-ii-b/pessoal/corpo-de-bombeiros-militar-do-estado-de-minas-gerais-cbmmg/index.md
+      - Defensoria Publica do Estado de Minas Gerais - DEF PUB: anexo-ii-b/pessoal/defensoria-publica-do-estado-de-minas-gerais-def-pub/index.md
+      - Departamento de Estradas de Rodagem do Estado de Minas Gerais - DER-MG: anexo-ii-b/pessoal/departamento-de-estradas-de-rodagem-do-estado-de-minas-gerais-der-mg/index.md
+      - Empresa de Assistência Técnica e Extensão Rural do Estado de Minas Gerais - EMATER: anexo-ii-b/pessoal/empresa-de-assistencia-tecnica-e-extensao-rural-do-estado-de-minas-ger/index.md
+      - Empresa de Pesquisa Agropecuária de Minas Gerais - EPAMIG: anexo-ii-b/pessoal/empresa-de-pesquisa-agropecuaria-de-minas-gerais-epamig/index.md
+      - Empresa Mineira de Comunicação - EMC: anexo-ii-b/pessoal/empresa-mineira-de-comunicacao-emc/index.md
+      - Escola de Saúde Pública do Estado de Minas Gerais - ESP MG: anexo-ii-b/pessoal/escola-de-saude-publica-do-estado-de-minas-gerais-esp-mg/index.md
+      - Fundação Centro de Hematologia e Hemoterapia de Minas Gerais - HEMOMINAS: anexo-ii-b/pessoal/fundacao-centro-de-hematologia-e-hemoterapia-de-minas-gerais-hemominas/index.md
+      - Fundação Clóvis Salgado - FCS: anexo-ii-b/pessoal/fundacao-clovis-salgado-fcs/index.md
+      - Fundação de Amparo À Pesquisa do Estado de Minas Gerais - FAPEMIG: anexo-ii-b/pessoal/fundacao-de-amparo-a-pesquisa-do-estado-de-minas-gerais-fapemig/index.md
+      - Fundação de Arte de Ouro Preto - FAOP: anexo-ii-b/pessoal/fundacao-de-arte-de-ouro-preto-faop/index.md
+      - Fundação de Educação para o Trabalho de Minas Gerais - UTRAMIG: anexo-ii-b/pessoal/fundacao-de-educacao-para-o-trabalho-de-minas-gerais-utramig/index.md
+      - Fundação Educacional Caio Martins - FUCAM: anexo-ii-b/pessoal/fundacao-educacional-caio-martins-fucam/index.md
+      - Fundação Estadual do Meio Ambiente - FEAM: anexo-ii-b/pessoal/fundacao-estadual-do-meio-ambiente-feam/index.md
+      - Fundação Ezequiel Dias - FUNED: anexo-ii-b/pessoal/fundacao-ezequiel-dias-funed/index.md
+      - Fundação Helena Antipoff - FHA: anexo-ii-b/pessoal/fundacao-helena-antipoff-fha/index.md
+      - Fundação Hospitalar do Estado de Minas Gerais - FHEMIG: anexo-ii-b/pessoal/fundacao-hospitalar-do-estado-de-minas-gerais-fhemig/index.md
+      - Fundação João Pinheiro - FJP: anexo-ii-b/pessoal/fundacao-joao-pinheiro-fjp/index.md
+      - Fundação Tv Minas Cultural e Educativa - TV MINAS: anexo-ii-b/pessoal/fundacao-tv-minas-cultural-e-educativa-tv-minas/index.md
+      - Fundo Estadual de Saúde - FES: anexo-ii-b/pessoal/fundo-estadual-de-saude-fes/index.md
+      - Gabinete Militar do Governador do Estado de Minas Gerais - GABINETE MILITAR: anexo-ii-b/pessoal/gabinete-militar-do-governador-do-estado-de-minas-gerais-gabinete-mili/index.md
+      - Instituto de Desenvolvimento do Norte e Nordeste de Minas Gerais - IDENE: anexo-ii-b/pessoal/instituto-de-desenvolvimento-do-norte-e-nordeste-de-minas-gerais-idene/index.md
+      - Instituto de Metrologia e Qualidade do Estado de Minas Gerais - IPEMMG: anexo-ii-b/pessoal/instituto-de-metrologia-e-qualidade-do-estado-de-minas-gerais-ipemmg/index.md
+      - Instituto de Previdência do Legislativo do Estado de Minas Gerais - IPLEMG: anexo-ii-b/pessoal/instituto-de-previdencia-do-legislativo-do-estado-de-minas-gerais-iple/index.md
+      - Instituto de Previdência dos Servidores do Estado de Minas Gerais - IPSEMG: anexo-ii-b/pessoal/instituto-de-previdencia-dos-servidores-do-estado-de-minas-gerais-ipse/index.md
+      - Instituto de Previdência dos Servidores Militares do Estado de Minas Gerais - IPSM: anexo-ii-b/pessoal/instituto-de-previdencia-dos-servidores-militares-do-estado-de-minas-g/index.md
+      - Instituto Estadual de Florestas - IEF: anexo-ii-b/pessoal/instituto-estadual-de-florestas-ief/index.md
+      - Instituto Estadual do Patrimônio Histórico e Artístico de Minas Gerais - IEPHA: anexo-ii-b/pessoal/instituto-estadual-do-patrimonio-historico-e-artistico-de-minas-gerais/index.md
+      - Instituto Mineiro de Agropecuária - IMA: anexo-ii-b/pessoal/instituto-mineiro-de-agropecuaria-ima/index.md
+      - Instituto Mineiro de Gestão das Águas - IGAM: anexo-ii-b/pessoal/instituto-mineiro-de-gestao-das-aguas-igam/index.md
+      - Junta Comercial do Estado de Minas Gerais - JUCEMG: anexo-ii-b/pessoal/junta-comercial-do-estado-de-minas-gerais-jucemg/index.md
+      - Loteria do Estado de Minas Gerais - LEMG: anexo-ii-b/pessoal/loteria-do-estado-de-minas-gerais-lemg/index.md
+      - Ouvidoria-geral do Estado de Minas Gerais - OGE: anexo-ii-b/pessoal/ouvidoria-geral-do-estado-de-minas-gerais-oge/index.md
+      - Polícia Civil do Estado de Minas Gerais - PCMG: anexo-ii-b/pessoal/policia-civil-do-estado-de-minas-gerais-pcmg/index.md
+      - Polícia Militar do Estado de Minas Gerais - PMMG: anexo-ii-b/pessoal/policia-militar-do-estado-de-minas-gerais-pmmg/index.md
+      - Procuradoria Geral de Justiça - PGJ: anexo-ii-b/pessoal/procuradoria-geral-de-justica-pgj/index.md
+      - Secretaria de Estado da Casa Civil - SCC: anexo-ii-b/pessoal/secretaria-de-estado-da-casa-civil-scc/index.md
+      - Secretaria de Estado de Agricultura, Pecuária e Abastecimento - SEAPA: anexo-ii-b/pessoal/secretaria-de-estado-de-agricultura-pecuaria-e-abastecimento-seapa/index.md
+      - Secretaria de Estado de Comunicação Social - SECOM: anexo-ii-b/pessoal/secretaria-de-estado-de-comunicacao-social-secom/index.md
+      - Secretaria de Estado de Cultura e Turismo - SECULT: anexo-ii-b/pessoal/secretaria-de-estado-de-cultura-e-turismo-secult/index.md
+      - Secretaria de Estado de Desenvolvimento Econômico - SEDE: anexo-ii-b/pessoal/secretaria-de-estado-de-desenvolvimento-economico-sede/index.md
+      - Secretaria de Estado de Desenvolvimento Social - SEDESE: anexo-ii-b/pessoal/secretaria-de-estado-de-desenvolvimento-social-sedese/index.md
+      - Secretaria de Estado de Educação - SEE: anexo-ii-b/pessoal/secretaria-de-estado-de-educacao-see/index.md
+      - Secretaria de Estado de Fazenda - SEF: anexo-ii-b/pessoal/secretaria-de-estado-de-fazenda-sef/index.md
+      - Secretaria de Estado de Governo - SEGOV: anexo-ii-b/pessoal/secretaria-de-estado-de-governo-segov/index.md
+      - Secretaria de Estado de Infraestrutura, Mobilidade e Parcerias - SEINFRA: anexo-ii-b/pessoal/secretaria-de-estado-de-infraestrutura-mobilidade-e-parcerias-seinfra/index.md
+      - Secretaria de Estado de Justiça e Segurança Pública - SEJUSP: anexo-ii-b/pessoal/secretaria-de-estado-de-justica-e-seguranca-publica-sejusp/index.md
+      - Secretaria de Estado de Meio Ambiente e Desenvolvimento Sustentável - SEMAD: anexo-ii-b/pessoal/secretaria-de-estado-de-meio-ambiente-e-desenvolvimento-sustentavel-se/index.md
+      - Secretaria de Estado de Planejamento e Gestão - SEPLAG: anexo-ii-b/pessoal/secretaria-de-estado-de-planejamento-e-gestao-seplag/index.md
+      - Secretaria-geral - SEC. GERAL: anexo-ii-b/pessoal/secretaria-geral-sec-geral/index.md
+      - Tribunal de Contas do Estado de Minas Gerais - TCEMG: anexo-ii-b/pessoal/tribunal-de-contas-do-estado-de-minas-gerais-tcemg/index.md
+      - Tribunal de Justiça do Estado de Minas Gerais - TJMG: anexo-ii-b/pessoal/tribunal-de-justica-do-estado-de-minas-gerais-tjmg/index.md
+      - Tribunal de Justiça Militar do Estado de Minas Gerais - TJMMG: anexo-ii-b/pessoal/tribunal-de-justica-militar-do-estado-de-minas-gerais-tjmmg/index.md
+      - Universidade do Estado de Minas Gerais - UEMG: anexo-ii-b/pessoal/universidade-do-estado-de-minas-gerais-uemg/index.md
+      - Universidade Estadual de Montes Claros - UNIMONTES: anexo-ii-b/pessoal/universidade-estadual-de-montes-claros-unimontes/index.md
+  - Anexo III — Investimento das estatais:
+    - Sobre o anexo: anexo-iii/index.md
+    - Investimento por Empresa segundo as Fontes de Financiamento: anexo-iii/investimento-estatais/index.md
+    - Investimento segundo o Detalhamento:
+      - Visão geral: anexo-iii/investimento-detalhe/index.md
+      - Agência de Promoção de Investimentos de Minas Gerais - INVEST MINAS: anexo-iii/investimento-detalhe/agencia-de-promocao-de-investimentos-de-minas-gerais-invest-minas/index.md
+      - Banco de Desenvolvimento de Minas Gerais S.A - BDMG: anexo-iii/investimento-detalhe/banco-de-desenvolvimento-de-minas-gerais-s-a-bdmg/index.md
+      - Cemig Distribuição S.A - CEMIG DISTRIBUIDORA: anexo-iii/investimento-detalhe/cemig-distribuicao-s-a-cemig-distribuidora/index.md
+      - Cemig Geração e Transmissão S.A - CEMIG GERAÇÃO E TRANSMISSÃO: anexo-iii/investimento-detalhe/cemig-geracao-e-transmissao-s-a-cemig-geracao-e-transmissao/index.md
+      - Companhia de Desenvolvimento de Minas Gerais - CODEMGE: anexo-iii/investimento-detalhe/companhia-de-desenvolvimento-de-minas-gerais-codemge/index.md
+      - Companhia de Desenvolvimento Econômico de Minas Gerais - CODEMIG: anexo-iii/investimento-detalhe/companhia-de-desenvolvimento-economico-de-minas-gerais-codemig/index.md
+      - Companhia de Gás de Minas Gerais - GASMIG: anexo-iii/investimento-detalhe/companhia-de-gas-de-minas-gerais-gasmig/index.md
+      - Companhia de Habitação do Estado de Minas Gerais - COHAB: anexo-iii/investimento-detalhe/companhia-de-habitacao-do-estado-de-minas-gerais-cohab/index.md
+      - Companhia de Saneamento de Minas Gerais - COPASA: anexo-iii/investimento-detalhe/companhia-de-saneamento-de-minas-gerais-copasa/index.md
+      - Companhia de Tecnologia da Informação do Estado de Minas Gerais - PRODEMGE: anexo-iii/investimento-detalhe/companhia-de-tecnologia-da-informacao-do-estado-de-minas-gerais-prodem/index.md
+      - Companhia Energética de Minas Gerais - CEMIG HOLDING: anexo-iii/investimento-detalhe/companhia-energetica-de-minas-gerais-cemig-holding/index.md
+      - Copasa - SERVIÇOS DE SANEAMENTO INTEGRADO DO NORTE E NORDESTE DE MINAS GERAIS S/A - COPANOR: anexo-iii/investimento-detalhe/copasa-servicos-de-saneamento-integrado-do-norte-e-nordeste-de-minas-g/index.md
+      - Minas Gerais Administração e Serviços S.A - MGS: anexo-iii/investimento-detalhe/minas-gerais-administracao-e-servicos-s-a-mgs/index.md
+      - Minas Gerais Participações S.A - MGI: anexo-iii/investimento-detalhe/minas-gerais-participacoes-s-a-mgi/index.md
+      - Trem Metropolitano de Belo Horizonte S.A - TREM METROPOLITANO: anexo-iii/investimento-detalhe/trem-metropolitano-de-belo-horizonte-s-a-trem-metropolitano/index.md
+  - Anexo IV — Investimentos por região:
+    - Sobre o anexo: anexo-iv/index.md
+    - Obras por Unidade Orçamentária segundo as Regiões Geográficas Intermediárias:
+      - Visão geral: anexo-iv/regionalizado/index.md
+      - Barbacena: anexo-iv/regionalizado/regiao-barbacena/index.md
+      - Belo Horizonte: anexo-iv/regionalizado/regiao-belo-horizonte/index.md
+      - Divinópolis: anexo-iv/regionalizado/regiao-divinopolis/index.md
+      - Estadual: anexo-iv/regionalizado/regiao-estadual/index.md
+      - Governador Valadares: anexo-iv/regionalizado/regiao-governador-valadares/index.md
+      - Ipatinga: anexo-iv/regionalizado/regiao-ipatinga/index.md
+      - Juíz de Fora: anexo-iv/regionalizado/regiao-juiz-de-fora/index.md
+      - Montes Claros: anexo-iv/regionalizado/regiao-montes-claros/index.md
+      - Patos de Minas: anexo-iv/regionalizado/regiao-patos-de-minas/index.md
+      - Pouso Alegre: anexo-iv/regionalizado/regiao-pouso-alegre/index.md
+      - Teófilo Otoni: anexo-iv/regionalizado/regiao-teofilo-otoni/index.md
+      - Uberaba: anexo-iv/regionalizado/regiao-uberaba/index.md
+      - Uberlândia: anexo-iv/regionalizado/regiao-uberlandia/index.md
+      - Varginha: anexo-iv/regionalizado/regiao-varginha/index.md
+    - Obras por Município:
+      - Visão geral: anexo-iv/obras-municipio/index.md
+      - Além Paraíba: anexo-iv/obras-municipio/municipio-alem-paraiba/index.md
+      - Araguari: anexo-iv/obras-municipio/municipio-araguari/index.md
+      - Araçuaí: anexo-iv/obras-municipio/municipio-aracuai/index.md
+      - Areado: anexo-iv/obras-municipio/municipio-areado/index.md
+      - Bambuí: anexo-iv/obras-municipio/municipio-bambui/index.md
+      - Barbacena: anexo-iv/obras-municipio/municipio-barbacena/index.md
+      - Belo Horizonte: anexo-iv/obras-municipio/municipio-belo-horizonte/index.md
+      - Betim: anexo-iv/obras-municipio/municipio-betim/index.md
+      - Caldas: anexo-iv/obras-municipio/municipio-caldas/index.md
+      - Camanducaia: anexo-iv/obras-municipio/municipio-camanducaia/index.md
+      - Cambuí: anexo-iv/obras-municipio/municipio-cambui/index.md
+      - Campina Verde: anexo-iv/obras-municipio/municipio-campina-verde/index.md
+      - Campo Belo: anexo-iv/obras-municipio/municipio-campo-belo/index.md
+      - Canápolis: anexo-iv/obras-municipio/municipio-canapolis/index.md
+      - Capela Nova: anexo-iv/obras-municipio/municipio-capela-nova/index.md
+      - Carangola: anexo-iv/obras-municipio/municipio-carangola/index.md
+      - Conceição do Mato Dentro: anexo-iv/obras-municipio/municipio-conceicao-do-mato-dentro/index.md
+      - Congonhas: anexo-iv/obras-municipio/municipio-congonhas/index.md
+      - Conquista: anexo-iv/obras-municipio/municipio-conquista/index.md
+      - Contagem: anexo-iv/obras-municipio/municipio-contagem/index.md
+      - Cordislândia: anexo-iv/obras-municipio/municipio-cordislandia/index.md
+      - Coronel Fabriciano: anexo-iv/obras-municipio/municipio-coronel-fabriciano/index.md
+      - Curral de Dentro: anexo-iv/obras-municipio/municipio-curral-de-dentro/index.md
+      - Cássia: anexo-iv/obras-municipio/municipio-cassia/index.md
+      - Diamantina: anexo-iv/obras-municipio/municipio-diamantina/index.md
+      - Diversos Municípios - Estadual: anexo-iv/obras-municipio/municipio-diversos-municipios-estadual/index.md
+      - Diversos Municípios - Região Intermediária de Barbacena: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-barbacena/index.md
+      - Diversos Municípios - Região Intermediária de Belo Horizonte: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-belo-horizonte/index.md
+      - Diversos Municípios - Região Intermediária de Divinópolis: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-divinopolis/index.md
+      - Diversos Municípios - Região Intermediária de Governador Valadares: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-governador-valadares/index.md
+      - Diversos Municípios - Região Intermediária de Ipatinga: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-ipatinga/index.md
+      - Diversos Municípios - Região Intermediária de Juíz de Fora: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-juiz-de-fora/index.md
+      - Diversos Municípios - Região Intermediária de Montes Claros: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-montes-claros/index.md
+      - Diversos Municípios - Região Intermediária de Patos de Minas: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-patos-de-minas/index.md
+      - Diversos Municípios - Região Intermediária de Pouso Alegre: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-pouso-alegre/index.md
+      - Diversos Municípios - Região Intermediária de Teófilo Otoni: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-teofilo-otoni/index.md
+      - Diversos Municípios - Região Intermediária de Uberaba: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-uberaba/index.md
+      - Diversos Municípios - Região Intermediária de Uberlândia: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-uberlandia/index.md
+      - Diversos Municípios - Região Intermediária de Varginha: anexo-iv/obras-municipio/municipio-diversos-municipios-regiao-intermediaria-de-varginha/index.md
+      - Formiga: anexo-iv/obras-municipio/municipio-formiga/index.md
+      - Formoso: anexo-iv/obras-municipio/municipio-formoso/index.md
+      - Governador Valadares: anexo-iv/obras-municipio/municipio-governador-valadares/index.md
+      - Guanhães: anexo-iv/obras-municipio/municipio-guanhaes/index.md
+      - Ibirité: anexo-iv/obras-municipio/municipio-ibirite/index.md
+      - Ipatinga: anexo-iv/obras-municipio/municipio-ipatinga/index.md
+      - Itabira: anexo-iv/obras-municipio/municipio-itabira/index.md
+      - Itabirito: anexo-iv/obras-municipio/municipio-itabirito/index.md
+      - Itajubá: anexo-iv/obras-municipio/municipio-itajuba/index.md
+      - Itaobim: anexo-iv/obras-municipio/municipio-itaobim/index.md
+      - Itapagipe: anexo-iv/obras-municipio/municipio-itapagipe/index.md
+      - Itaúna: anexo-iv/obras-municipio/municipio-itauna/index.md
+      - Ituiutaba: anexo-iv/obras-municipio/municipio-ituiutaba/index.md
+      - Iturama: anexo-iv/obras-municipio/municipio-iturama/index.md
+      - Jaboticatubas: anexo-iv/obras-municipio/municipio-jaboticatubas/index.md
+      - Janaúba: anexo-iv/obras-municipio/municipio-janauba/index.md
+      - Januária: anexo-iv/obras-municipio/municipio-januaria/index.md
+      - Joaíma: anexo-iv/obras-municipio/municipio-joaima/index.md
+      - João Monlevade: anexo-iv/obras-municipio/municipio-joao-monlevade/index.md
+      - Juiz de Fora: anexo-iv/obras-municipio/municipio-juiz-de-fora/index.md
+      - Lavras: anexo-iv/obras-municipio/municipio-lavras/index.md
+      - Luz: anexo-iv/obras-municipio/municipio-luz/index.md
+      - Manga: anexo-iv/obras-municipio/municipio-manga/index.md
+      - Manhumirim: anexo-iv/obras-municipio/municipio-manhumirim/index.md
+      - Marliéria: anexo-iv/obras-municipio/municipio-marlieria/index.md
+      - Medina: anexo-iv/obras-municipio/municipio-medina/index.md
+      - Monte Belo: anexo-iv/obras-municipio/municipio-monte-belo/index.md
+      - Monte Carmelo: anexo-iv/obras-municipio/municipio-monte-carmelo/index.md
+      - Montes Claros: anexo-iv/obras-municipio/municipio-montes-claros/index.md
+      - Morada Nova de Minas: anexo-iv/obras-municipio/municipio-morada-nova-de-minas/index.md
+      - Muriaé: anexo-iv/obras-municipio/municipio-muriae/index.md
+      - Nova Lima: anexo-iv/obras-municipio/municipio-nova-lima/index.md
+      - Nova Porteirinha: anexo-iv/obras-municipio/municipio-nova-porteirinha/index.md
+      - Ouro Preto: anexo-iv/obras-municipio/municipio-ouro-preto/index.md
+      - Paracatu: anexo-iv/obras-municipio/municipio-paracatu/index.md
+      - Pará de Minas: anexo-iv/obras-municipio/municipio-para-de-minas/index.md
+      - Passa Tempo: anexo-iv/obras-municipio/municipio-passa-tempo/index.md
+      - Passos: anexo-iv/obras-municipio/municipio-passos/index.md
+      - Patos de Minas: anexo-iv/obras-municipio/municipio-patos-de-minas/index.md
+      - Patrocínio: anexo-iv/obras-municipio/municipio-patrocinio/index.md
+      - Paula Cândido: anexo-iv/obras-municipio/municipio-paula-candido/index.md
+      - Pedra Bonita: anexo-iv/obras-municipio/municipio-pedra-bonita/index.md
+      - Peçanha: anexo-iv/obras-municipio/municipio-pecanha/index.md
+      - Pimenta: anexo-iv/obras-municipio/municipio-pimenta/index.md
+      - Pintópolis: anexo-iv/obras-municipio/municipio-pintopolis/index.md
+      - Pirapora: anexo-iv/obras-municipio/municipio-pirapora/index.md
+      - Pitangui: anexo-iv/obras-municipio/municipio-pitangui/index.md
+      - Ponte Nova: anexo-iv/obras-municipio/municipio-ponte-nova/index.md
+      - Ponto Chique: anexo-iv/obras-municipio/municipio-ponto-chique/index.md
+      - Poços de Caldas: anexo-iv/obras-municipio/municipio-pocos-de-caldas/index.md
+      - Presidente Bernardes: anexo-iv/obras-municipio/municipio-presidente-bernardes/index.md
+      - Prudente de Morais: anexo-iv/obras-municipio/municipio-prudente-de-morais/index.md
+      - Raul Soares: anexo-iv/obras-municipio/municipio-raul-soares/index.md
+      - Rio Casca: anexo-iv/obras-municipio/municipio-rio-casca/index.md
+      - Rio Pardo de Minas: anexo-iv/obras-municipio/municipio-rio-pardo-de-minas/index.md
+      - Sabará: anexo-iv/obras-municipio/municipio-sabara/index.md
+      - Sabinópolis: anexo-iv/obras-municipio/municipio-sabinopolis/index.md
+      - Salinas: anexo-iv/obras-municipio/municipio-salinas/index.md
+      - Santa Cruz do Escalvado: anexo-iv/obras-municipio/municipio-santa-cruz-do-escalvado/index.md
+      - Santa Luzia: anexo-iv/obras-municipio/municipio-santa-luzia/index.md
+      - Santa Rita do Itueto: anexo-iv/obras-municipio/municipio-santa-rita-do-itueto/index.md
+      - Sericita: anexo-iv/obras-municipio/municipio-sericita/index.md
+      - Serro: anexo-iv/obras-municipio/municipio-serro/index.md
+      - Sete Lagoas: anexo-iv/obras-municipio/municipio-sete-lagoas/index.md
+      - São Francisco: anexo-iv/obras-municipio/municipio-sao-francisco/index.md
+      - São Gonçalo do Sapucaí: anexo-iv/obras-municipio/municipio-sao-goncalo-do-sapucai/index.md
+      - São Romão: anexo-iv/obras-municipio/municipio-sao-romao/index.md
+      - Teófilo Otoni: anexo-iv/obras-municipio/municipio-teofilo-otoni/index.md
+      - Timóteo: anexo-iv/obras-municipio/municipio-timoteo/index.md
+      - Três Pontas: anexo-iv/obras-municipio/municipio-tres-pontas/index.md
+      - Uberaba: anexo-iv/obras-municipio/municipio-uberaba/index.md
+      - Uberlândia: anexo-iv/obras-municipio/municipio-uberlandia/index.md
+      - Unaí: anexo-iv/obras-municipio/municipio-unai/index.md
+      - Viçosa: anexo-iv/obras-municipio/municipio-vicosa/index.md
 - Como ler o orçamento: como-ler.md
 - Glossário: glossario.md
 - Dados abertos: dados-abertos.md
