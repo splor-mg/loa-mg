@@ -60,10 +60,13 @@
 /* A barra de anexos fica um tom mais escuro que o cabeçalho. */
 .md-tabs { background-color: var(--loa-900); }
 
-.md-grid { max-width: 68rem; }
+.md-grid {
+  max-width: 68rem;
+}
 
+/* Alinha o menu superior com o início do conteúdo */
 .md-tabs .md-grid {
-  max-width: 100%;
+  max-width: 68rem;
 }
 
 /* A barra de abas não quebra linha sozinha e corta os itens que não
