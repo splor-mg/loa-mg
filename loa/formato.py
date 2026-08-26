@@ -110,7 +110,7 @@ def percentual(parte, total, casas: int = 2) -> str:
 
 FORMATADORES = {
     "texto": lambda v: "" if v is None else str(v),
-    "dinheiro": reais,
+    "dinheiro": lambda v: reais(v, com_simbolo=False),
     "quantidade": inteiro,
     "percentual": lambda v: f"{para_decimal(v):.2f}".replace(".", ",") + "%",
 }
