@@ -10,7 +10,7 @@ hide:
 
 **Base legal:** Art. 22, parágrafo único, inciso I, da Lei federal nº 4.320/1964
 
-??? question "Como ler este demonstrativo"
+!!! abstract "Como ler este demonstrativo"
 
     As categorias seguem a estrutura de carreiras do Estado:
     **administrativa**, **técnica**, **especializada**, **docente**,

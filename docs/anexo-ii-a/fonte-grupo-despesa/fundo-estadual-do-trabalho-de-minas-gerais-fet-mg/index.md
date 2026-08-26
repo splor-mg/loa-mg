@@ -10,7 +10,7 @@ hide:
 
 **Base legal:** Art. 8º, parágrafo único, da Lei Complementar federal nº 101/2000
 
-??? question "Como ler este demonstrativo"
+!!! abstract "Como ler este demonstrativo"
 
     Cada linha cruza uma **fonte de recurso** com os **grupos de
     despesa** que ela financia. É o quadro que mostra, na prática, o que

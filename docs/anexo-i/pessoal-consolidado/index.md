@@ -10,7 +10,7 @@ hide:
 
 **Base legal:** Art. 22, parágrafo único, inciso I, da Lei federal nº 4.320/1964
 
-??? question "Como ler este demonstrativo"
+!!! abstract "Como ler este demonstrativo"
 
     **Ativos** são os servidores em exercício. **Inativos** são
     aposentados e pensionistas pagos pelo órgão. **Terceirizados** são

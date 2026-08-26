@@ -10,7 +10,7 @@ hide:
 
 **Base legal:** Art. 165, §5º, inciso II, da Constituição Federal
 
-??? question "Como ler este demonstrativo"
+!!! abstract "Como ler este demonstrativo"
 
     Abre o total de cada empresa por tipo de aplicação — obras,
     máquinas e equipamentos, participações — e pela fonte que financia

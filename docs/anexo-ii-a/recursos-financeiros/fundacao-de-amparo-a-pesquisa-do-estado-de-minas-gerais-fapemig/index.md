@@ -10,7 +10,7 @@ hide:
 
 **Base legal:** Art. 2º, §1º, inciso I, da Lei federal nº 4.320/1964
 
-??? question "Como ler este demonstrativo"
+!!! abstract "Como ler este demonstrativo"
 
     O **código** de nove posições é a classificação oficial da receita.
     Ele é hierárquico: os primeiros dígitos dizem a categoria econômica,

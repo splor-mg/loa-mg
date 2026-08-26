@@ -10,7 +10,7 @@ hide:
 
 **Base legal:** Art. 2º, §2º, inciso II, da Lei federal nº 4.320/1964
 
-??? question "Como ler este demonstrativo"
+!!! abstract "Como ler este demonstrativo"
 
     Cada linha é uma **unidade orçamentária** -, a menor unidade que
     recebe dotação própria na lei. Uma secretaria pode ter várias, a

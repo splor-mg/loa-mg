@@ -10,7 +10,7 @@ hide:
 
 **Base legal:** Art. 165, §7º, da Constituição Federal e LDO estadual
 
-??? question "Como ler este demonstrativo"
+!!! abstract "Como ler este demonstrativo"
 
     Minas Gerais é dividida pelo IBGE em **13 regiões geográficas
     intermediárias**. Cada obra prevista no orçamento é atribuída à

@@ -10,7 +10,7 @@ hide:
 
 **Base legal:** Art. 2º, §1º, inciso II, da Lei federal nº 4.320/1964
 
-??? question "Como ler este demonstrativo"
+!!! abstract "Como ler este demonstrativo"
 
     Este é o formato exigido pela Lei federal nº 4.320/1964 para todo
     orçamento público do país -, o que permite comparar Minas com outros

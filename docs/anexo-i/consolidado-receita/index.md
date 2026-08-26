@@ -10,7 +10,7 @@ hide:
 
 **Base legal:** Art. 7º, inciso I, da Lei estadual nº 25.440/2025 (LDO)
 
-??? question "Como ler este demonstrativo"
+!!! abstract "Como ler este demonstrativo"
 
     A receita aparece dividida em **ordinária** (o Estado decide onde
     aplicar) e **vinculada** (já tem destino definido por lei — saúde,

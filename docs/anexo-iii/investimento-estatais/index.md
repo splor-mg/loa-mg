@@ -10,7 +10,7 @@ hide:
 
 **Base legal:** Art. 165, §5º, inciso II, da Constituição Federal
 
-??? question "Como ler este demonstrativo"
+!!! abstract "Como ler este demonstrativo"
 
     Estas empresas — CEMIG, COPASA, BDMG, GASMIG e outras — não dependem
     do Tesouro estadual para se manter: cobram tarifas ou prestam

@@ -103,7 +103,7 @@ class Gerador:
         if dem.get("base_legal"):
             partes += [f"**Base legal:** {dem['base_legal']}", ""]
         if dem.get("explicacao"):
-            partes += ['??? question "Como ler este demonstrativo"', ""]
+            partes += ['!!! abstract "Como ler este demonstrativo"', ""]
             partes += ["    " + l for l in dem["explicacao"].strip().split("\n")]
             partes += [""]
         return "\n".join(partes)
