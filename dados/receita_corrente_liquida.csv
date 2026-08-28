@@ -1,0 +1,41 @@
+especificacao;valor;ordem;nivel
+RECEITAS CORRENTES ( I );171685893968,00;0;0
+Impostos, Taxas e Contribuições de Melhoria;124197706667,00;1;1
+Principal;121065396796,00;2;2
+ICMS;91800255754,00;3;3
+IPVA;13177428728,00;4;3
+ITCD;2164143438,00;5;3
+IRRF;8380623258,00;6;3
+Taxas;5542945618,00;7;3
+Acessórias [Dívida Ativa, Multas e Juros];3132309871,00;8;2
+ICMS;1628676236,00;9;3
+IPVA;1209978371,00;10;3
+ITCD;207894333,00;11;3
+Taxas;85760931,00;12;3
+Receitas de Contribuições;6834221505,00;13;1
+Receita Patrimonial;8195024510,00;14;1
+Rendimentos de Aplicação Financeira;2987112860,00;15;2
+Outras Receitas Patrimoniais;5207911650,00;16;2
+Receita Agropecuária;13939043,00;17;1
+Receita Industrial;396902303,00;18;1
+Receita de Serviços;1583980866,00;19;1
+Receita de Transferências Correntes;28466146753,00;20;1
+Cota-Parte do FPE;10210359074,00;21;2
+Transferências da LC 61/1989;1268112884,00;23;2
+Transferências do FUNDEB;13490396315,00;24;2
+Outras Transferências Correntes;3497278480,00;25;2
+Outras Receitas Correntes;1997972321,00;26;1
+DEDUÇÕES ( II );53952634684,00;27;0
+Transferências Constitucionais e Legais;30653289783,00;28;1
+Contrib. para o Plano de Previdência do Servidor;3941300432,00;29;1
+Contrib. para o Custeio das Pensões Militares;1009741389,00;30;1
+Compensação Financ. entre Regimes Previdência;81000000,00;31;1
+Rendimentos de Aplicações de Recursos Previdenciários;55463500,00;32;1
+Dedução da Receita Corrente – Formação do FUNDEB;18211839580,00;33;1
+RECEITA CORRENTE LÍQUIDA ( III ) = ( I - II );117733259284,00;34;0
+(-) Transf. obrig. da União relativas às emendas individuais (art. 166-A, § 1\degree, da CF) (IV);20762514,00;35;0
+RCL AJUSTADA PARA CÁLCULO DOS LIMITES DE ENDIVIDAMENTO (V) = ( III - IV );117712496770,00;36;0
+(-) Transf. obrig. da União relativas às emendas de bancada (art. 166, § 16, da CF) (VI);17797057,00;37;0
+(-) Transf. da União relativas a remuneração dos agentes comunitários de saúde e de combate às endemias (CF, art. 198, § 11 (VII);0,00;38;0
+(-) Outras Deduções Constitucionais ou Legais (VIII);0,00;39;0
+RCL AJUSTADA PARA CÁLCULO DOS DE DESPESA DE PESSOAL (IX) = (V - VI - VII - VIII);117694699713,00;40;0

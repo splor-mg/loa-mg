@@ -569,3 +569,16 @@ article abbr {
   height: 12px;
   border-radius: 2px;
 }
+
+/* Percentuais de participação exibidos abaixo do valor principal. */
+.loa-valor-principal { display: block; }
+.loa-percentual {
+  display: block;
+  margin-top: .12rem;
+  color: var(--loa-texto-fraco);
+  font-size: .78em;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+[data-md-color-scheme="slate"] .loa-percentual { color: var(--loa-200); }

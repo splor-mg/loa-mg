@@ -28,6 +28,8 @@ hide:
     
     Comece com a árvore fechada e vá abrindo só o ramo que interessa.
 
+    **Conferência no PDF original:** `T4_DEMONSTRATIVO_DOS_RECURSOS_FINANCEIROS.pdf — página 1-161`.
+
 <div class="loa-cards">
 <div class="loa-card">
 <span class="loa-card__titulo">Receita das unidades</span>

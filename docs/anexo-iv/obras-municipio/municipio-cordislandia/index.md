@@ -20,6 +20,8 @@ hide:
     
     Use o filtro para digitar o nome do seu município.
 
+    **Conferência no PDF original:** `05_LOA__Volume_IV_sem_contra_capa.pdf — página 45-157`.
+
 <div class="loa-cards">
 <div class="loa-card">
 <span class="loa-card__titulo">Investimento em obras</span>

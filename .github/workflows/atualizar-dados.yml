@@ -78,8 +78,24 @@ jobs:
         id: origem
         working-directory: origem
         run: |
-          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-          echo "assunto=$(git log -1 --pretty=%s | cut -c1-160)" >> "$GITHUB_OUTPUT"
+          SHA="$(git rev-parse HEAD)"
+          ASSUNTO="$(git log -1 --pretty=%s | cut -c1-160)"
+
+          echo "sha=$SHA" >> "$GITHUB_OUTPUT"
+          echo "assunto=$ASSUNTO" >> "$GITHUB_OUTPUT"
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ github.event.inputs.referencia }}" ]; then
+            echo "referencia=${{ github.event.inputs.referencia }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "referencia=main" >> "$GITHUB_OUTPUT"
+          fi
+
+          echo "### Origem dos dados" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Repositório: \`${REPO_DADOS}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Referência: \`${{ github.event.inputs.referencia || 'main' }}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Commit: \`$SHA\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Último commit: $ASSUNTO" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Instalar o Poetry
         run: pipx install poetry

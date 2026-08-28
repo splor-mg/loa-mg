@@ -22,6 +22,8 @@ hide:
     **Somar todas as linhas dá um número sem sentido** -, some apenas as
     linhas de um mesmo nível.
 
+    **Conferência no PDF original:** `T7_QUADRO_GERAL_DA_RECEITA.pdf — página 1-47`.
+
 <div class="loa-cards">
 <div class="loa-card">
 <span class="loa-card__titulo">Receita prevista</span>

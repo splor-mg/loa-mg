@@ -91,6 +91,34 @@ nav:
     - Despesa por Unidade Orçamentária segundo os Grupos de Despesa: anexo-i/despesa-por-unidade/index.md
     - Quadro Geral da Receita: anexo-i/quadro-geral-receita/index.md
     - Demonstrativo Consolidado da Categoria de Pessoal: anexo-i/pessoal-consolidado/index.md
+    - Demonstrativo da Receita Corrente Fiscal: anexo-i/receita-corrente-fiscal/index.md
+    - Demonstrativo da Receita e da Despesa segundo as Categorias Econômicas: anexo-i/receita-despesa-categorias/index.md
+    - Demonstrativo da Evolução da Receita por Categoria Econômica: anexo-i/evolucao-receita/index.md
+    - Receita Corrente Líquida — RCL: anexo-i/receita-corrente-liquida/index.md
+    - Demonstrativo da Receita Orçamentária Corrente Ordinária: anexo-i/receita-orcamentaria-corrente-ordinaria/index.md
+    - Demonstrativo da Evolução da Despesa por Categoria Econômica: anexo-i/evolucao-despesa/index.md
+    - Demonstrativo Consolidado da Despesa: anexo-i/consolidado-despesa-categoria/index.md
+    - Demonstrativo da Despesa por Função, Subfunção e Programa conforme o Vínculo com os Recursos: anexo-i/despesa-vinculo-recursos/index.md
+    - ? Programa de Trabalho do Governo — Demonstrativo da Despesa por Funções, Subfunções
+        e Programas conforme os Grupos de Despesa
+      : anexo-i/programa-trabalho-governo/index.md
+    - Demonstrativo da Aplicação de Recursos na Manutenção e no Desenvolvimento do Ensino: anexo-i/aplicacao-ensino/index.md
+    - Demonstrativo da Aplicação de Recursos em Programas de Saúde e Investimentos: anexo-i/aplicacao-saude-programas/index.md
+    - Demonstrativo da Aplicação de Recursos nas Ações e Serviços Públicos de Saúde — ASPS: anexo-i/aplicacao-asps/index.md
+    - Demonstrativo da Aplicação de Recursos no Amparo e Fomento à Pesquisa: anexo-i/aplicacao-pesquisa/index.md
+    - Demonstrativo da Participação Percentual de Pessoal na Receita Corrente Líquida: anexo-i/pessoal-rcl-lrf/index.md
+    - Demonstrativo do Serviço da Dívida Pública: anexo-i/servico-divida/index.md
+    - Demonstrativo da Aplicação de Recursos do Fundeb: anexo-i/aplicacao-fundeb/index.md
+    - Demonstrativo da Aplicação de Recursos do Fundeb em Pessoal do Magistério: anexo-i/fundeb-pessoal-magisterio/index.md
+    - Demonstrativo de Recursos Aplicados em Ações para Criança e Adolescente: anexo-i/acoes-crianca-adolescente/index.md
+    - Demonstrativo da Unidade de Gestão Previdenciária Integrada — UGEPREVI: anexo-i/despesas-ugeprevi/index.md
+    - Programas financiados com recursos da União — Receita prevista e realizada: anexo-i/programas-uniao-1/index.md
+    - Programas financiados com recursos da União — Despesa prevista e realizada: anexo-i/programas-uniao-2/index.md
+    - Programas financiados com recursos da União — Receita prevista na LOA: anexo-i/programas-uniao-3/index.md
+    - Programas financiados com recursos da União — Despesa prevista na LOA: anexo-i/programas-uniao-4/index.md
+    - Demonstrativo de Recursos Aplicados em Segurança Alimentar e Nutricional: anexo-i/seguranca-alimentar/index.md
+    - Demonstrativo das Receitas e Despesas Previdenciárias — RPPS: anexo-i/previdencia-rpps/index.md
+    - Demonstrativo da Política de Atendimento à Mulher Vítima de Violência no Estado: anexo-i/politica-mulher-violencia/index.md
   - Anexo II-A — Orçamento Fiscal (receitas):
     - Sobre o anexo: anexo-ii-a/index.md
     - Demonstrativo dos Recursos Financeiros:
@@ -279,6 +307,79 @@ nav:
       - Tribunal de Justiça Militar do Estado de Minas Gerais - TJMMG: anexo-ii-a/fonte-grupo-despesa/tribunal-de-justica-militar-do-estado-de-minas-gerais-tjmmg/index.md
       - Universidade do Estado de Minas Gerais - UEMG: anexo-ii-a/fonte-grupo-despesa/universidade-do-estado-de-minas-gerais-uemg/index.md
       - Universidade Estadual de Montes Claros - UNIMONTES: anexo-ii-a/fonte-grupo-despesa/universidade-estadual-de-montes-claros-unimontes/index.md
+    - Demonstrativo dos Recursos Financeiros — Demais Recursos:
+      - Visão geral: anexo-ii-a/demais-recursos-financeiros/index.md
+      - 2.01.1 - INSTITUTO DE PREVIDÊNCIA DOS SERVIDORES DO ESTADO DE MINAS GERAIS - IPSEMG: anexo-ii-a/demais-recursos-financeiros/2-01-1-instituto-de-previdencia-dos-servidores-do-estado-de-minas-gera/index.md
+      - 2.04.1 - LOTERIA DO ESTADO DE MINAS GERAIS - LEMG: anexo-ii-a/demais-recursos-financeiros/2-04-1-loteria-do-estado-de-minas-gerais-lemg/index.md
+      - 2.06.1 - FUNDAÇÃO JOÃO PINHEIRO - FJP: anexo-ii-a/demais-recursos-financeiros/2-06-1-fundacao-joao-pinheiro-fjp/index.md
+      - 2.07.1 - FUNDAÇÃO DE AMPARO À PESQUISA DO ESTADO DE MINAS GERAIS - FAPEMIG: anexo-ii-a/demais-recursos-financeiros/2-07-1-fundacao-de-amparo-a-pesquisa-do-estado-de-minas-gerais-fapemig/index.md
+      - 2.09.1 - FUNDAÇÃO ESTADUAL DO MEIO AMBIENTE - FEAM: anexo-ii-a/demais-recursos-financeiros/2-09-1-fundacao-estadual-do-meio-ambiente-feam/index.md
+      - 2.10.1 - INSTITUTO ESTADUAL DE FLORESTAS - IEF: anexo-ii-a/demais-recursos-financeiros/2-10-1-instituto-estadual-de-florestas-ief/index.md
+      - 2.12.1 - INSTITUTO DE PREVIDÊNCIA DOS SERVIDORES MILITARES DO ESTADO DE MINAS GERAIS - IPSM: anexo-ii-a/demais-recursos-financeiros/2-12-1-instituto-de-previdencia-dos-servidores-militares-do-estado-de-/index.md
+      - 2.15.1 - FUNDAÇÃO HELENA ANTIPOFF - FHA: anexo-ii-a/demais-recursos-financeiros/2-15-1-fundacao-helena-antipoff-fha/index.md
+      - 2.16.1 - FUNDAÇÃO EDUCACIONAL CAIO MARTINS - FUCAM: anexo-ii-a/demais-recursos-financeiros/2-16-1-fundacao-educacional-caio-martins-fucam/index.md
+      - 2.17.1 - FUNDAÇÃO DE ARTE DE OURO PRETO - FAOP: anexo-ii-a/demais-recursos-financeiros/2-17-1-fundacao-de-arte-de-ouro-preto-faop/index.md
+      - 2.18.1 - FUNDAÇÃO CLÓVIS SALGADO - FCS: anexo-ii-a/demais-recursos-financeiros/2-18-1-fundacao-clovis-salgado-fcs/index.md
+      - 2.20.1 - INSTITUTO ESTADUAL DO PATRIMÔNIO HISTÓRICO E ARTÍSTICO DE MINAS GERAIS - IEPHA: anexo-ii-a/demais-recursos-financeiros/2-20-1-instituto-estadual-do-patrimonio-historico-e-artistico-de-minas/index.md
+      - 2.21.1 - FUNDAÇÃO TV MINAS CULTURAL E EDUCATIVA - TV MINAS: anexo-ii-a/demais-recursos-financeiros/2-21-1-fundacao-tv-minas-cultural-e-educativa-tv-minas/index.md
+      - 2.24.1 - INSTITUTO MINEIRO DE GESTÃO DAS ÁGUAS - IGAM: anexo-ii-a/demais-recursos-financeiros/2-24-1-instituto-mineiro-de-gestao-das-aguas-igam/index.md
+      - 2.25.1 - JUNTA COMERCIAL DO ESTADO DE MINAS GERAIS - JUCEMG: anexo-ii-a/demais-recursos-financeiros/2-25-1-junta-comercial-do-estado-de-minas-gerais-jucemg/index.md
+      - 2.26.1 - FUNDAÇÃO EZEQUIEL DIAS - FUNED: anexo-ii-a/demais-recursos-financeiros/2-26-1-fundacao-ezequiel-dias-funed/index.md
+      - 2.27.1 - FUNDAÇÃO HOSPITALAR DO ESTADO DE MINAS GERAIS - FHEMIG: anexo-ii-a/demais-recursos-financeiros/2-27-1-fundacao-hospitalar-do-estado-de-minas-gerais-fhemig/index.md
+      - 2.28.1 - FUNDAÇÃO DE EDUCAÇÃO PARA O TRABALHO DE MINAS GERAIS - UTRAMIG: anexo-ii-a/demais-recursos-financeiros/2-28-1-fundacao-de-educacao-para-o-trabalho-de-minas-gerais-utramig/index.md
+      - 2.30.1 - DEPARTAMENTO DE ESTRADAS DE RODAGEM DO ESTADO DE MINAS GERAIS - DER-MG: anexo-ii-a/demais-recursos-financeiros/2-30-1-departamento-de-estradas-de-rodagem-do-estado-de-minas-gerais-d/index.md
+      - 2.31.1 - UNIVERSIDADE ESTADUAL DE MONTES CLAROS - UNIMONTES: anexo-ii-a/demais-recursos-financeiros/2-31-1-universidade-estadual-de-montes-claros-unimontes/index.md
+      - 2.32.1 - FUNDAÇÃO CENTRO DE HEMATOLOGIA E HEMOTERAPIA DE MINAS GERAIS - HEMOMINAS: anexo-ii-a/demais-recursos-financeiros/2-32-1-fundacao-centro-de-hematologia-e-hemoterapia-de-minas-gerais-he/index.md
+      - 2.33.1 - INSTITUTO DE METROLOGIA E QUALIDADE DO ESTADO DE MINAS GERAIS - IPEMMG: anexo-ii-a/demais-recursos-financeiros/2-33-1-instituto-de-metrologia-e-qualidade-do-estado-de-minas-gerais-i/index.md
+      - 2.35.1 - UNIVERSIDADE DO ESTADO DE MINAS GERAIS - UEMG: anexo-ii-a/demais-recursos-financeiros/2-35-1-universidade-do-estado-de-minas-gerais-uemg/index.md
+      - 2.36.1 - INSTITUTO DE PREVIDÊNCIA DO LEGISLATIVO DO ESTADO DE MINAS GERAIS - IPLEMG: anexo-ii-a/demais-recursos-financeiros/2-36-1-instituto-de-previdencia-do-legislativo-do-estado-de-minas-gera/index.md
+      - 2.37.1 - INSTITUTO MINEIRO DE AGROPECUÁRIA - IMA: anexo-ii-a/demais-recursos-financeiros/2-37-1-instituto-mineiro-de-agropecuaria-ima/index.md
+      - 2.42.1 - INSTITUTO DE DESENVOLVIMENTO DO NORTE E NORDESTE DE MINAS GERAIS - IDENE: anexo-ii-a/demais-recursos-financeiros/2-42-1-instituto-de-desenvolvimento-do-norte-e-nordeste-de-minas-gerai/index.md
+      - 2.43.1 - AGÊNCIA DE DESENVOLVIMENTO DA REGIÃO METROPOLITANA DE BELO HORIZONTE - AGÊNCIA RMBH: anexo-ii-a/demais-recursos-financeiros/2-43-1-agencia-de-desenvolvimento-da-regiao-metropolitana-de-belo-hori/index.md
+      - ? 2.44.1 - AGÊNCIA REGULADORA DE SERVIÇOS DE ABASTECIMENTO DE ÁGUA E DE ESGOTAMENTO
+          SANITÁRIO DO ESTADO DE MINAS GERAIS - ARSAE -MG
+        : anexo-ii-a/demais-recursos-financeiros/2-44-1-agencia-reguladora-de-servicos-de-abastecimento-de-agua-e-de-es/index.md
+      - 2.46.1 - AGÊNCIA DE DESENVOLVIMENTO DA REGIÃO METROPOLITANA DO VALE DO AÇO - ARMVA: anexo-ii-a/demais-recursos-financeiros/2-46-1-agencia-de-desenvolvimento-da-regiao-metropolitana-do-vale-do-a/index.md
+      - 2.47.1 - AGÊNCIA REGULADORA DE TRANSPORTES DO ESTADO DE MINAS GERAIS - ARTEMIG: anexo-ii-a/demais-recursos-financeiros/2-47-1-agencia-reguladora-de-transportes-do-estado-de-minas-gerais-art/index.md
+      - 3.04.1 - EMPRESA DE ASSISTÊNCIA TÉCNICA E EXTENSÃO RURAL DO ESTADO DE MINAS GERAIS - EMATER: anexo-ii-a/demais-recursos-financeiros/3-04-1-empresa-de-assistencia-tecnica-e-extensao-rural-do-estado-de-mi/index.md
+      - 3.05.1 - EMPRESA DE PESQUISA AGROPECUÁRIA DE MINAS GERAIS - EPAMIG: anexo-ii-a/demais-recursos-financeiros/3-05-1-empresa-de-pesquisa-agropecuaria-de-minas-gerais-epamig/index.md
+      - 3.15.1 - EMPRESA MINEIRA DE COMUNICAÇÃO - EMC: anexo-ii-a/demais-recursos-financeiros/3-15-1-empresa-mineira-de-comunicacao-emc/index.md
+      - 4.03.1 - FUNDO ESPECIAL DO PODER JUDICIÁRIO DO ESTADO DE MINAS GERAIS - FEPJ: anexo-ii-a/demais-recursos-financeiros/4-03-1-fundo-especial-do-poder-judiciario-do-estado-de-minas-gerais-fe/index.md
+      - 4.09.1 - FUNDO PARA A INFÂNCIA E A ADOLESCÊNCIA - FIA: anexo-ii-a/demais-recursos-financeiros/4-09-1-fundo-para-a-infancia-e-a-adolescencia-fia/index.md
+      - 4.10.1 - FUNDO ESTADUAL DE HABITAÇÃO - FEH: anexo-ii-a/demais-recursos-financeiros/4-10-1-fundo-estadual-de-habitacao-feh/index.md
+      - 4.11.1 - FUNDO DE FOMENTO E DESENVOLVIMENTO SOCIOECONÔMICO DO ESTADO DE MINAS GERAIS - FUNDESE: anexo-ii-a/demais-recursos-financeiros/4-11-1-fundo-de-fomento-e-desenvolvimento-socioeconomico-do-estado-de-/index.md
+      - 4.12.1 - FUNDO ESPECIAL DA ASSEMBLEIA LEGISLATIVA DO ESTADO DE MINAS GERAIS - FUNDALEMG: anexo-ii-a/demais-recursos-financeiros/4-12-1-fundo-especial-da-assembleia-legislativa-do-estado-de-minas-ger/index.md
+      - 4.14.1 - FUNDO PENITENCIÁRIO ESTADUAL - FPE: anexo-ii-a/demais-recursos-financeiros/4-14-1-fundo-penitenciario-estadual-fpe/index.md
+      - 4.15.1 - FUNDO DE ASSISTÊNCIA AO TURISMO - FASTUR: anexo-ii-a/demais-recursos-financeiros/4-15-1-fundo-de-assistencia-ao-turismo-fastur/index.md
+      - 4.25.1 - FUNDO ESTADUAL DE ASSISTÊNCIA SOCIAL - FEAS: anexo-ii-a/demais-recursos-financeiros/4-25-1-fundo-estadual-de-assistencia-social-feas/index.md
+      - 4.29.1 - FUNDO ESTADUAL DE SAÚDE - FES: anexo-ii-a/demais-recursos-financeiros/4-29-1-fundo-estadual-de-saude-fes/index.md
+      - 4.32.1 - FUNDO ESTADUAL DE PREVENÇÃO, FISCALIZAÇÃO E REPRESSÃO DE ENTORPECENTES - FUNPREN: anexo-ii-a/demais-recursos-financeiros/4-32-1-fundo-estadual-de-prevencao-fiscalizacao-e-repressao-de-entorpe/index.md
+      - 4.33.1 - FUNDO DE DESENVOLVIMENTO METROPOLITANO - FDM: anexo-ii-a/demais-recursos-financeiros/4-33-1-fundo-de-desenvolvimento-metropolitano-fdm/index.md
+      - ? 4.34.1 - FUNDO DE RECUPERAÇÃO, PROTEÇÃO E DESENVOLVIMENTO SUSTENTÁVEL DAS
+          BACIAS HIDROGRÁFICAS DO ESTADO DE MINAS GERAIS - FHIDRO
+        : anexo-ii-a/demais-recursos-financeiros/4-34-1-fundo-de-recuperacao-protecao-e-desenvolvimento-sustentavel-das/index.md
+      - 4.38.1 - FUNDO ESTADUAL DE DESENVOLVIMENTO DE TRANSPORTES - FUNTRANS: anexo-ii-a/demais-recursos-financeiros/4-38-1-fundo-estadual-de-desenvolvimento-de-transportes-funtrans/index.md
+      - 4.42.1 - FUNDO ESTADUAL DE DEFESA DE DIREITOS DIFUSOS - FUNDIF: anexo-ii-a/demais-recursos-financeiros/4-42-1-fundo-estadual-de-defesa-de-direitos-difusos-fundif/index.md
+      - 4.44.1 - FUNDO ESPECIAL DO MINISTÉRIO PÚBLICO DO ESTADO DE MINAS GERAIS - FUNEMP: anexo-ii-a/demais-recursos-financeiros/4-44-1-fundo-especial-do-ministerio-publico-do-estado-de-minas-gerais-/index.md
+      - 4.45.1 - FUNDO ESTADUAL DE PROTEÇÃO E DEFESA DO CONSUMIDOR - FEPDC: anexo-ii-a/demais-recursos-financeiros/4-45-1-fundo-estadual-de-protecao-e-defesa-do-consumidor-fepdc/index.md
+      - 4.49.1 - FUNDO ESTADUAL DE CULTURA - FEC: anexo-ii-a/demais-recursos-financeiros/4-49-1-fundo-estadual-de-cultura-fec/index.md
+      - 4.54.1 - FUNDO DE APOIO HABITACIONAL AOS MILITARES DO ESTADO DE MINAS GERAIS - FAHMEMG: anexo-ii-a/demais-recursos-financeiros/4-54-1-fundo-de-apoio-habitacional-aos-militares-do-estado-de-minas-ge/index.md
+      - 4.55.1 - FUNDO DE ASSISTÊNCIA AO PECÚLIO DOS SERVIDORES DO ESTADO DE MINAS GERAIS - FUNAPEC: anexo-ii-a/demais-recursos-financeiros/4-55-1-fundo-de-assistencia-ao-peculio-dos-servidores-do-estado-de-min/index.md
+      - 4.60.1 - FUNDO ESTADUAL DOS DIREITOS DO IDOSO - FEI: anexo-ii-a/demais-recursos-financeiros/4-60-1-fundo-estadual-dos-direitos-do-idoso-fei/index.md
+      - 4.61.1 - FUNDO DO TRIBUNAL DE CONTAS DO ESTADO DE MINAS GERAIS - FUNCONTAS: anexo-ii-a/demais-recursos-financeiros/4-61-1-fundo-do-tribunal-de-contas-do-estado-de-minas-gerais-funcontas/index.md
+      - 4.62.1 - FUNDO DE INVESTIMENTO DO ESTADO DE MINAS GERAIS - MG INVESTE: anexo-ii-a/demais-recursos-financeiros/4-62-1-fundo-de-investimento-do-estado-de-minas-gerais-mg-investe/index.md
+      - 4.63.1 - FUNDO DE PAGAMENTO DE PARCERIAS PÚBLICO - PRIVADAS DE MINAS GERAIS - FPP - MG: anexo-ii-a/demais-recursos-financeiros/4-63-1-fundo-de-pagamento-de-parcerias-publico-privadas-de-minas-gerai/index.md
+      - 4.64.1 - FUNDO DE GARANTIAS DE PARCERIAS PÚBLICO - PRIVADAS DE MINAS GERAIS - FGP - MG: anexo-ii-a/demais-recursos-financeiros/4-64-1-fundo-de-garantias-de-parcerias-publico-privadas-de-minas-gerai/index.md
+      - 4.65.1 - FUNDO ESPECIAL DE CRÉDITOS INADIMPLIDOS E DÍVIDA ATIVA - FECIDAT: anexo-ii-a/demais-recursos-financeiros/4-65-1-fundo-especial-de-creditos-inadimplidos-e-divida-ativa-fecidat/index.md
+      - 4.66.1 - FUNDO DE ATIVOS IMOBILIÁRIOS DE MINAS GERAIS - FAIMG: anexo-ii-a/demais-recursos-financeiros/4-66-1-fundo-de-ativos-imobiliarios-de-minas-gerais-faimg/index.md
+      - 4.67.1 - FUNDO DE INVESTIMENTOS IMOBILIÁRIOS DE MINAS GERAIS - FIIMG: anexo-ii-a/demais-recursos-financeiros/4-67-1-fundo-de-investimentos-imobiliarios-de-minas-gerais-fiimg/index.md
+      - 4.69.1 - FUNDO ESTADUAL DE SEGURANÇA PÚBLICA DE MINAS GERAIS - FESP-MG: anexo-ii-a/demais-recursos-financeiros/4-69-1-fundo-estadual-de-seguranca-publica-de-minas-gerais-fesp-mg/index.md
+      - 4.70.1 - FUNDO ESTADUAL DO TRABALHO DE MINAS GERAIS - FET-MG: anexo-ii-a/demais-recursos-financeiros/4-70-1-fundo-estadual-do-trabalho-de-minas-gerais-fet-mg/index.md
+      - 4.71.1 - FUNDO FINANCEIRO DE PREVIDÊNCIA DO ESTADO DE MINAS GERAIS - FFP - MG: anexo-ii-a/demais-recursos-financeiros/4-71-1-fundo-financeiro-de-previdencia-do-estado-de-minas-gerais-ffp-m/index.md
+      - 4.72.1 - FUNDO ESTADUAL DE PREVIDÊNCIA DO ESTADO DE MINAS GERAIS - FEPREMG: anexo-ii-a/demais-recursos-financeiros/4-72-1-fundo-estadual-de-previdencia-do-estado-de-minas-gerais-fepremg/index.md
+      - 4.73.1 - FUNDO DE DESENVOLVIMENTO DO MINISTÉRIO PÚBLICO - FDMP: anexo-ii-a/demais-recursos-financeiros/4-73-1-fundo-de-desenvolvimento-do-ministerio-publico-fdmp/index.md
+      - 4.74.1 - FUNDO ESPECIAL DE GARANTIA DE ACESSO À JUSTIÇA - FEGAJ: anexo-ii-a/demais-recursos-financeiros/4-74-1-fundo-especial-de-garantia-de-acesso-a-justica-fegaj/index.md
+      - 4.75.1 - FUNDO ESPECIAL DA ADVOCACIA-GERAL DO ESTADO - FEAGE: anexo-ii-a/demais-recursos-financeiros/4-75-1-fundo-especial-da-advocacia-geral-do-estado-feage/index.md
   - Anexo II-B — Orçamento Fiscal (pessoal):
     - Sobre o anexo: anexo-ii-b/index.md
     - Detalhamento da Categoria de Pessoal:
@@ -345,10 +446,17 @@ nav:
       - Tribunal de Justiça Militar do Estado de Minas Gerais - TJMMG: anexo-ii-b/pessoal/tribunal-de-justica-militar-do-estado-de-minas-gerais-tjmmg/index.md
       - Universidade do Estado de Minas Gerais - UEMG: anexo-ii-b/pessoal/universidade-do-estado-de-minas-gerais-uemg/index.md
       - Universidade Estadual de Montes Claros - UNIMONTES: anexo-ii-b/pessoal/universidade-estadual-de-montes-claros-unimontes/index.md
+    - Detalhamento de Pessoal Inativo Civil — FUNFIP:
+      - Visão geral: anexo-ii-b/funfip-pessoal-inativo/index.md
+      - ? ''
+        : anexo-ii-b/funfip-pessoal-inativo/sem-nome/index.md
+      - Outros Poderes: anexo-ii-b/funfip-pessoal-inativo/outros-poderes/index.md
+      - Poder Executivo: anexo-ii-b/funfip-pessoal-inativo/poder-executivo/index.md
+      - Total: anexo-ii-b/funfip-pessoal-inativo/total/index.md
   - Anexo III — Investimento das estatais:
     - Sobre o anexo: anexo-iii/index.md
     - Investimento por Empresa segundo as Fontes de Financiamento: anexo-iii/investimento-estatais/index.md
-    - Investimento segundo o Detalhamento:
+    - Origem de Recursos para Investimento:
       - Visão geral: anexo-iii/investimento-detalhe/index.md
       - Agência de Promoção de Investimentos de Minas Gerais - INVEST MINAS: anexo-iii/investimento-detalhe/agencia-de-promocao-de-investimentos-de-minas-gerais-invest-minas/index.md
       - Banco de Desenvolvimento de Minas Gerais S.A - BDMG: anexo-iii/investimento-detalhe/banco-de-desenvolvimento-de-minas-gerais-s-a-bdmg/index.md
@@ -365,6 +473,43 @@ nav:
       - Minas Gerais Administração e Serviços S.A - MGS: anexo-iii/investimento-detalhe/minas-gerais-administracao-e-servicos-s-a-mgs/index.md
       - Minas Gerais Participações S.A - MGI: anexo-iii/investimento-detalhe/minas-gerais-participacoes-s-a-mgi/index.md
       - Trem Metropolitano de Belo Horizonte S.A - TREM METROPOLITANO: anexo-iii/investimento-detalhe/trem-metropolitano-de-belo-horizonte-s-a-trem-metropolitano/index.md
+    - Investimentos segundo as Funções: anexo-iii/investimentos-funcoes/index.md
+    - Investimentos por Empresa segundo o Detalhamento dos Investimentos: anexo-iii/investimentos-empresa-detalhamento/index.md
+    - Investimentos segundo Funções, Subfunções e Programas por Projetos e Atividades: anexo-iii/investimentos-funcoes-programas/index.md
+    - Recursos Financeiros — Fonte de Recursos e Aplicação do Investimento:
+      - Visão geral: anexo-iii/investimentos-recursos-aplicacao/index.md
+      - 5.01.1 - COMPANHIA DE DESENVOLVIMENTO ECONÔMICO DE MINAS GERAIS - CODEMIG: anexo-iii/investimentos-recursos-aplicacao/5-01-1-companhia-de-desenvolvimento-economico-de-minas-gerais-codemig/index.md
+      - 5.03.1 - COMPANHIA DE DESENVOLVIMENTO DE MINAS GERAIS - CODEMGE: anexo-iii/investimentos-recursos-aplicacao/5-03-1-companhia-de-desenvolvimento-de-minas-gerais-codemge/index.md
+      - 5.07.1 - COMPANHIA DE HABITAÇÃO DO ESTADO DE MINAS GERAIS - COHAB: anexo-iii/investimentos-recursos-aplicacao/5-07-1-companhia-de-habitacao-do-estado-de-minas-gerais-cohab/index.md
+      - 5.08.1 - COMPANHIA DE SANEAMENTO DE MINAS GERAIS - COPASA: anexo-iii/investimentos-recursos-aplicacao/5-08-1-companhia-de-saneamento-de-minas-gerais-copasa/index.md
+      - 5.12.1 - COMPANHIA ENERGÉTICA DE MINAS GERAIS - CEMIG HOLDING: anexo-iii/investimentos-recursos-aplicacao/5-12-1-companhia-energetica-de-minas-gerais-cemig-holding/index.md
+      - 5.13.1 - AGÊNCIA DE PROMOÇÃO DE INVESTIMENTOS DE MINAS GERAIS - INVEST MINAS: anexo-iii/investimentos-recursos-aplicacao/5-13-1-agencia-de-promocao-de-investimentos-de-minas-gerais-invest-min/index.md
+      - 5.14.1 - COMPANHIA DE TECNOLOGIA DA INFORMAÇÃO DO ESTADO DE MINAS GERAIS - PRODEMGE: anexo-iii/investimentos-recursos-aplicacao/5-14-1-companhia-de-tecnologia-da-informacao-do-estado-de-minas-gerais/index.md
+      - 5.19.1 - MINAS GERAIS PARTICIPAÇÕES S.A - MGI: anexo-iii/investimentos-recursos-aplicacao/5-19-1-minas-gerais-participacoes-s-a-mgi/index.md
+      - 5.20.1 - BANCO DE DESENVOLVIMENTO DE MINAS GERAIS S.A - BDMG: anexo-iii/investimentos-recursos-aplicacao/5-20-1-banco-de-desenvolvimento-de-minas-gerais-s-a-bdmg/index.md
+      - 5.25.1 - COMPANHIA DE GÁS DE MINAS GERAIS - GASMIG: anexo-iii/investimentos-recursos-aplicacao/5-25-1-companhia-de-gas-de-minas-gerais-gasmig/index.md
+      - 5.26.1 - TREM METROPOLITANO DE BELO HORIZONTE S.A - TREM METROPOLITANO: anexo-iii/investimentos-recursos-aplicacao/5-26-1-trem-metropolitano-de-belo-horizonte-s-a-trem-metropolitano/index.md
+      - 5.38.1 - MINAS GERAIS ADMINISTRAÇÃO E SERVIÇOS S.A - MGS: anexo-iii/investimentos-recursos-aplicacao/5-38-1-minas-gerais-administracao-e-servicos-s-a-mgs/index.md
+      - 5.39.1 - CEMIG GERAÇÃO E TRANSMISSÃO S.A - CEMIG GERAÇÃO E TRANSMISSÃO: anexo-iii/investimentos-recursos-aplicacao/5-39-1-cemig-geracao-e-transmissao-s-a-cemig-geracao-e-transmissao/index.md
+      - 5.40.1 - CEMIG DISTRIBUIÇÃO S.A - CEMIG DISTRIBUIDORA: anexo-iii/investimentos-recursos-aplicacao/5-40-1-cemig-distribuicao-s-a-cemig-distribuidora/index.md
+      - 5.51.1 - COPASA - SERVIÇOS DE SANEAMENTO INTEGRADO DO NORTE E NORDESTE DE MINAS GERAIS S/A - COPANOR: anexo-iii/investimentos-recursos-aplicacao/5-51-1-copasa-servicos-de-saneamento-integrado-do-norte-e-nordeste-de-/index.md
+    - Detalhamento dos Investimentos por Empresa:
+      - Visão geral: anexo-iii/investimentos-detalhamento-uo/index.md
+      - Agência de Promoção de Investimentos de Minas Gerais - INVEST MINAS: anexo-iii/investimentos-detalhamento-uo/agencia-de-promocao-de-investimentos-de-minas-gerais-invest-minas/index.md
+      - Banco de Desenvolvimento de Minas Gerais S.A - BDMG: anexo-iii/investimentos-detalhamento-uo/banco-de-desenvolvimento-de-minas-gerais-s-a-bdmg/index.md
+      - Cemig Distribuição S.A - CEMIG DISTRIBUIDORA: anexo-iii/investimentos-detalhamento-uo/cemig-distribuicao-s-a-cemig-distribuidora/index.md
+      - Cemig Geração e Transmissão S.A - CEMIG GERAÇÃO E TRANSMISSÃO: anexo-iii/investimentos-detalhamento-uo/cemig-geracao-e-transmissao-s-a-cemig-geracao-e-transmissao/index.md
+      - Companhia de Desenvolvimento de Minas Gerais - CODEMGE: anexo-iii/investimentos-detalhamento-uo/companhia-de-desenvolvimento-de-minas-gerais-codemge/index.md
+      - Companhia de Desenvolvimento Econômico de Minas Gerais - CODEMIG: anexo-iii/investimentos-detalhamento-uo/companhia-de-desenvolvimento-economico-de-minas-gerais-codemig/index.md
+      - Companhia de Gás de Minas Gerais - GASMIG: anexo-iii/investimentos-detalhamento-uo/companhia-de-gas-de-minas-gerais-gasmig/index.md
+      - Companhia de Habitação do Estado de Minas Gerais - COHAB: anexo-iii/investimentos-detalhamento-uo/companhia-de-habitacao-do-estado-de-minas-gerais-cohab/index.md
+      - Companhia de Saneamento de Minas Gerais - COPASA: anexo-iii/investimentos-detalhamento-uo/companhia-de-saneamento-de-minas-gerais-copasa/index.md
+      - Companhia de Tecnologia da Informação do Estado de Minas Gerais - PRODEMGE: anexo-iii/investimentos-detalhamento-uo/companhia-de-tecnologia-da-informacao-do-estado-de-minas-gerais-prodem/index.md
+      - Companhia Energética de Minas Gerais - CEMIG HOLDING: anexo-iii/investimentos-detalhamento-uo/companhia-energetica-de-minas-gerais-cemig-holding/index.md
+      - Copasa - SERVIÇOS DE SANEAMENTO INTEGRADO DO NORTE E NORDESTE DE MINAS GERAIS S/A - COPANOR: anexo-iii/investimentos-detalhamento-uo/copasa-servicos-de-saneamento-integrado-do-norte-e-nordeste-de-minas-g/index.md
+      - Minas Gerais Administração e Serviços S.A - MGS: anexo-iii/investimentos-detalhamento-uo/minas-gerais-administracao-e-servicos-s-a-mgs/index.md
+      - Minas Gerais Participações S.A - MGI: anexo-iii/investimentos-detalhamento-uo/minas-gerais-participacoes-s-a-mgi/index.md
+      - Trem Metropolitano de Belo Horizonte S.A - TREM METROPOLITANO: anexo-iii/investimentos-detalhamento-uo/trem-metropolitano-de-belo-horizonte-s-a-trem-metropolitano/index.md
   - Anexo IV — Investimentos por região:
     - Sobre o anexo: anexo-iv/index.md
     - Obras por Unidade Orçamentária segundo as Regiões Geográficas Intermediárias:

@@ -1,0 +1,33 @@
+# Versões disponíveis da LOA.
+#
+# Quando as tags forem criadas no volumes-loa, basta cadastrar aqui.
+#
+# Exemplo:
+#
+# - id: ploa-1.0
+#   nome: PLOA 1.0
+#   referencia: PLOA-1.0
+#   descricao: Primeira versão da PLOA
+#
+# A referência deve ser exatamente o nome da tag existente
+# no repositório splor-mg/volumes-loa.
+
+versoes: []
+
+# Exemplo de como ficará quando as tags forem definidas:
+#
+# versoes:
+#   - id: ploa-1.0
+#     nome: PLOA 1.0
+#     referencia: PLOA-1.0
+#     descricao: Primeira versão da PLOA
+#
+#   - id: ploa-1.1
+#     nome: PLOA 1.1
+#     referencia: PLOA-1.1
+#     descricao: Segunda versão da PLOA
+#
+#   - id: ploa-2.0
+#     nome: PLOA 2.0
+#     referencia: PLOA-2.0
+#     descricao: Nova versão da PLOA

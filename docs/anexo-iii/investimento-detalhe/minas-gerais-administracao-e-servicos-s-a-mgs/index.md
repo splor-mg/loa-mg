@@ -3,18 +3,20 @@ hide:
   - toc
 ---
 
-# Investimento segundo o Detalhamento — Minas Gerais Administração e Serviços S.A - MGS
+# Origem de Recursos para Investimento — Minas Gerais Administração e Serviços S.A - MGS
 
 !!! abstract "Em uma frase"
-    No que cada empresa vai aplicar o dinheiro do investimento.
+    Mostra de onde vêm os recursos que financiam o investimento de cada empresa.
 
 **Base legal:** Art. 165, §5º, inciso II, da Constituição Federal
 
 !!! abstract "Como ler este demonstrativo"
 
-    Abre o total de cada empresa por tipo de aplicação — obras,
-    máquinas e equipamentos, participações — e pela fonte que financia
-    cada parcela.
+    Cada empresa aparece com a origem do recurso e seus desdobramentos — recursos próprios, recursos do Estado, operação de crédito e outras fontes.
+    
+    Este quadro é diferente do demonstrativo consolidado “Investimentos por Empresa segundo o Detalhamento dos Investimentos”, que apresenta o destino do investimento.
+
+    **Conferência no PDF original:** `04_LOA_Volume_III.pdf — página 72-133`.
 
 <div class="loa-cards">
 <div class="loa-card">

@@ -20,6 +20,8 @@ hide:
     O código da fonte (10, 42, 60…) é o mesmo usado no restante do
     orçamento e na execução.
 
+    **Conferência no PDF original:** `T2_RECURSOS_FINANCEIROS_FONTE_RECURSOS_GRUPOS_DESPESA_FISCAL.pdf — página 1-112`.
+
 <div class="loa-cards">
 <div class="loa-card">
 <span class="loa-card__titulo">Despesa por fonte</span>

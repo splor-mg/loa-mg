@@ -19,6 +19,8 @@ hide:
     São quantidades de cargos previstos no orçamento, não
     necessariamente pessoas em exercício hoje.
 
+    **Conferência no PDF original:** `T5_DEMONSTRATIVO_CONSOLIDADO_CATEGORIA_PESSOAL.pdf — página 1-3`.
+
 <div class="loa-cards">
 <div class="loa-card">
 <span class="loa-card__titulo">Total de pessoal</span>

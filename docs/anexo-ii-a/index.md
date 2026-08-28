@@ -6,3 +6,4 @@ Origem detalhada dos recursos de cada unidade orçamentária. No PDF são 622 p�
 
 - [Demonstrativo dos Recursos Financeiros](recursos-financeiros/index.md) — De onde vem o dinheiro de cada unidade orçamentária do Estado.
 - [Fonte de Recursos e Grupos de Despesa](fonte-grupo-despesa/index.md) — Qual dinheiro paga qual tipo de gasto, em cada unidade.
+- [Demonstrativo dos Recursos Financeiros — Demais Recursos](demais-recursos-financeiros/index.md) — Mostra receitas, repasses e recursos disponíveis das unidades orçamentárias nos demais recursos.

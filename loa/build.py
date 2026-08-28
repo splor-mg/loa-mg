@@ -102,10 +102,15 @@ class Gerador:
             partes += ["!!! abstract \"Em uma frase\"", f"    {dem['resumo']}", ""]
         if dem.get("base_legal"):
             partes += [f"**Base legal:** {dem['base_legal']}", ""]
-        if dem.get("explicacao"):
+        if dem.get("explicacao") or dem.get("pdf"):
             partes += ['!!! abstract "Como ler este demonstrativo"', ""]
-            partes += ["    " + l for l in dem["explicacao"].strip().split("\n")]
-            partes += [""]
+            if dem.get("explicacao"):
+                partes += ["    " + l for l in dem["explicacao"].strip().split("\n")]
+                partes += [""]
+            if dem.get("pdf"):
+                paginas = dem.get("paginas", "")
+                referencia = f"{dem['pdf']} — página {paginas}" if paginas else dem["pdf"]
+                partes += [f"    **Conferência no PDF original:** `{referencia}`.", ""]
         return "\n".join(partes)
 
     def _rodape_pagina(self, dem: dict, profundidade: int = 2) -> str:

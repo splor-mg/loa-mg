@@ -52,6 +52,18 @@ def _numero(valor: str) -> str:
     return ("-" if negativo else "") + str(int(digitos)) + CENTAVOS
 
 
+def _percentual(valor: str) -> str:
+    """Normaliza percentuais da origem para o formato exibido pelo site."""
+    bruto = _texto(valor).replace("%", "")
+    if not bruto:
+        return ""
+    try:
+        numero = float(bruto.replace(".", "").replace(",", "."))
+    except ValueError:
+        return ""
+    return f"{numero:.2f}".replace(".", ",") + "%"
+
+
 def ler_tsv(caminho: Path, bruto: bool = False) -> list[dict]:
     """Lê um arquivo do datapackage. Aceita tabulação ou ponto-e-vírgula.
 
@@ -185,11 +197,20 @@ def importar_anexo_i(volume: Path, destino: Path) -> dict[str, int]:
                 total = _numero(registro.get(f"total{prefixo}"))
                 if not total:
                     continue
-                linhas.append([lado, nivel, rotulo, ordinaria or "0,00",
-                               vinculada or "0,00", total])
+                part_ord = _percentual(registro.get(f"part_ord{prefixo}"))
+                part_vinc = _percentual(registro.get(f"part_vinc{prefixo}"))
+                part_total = _percentual(registro.get(f"part_total{prefixo}"))
+                if lado == "receita":
+                    linhas.append([lado, nivel, rotulo, ordinaria or "0,00", part_ord,
+                                   vinculada or "0,00", part_vinc, total, part_total, "", "", ""])
+                else:
+                    linhas.append([lado, nivel, rotulo, ordinaria or "0,00", "",
+                                   vinculada or "0,00", "", total, "", part_ord, part_vinc, part_total])
         resultado["consolidado_fiscal.csv"] = gravar(
             destino, "consolidado_fiscal.csv",
-            ["lado", "nivel", "especificacao", "ordinaria", "vinculada", "total"], linhas)
+            ["lado", "nivel", "especificacao", "ordinaria", "part_ord_rec",
+             "vinculada", "part_vinc_rec", "total", "part_total_rec",
+             "part_ord", "part_vinc", "part_total"], linhas)
 
     # T3: resumo por categoria econômica.
     #
@@ -581,12 +602,26 @@ def importar(origem: Path, destino: Path) -> list[tuple[str, str, int]]:
     """Converte os volumes brutos para os CSV do projeto."""
     relatorio: list[tuple[str, str, int]] = []
 
+    volumes = {}
     for numero, (titulo, funcao) in IMPORTADORES.items():
         volume = _achar_volume(origem, numero)
+        volumes[numero] = volume
         if volume is None:
             relatorio.append((titulo, "volume não encontrado", 0))
             continue
         for arquivo, quantidade in funcao(volume, destino).items():
             relatorio.append((titulo, arquivo, quantidade))
+
+    # Complementos: os demonstrativos novos usam os mesmos bancos de origem,
+    # mas não faziam parte do importador histórico. Mantê-los aqui é importante
+    # para que o workflow automático nunca deixe uma página nova com dados
+    # antigos quando o repositório volumes-loa for atualizado.
+    try:
+        from .importar_complementares import importar_complementares
+        extras = importar_complementares(volumes.get(1), volumes.get(2), volumes.get(3), destino)
+        for arquivo, quantidade in extras.items():
+            relatorio.append(("Demonstrativos complementares", arquivo, quantidade))
+    except Exception as exc:
+        relatorio.append(("Demonstrativos complementares", f"ERRO: {exc}", 0))
 
     return relatorio

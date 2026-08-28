@@ -24,6 +24,8 @@ hide:
     Clique em uma região no mapa para ver a lista completa de unidades
     orçamentárias que investem ali, com os valores integrais.
 
+    **Conferência no PDF original:** `05_LOA__Volume_IV_sem_contra_capa.pdf — página 6-44`.
+
 <div class="loa-cards">
 <div class="loa-card">
 <span class="loa-card__titulo">Investimento regionalizado</span>

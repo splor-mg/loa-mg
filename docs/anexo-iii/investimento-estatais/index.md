@@ -25,6 +25,8 @@ hide:
     Por isso os valores desta página **não se somam** ao Orçamento
     Fiscal: são orçamentos distintos, com dinheiro de origem diferente.
 
+    **Conferência no PDF original:** `T32_INVESTIMENTOS_POR_EMPRESA_SEGUNDO_FONTES_RECURSO.pdf — página 1-2`.
+
 <div class="loa-cards">
 <div class="loa-card">
 <span class="loa-card__titulo">Investimento das estatais</span>

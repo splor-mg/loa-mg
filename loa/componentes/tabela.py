@@ -180,8 +180,18 @@ def montar(
                 celulas.append(f'<td class="loa-col--texto">{conteudo}</td>')
             else:
                 texto = formatar(bruto, tipo)
+                percentual_campo = coluna.get("percentual_campo")
+                percentual = linha.get(percentual_campo, "") if percentual_campo else ""
+                if percentual:
+                    percentual_texto = formatar(percentual, "percentual") if "%" not in str(percentual) else html.escape(str(percentual))
+                    conteudo_numero = (
+                        f'<span class="loa-valor-principal">{texto}</span>'
+                        f'<span class="loa-percentual">{percentual_texto}</span>'
+                    )
+                else:
+                    conteudo_numero = texto
                 celulas.append(
-                    f'<td class="loa-col--numero" data-valor="{para_decimal(bruto)}">{texto}</td>'
+                    f'<td class="loa-col--numero" data-valor="{para_decimal(bruto)}">{conteudo_numero}</td>'
                 )
 
         atributos = [

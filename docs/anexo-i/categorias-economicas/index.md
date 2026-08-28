@@ -16,6 +16,8 @@ hide:
     orçamento público do país -, o que permite comparar Minas com outros
     estados.
 
+    **Conferência no PDF original:** `T3_DCGF_Demonstrativo_Receita_Despesa_Segundo_Categorias_Economicas.pdf — página 1`.
+
 <div class="loa-cards">
 <div class="loa-card">
 <span class="loa-card__titulo">Total da receita</span>
