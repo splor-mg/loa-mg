@@ -640,9 +640,104 @@
       });
   }
 
+  /* --------------------------------------------------------- versões */
+  /*
+     VERSÕES DO PROJETO
+     -------------------
+     O repositório volumes-loa ainda não possui tags oficiais. Por isso,
+     v1.1 aparece aqui apenas como versão de demonstração da interface.
+
+     QUANDO A EQUIPE DEFINIR AS TAGS OFICIAIS:
+       1. substitua/adicone os itens desta lista;
+       2. em cada item, troque `url` para /tree/<tag> (ou para a URL definida);
+       3. marque a versão publicada em `atual`;
+       4. não é necessário alterar o restante da integração.
+
+     Exemplo futuro:
+       { nome: "v1.1", url: "https://github.com/splor-mg/volumes-loa/tree/v1.1" }
+  */
+  var VERSAO_ATUAL = "v1.1";
+  var VERSOES = [
+    {
+      nome: "v1.1",
+      url: "https://github.com/splor-mg/loa-mg/tree/main",
+      descricao: "Demonstração — tag oficial ainda não definida"
+    }
+  ];
+
+  function criaIconeTag() {
+  /*
+     Ícone `material/tag` do Material for MkDocs.
+     O SVG é inserido diretamente porque este seletor é criado pelo
+     JavaScript depois que o template do Material já foi renderizado.
+  */
+  var span = document.createElement("span");
+  span.className = "loa-versoes__icone md-icon";
+  span.setAttribute("aria-hidden", "true");
+  span.innerHTML =
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img">' +
+    '<path d="M5.5 3C4.67 3 4 3.67 4 4.5v5.67c0 .4.16.78.44 1.06l8.33 8.33c.59.59 1.54.59 2.12 0l5.67-5.67c.59-.59.59-1.54 0-2.12l-8.33-8.33A1.49 1.49 0 0 0 11.17 3H5.5zm1.5 3.5A1.5 1.5 0 1 1 7 9.5 1.5 1.5 0 0 1 7 6.5z"/>' +
+    '</svg>';
+  return span;
+}
+
+  function montaVersoes() {
+    var origem = document.querySelector(".md-header__source");
+    if (!origem || document.querySelector(".loa-versoes")) return;
+
+    var detalhes = document.createElement("details");
+    detalhes.className = "loa-versoes";
+
+    var resumo = document.createElement("summary");
+    resumo.className = "loa-versoes__resumo";
+    resumo.setAttribute("title", "Selecionar versão");
+    resumo.appendChild(criaIconeTag());
+
+    var rotulo = document.createElement("span");
+    rotulo.className = "loa-versoes__atual";
+    rotulo.textContent = VERSAO_ATUAL;
+    resumo.appendChild(rotulo);
+    detalhes.appendChild(resumo);
+
+    var menu = document.createElement("div");
+    menu.className = "loa-versoes__menu";
+    menu.setAttribute("role", "menu");
+
+    VERSOES.forEach(function (versao) {
+      var item = document.createElement("a");
+      item.className = "loa-versoes__item";
+      item.href = versao.url;
+      item.setAttribute("role", "menuitem");
+      if (versao.nome === VERSAO_ATUAL) {
+        item.classList.add("loa-versoes__item--atual");
+      }
+
+      var nome = document.createElement("strong");
+      nome.textContent = versao.nome;
+      item.appendChild(nome);
+
+      var descricao = document.createElement("small");
+      descricao.textContent = versao.descricao;
+      item.appendChild(descricao);
+
+      menu.appendChild(item);
+    });
+
+    detalhes.appendChild(menu);
+
+    var observacao = document.createElement("div");
+    observacao.className = "loa-versoes__observacao";
+    observacao.textContent = "Tags oficiais do volumes-loa serão incorporadas aqui quando definidas.";
+    menu.appendChild(observacao);
+
+    /* Coloca o seletor imediatamente ao lado do bloco do GitHub. */
+    origem.parentNode.insertBefore(detalhes, origem.nextSibling);
+  }
+
   function ativarTudo() {
     document.querySelectorAll(".loa-tabela").forEach(ativaTabela);
     document.querySelectorAll(".loa-mapa-municipios").forEach(montaMapaMunicipios);
+    montaVersoes();
   }
 
   /* `document$` é o fluxo do Material que emite a cada troca de página,
