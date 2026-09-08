@@ -14,7 +14,7 @@ hide:
 
     As linhas 5 e 6 fecham a receita total e a receita disponível; repasses internos não devem ser confundidos com receita nova do Estado.
 
-    **Conferência no PDF original:** `T5_DEMONSTRATIVO_DOS_RECURSOS_FINANCEIROS_TABELA_DEMAIS_RECURSOS.pdf — página 1-63`.
+    **Conferência no PDF original:** `Volume 2B, página 382 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-demais-recursos-financeiros-4-69-1-fundo-estadual-de-seguranca-publica-de-minas-gerais-fesp-mg" data-id="demais-recursos-financeiros-4-69-1-fundo-estadual-de-seguranca-publica-de-minas-gerais-fesp-mg">
   <div class="loa-ferramentas">

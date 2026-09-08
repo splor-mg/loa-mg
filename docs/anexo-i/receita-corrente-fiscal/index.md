@@ -14,7 +14,7 @@ hide:
 
     A receita corrente fiscal resulta das receitas correntes menos as deduções obrigatórias. A linha de dedução é negativa e não deve ser somada como se fosse uma receita.
 
-    **Conferência no PDF original:** `T2_DCGF_DEMONSTRATIVO_RECEITA_CORRENTE_FISCAL.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 1, página 7 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-receita-corrente-fiscal" data-id="receita-corrente-fiscal">
   <div class="loa-ferramentas">

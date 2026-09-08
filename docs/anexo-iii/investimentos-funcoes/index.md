@@ -14,7 +14,7 @@ hide:
 
     O percentual é a participação de cada função no total dos investimentos.
 
-    **Conferência no PDF original:** `T30_INVESTIMENTOS_SEGUNDO_FUNCOES.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 3, página 9 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-investimentos-funcoes" data-id="investimentos-funcoes">
   <div class="loa-ferramentas">

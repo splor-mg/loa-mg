@@ -14,7 +14,7 @@ hide:
 
     As colunas separam recursos do Tesouro e outras fontes. O total é a soma das duas parcelas em cada linha.
 
-    **Conferência no PDF original:** `T13_DCGF_Demonstrativo_Consolidado_Despesa.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 1, página 85 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-consolidado-despesa-categoria" data-id="consolidado-despesa-categoria">
   <div class="loa-ferramentas">

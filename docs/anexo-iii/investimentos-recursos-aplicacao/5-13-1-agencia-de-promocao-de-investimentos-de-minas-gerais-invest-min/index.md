@@ -14,7 +14,7 @@ hide:
 
     A primeira coluna identifica a fonte; as demais mostram onde o recurso é aplicado. Cada empresa tem seu próprio bloco no PDF.
 
-    **Conferência no PDF original:** `04_LOA_Volume_III.pdf — página 25-137`.
+    **Conferência no PDF original:** `Volume 3, página 25 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-investimentos-recursos-aplicacao-5-13-1-agencia-de-promocao-de-investimentos-de-minas-gerais-invest-min" data-id="investimentos-recursos-aplicacao-5-13-1-agencia-de-promocao-de-investimentos-de-minas-gerais-invest-min">
   <div class="loa-ferramentas">

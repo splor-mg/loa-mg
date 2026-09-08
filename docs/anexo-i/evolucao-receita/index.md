@@ -14,7 +14,7 @@ hide:
 
     Cada ano mostra o valor da receita e sua participação percentual. A comparação ajuda a identificar crescimento, queda e mudança de composição da arrecadação.
 
-    **Conferência no PDF original:** `T6_DCGF_Demonstrativo_Evolucao_Receita_por_Categoria_Economica.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 1, página 22 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-evolucao-receita" data-id="evolucao-receita">
   <div class="loa-ferramentas">

@@ -14,7 +14,7 @@ hide:
 
     As parcelas são participação societária, imobilizações, outras aplicações e amortização de dívidas. O total é a soma dessas parcelas.
 
-    **Conferência no PDF original:** `T33_INVESTIMENTOS_EMPRESA_SEGUNDO_DETALHAMENTO_INVESTIMENTOS.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 3, página 8 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-investimentos-empresa-detalhamento" data-id="investimentos-empresa-detalhamento">
   <div class="loa-ferramentas">

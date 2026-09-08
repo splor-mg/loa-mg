@@ -14,7 +14,7 @@ hide:
 
     A classificação funcional identifica onde os recursos estão previstos e a coluna de exclusividade indica o enquadramento da ação.
 
-    **Conferência no PDF original:** `T39_DCGF_DEMONSTRATIVO_DA_POLITICA_DE_ATENDIMENTO_A_MULHER_VITIMA_DE_VIOLENCIA_NO_ESTADO.pdf — página 1-3`.
+    **Conferência no PDF original:** `Volume 1, páginas 230-232 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-politica-mulher-violencia" data-id="politica-mulher-violencia">
   <div class="loa-ferramentas">

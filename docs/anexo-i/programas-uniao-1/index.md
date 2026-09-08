@@ -14,7 +14,7 @@ hide:
 
     As partes do demonstrativo mostram, conforme a fonte, o previsto na LOA e/ou o realizado no acompanhamento de execução.
 
-    **Conferência no PDF original:** `T28_DCGF_PT1_Receita_prevista_e_realizada.pdf — página 1-5`.
+    **Conferência no PDF original:** `Volume 1, páginas 174-178 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-programas-uniao-1" data-id="programas-uniao-1">
   <div class="loa-ferramentas">

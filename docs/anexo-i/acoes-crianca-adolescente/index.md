@@ -14,7 +14,7 @@ hide:
 
     A coluna de exclusividade identifica ações classificadas como exclusivas para esse público.
 
-    **Conferência no PDF original:** `T26_DCGF_DEMONSTRATIVO_RECURSOS_APLICADOS_ACOES_PARA_CRIANCA_E_ADOLESCENTE.pdf — página 1-8`.
+    **Conferência no PDF original:** `Volume 1, páginas 163-170 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-acoes-crianca-adolescente" data-id="acoes-crianca-adolescente">
   <div class="loa-ferramentas">

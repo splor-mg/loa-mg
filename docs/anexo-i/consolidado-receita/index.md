@@ -27,7 +27,7 @@ hide:
     
     Clique em uma **linha com seta** para abrir o detalhamento.
 
-    **Conferência no PDF original:** `01. Demonstrativo Consolidado do Or#U00e7amento Fiscal.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 1, página 6 do PDF oficial`.
 
 <div class="loa-cards">
 <div class="loa-card">

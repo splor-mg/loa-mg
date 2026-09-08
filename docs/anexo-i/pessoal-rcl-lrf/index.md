@@ -14,7 +14,7 @@ hide:
 
     O percentual da linha é a participação prevista; quando há valor em reais, ele aparece junto.
 
-    **Conferência no PDF original:** `T20A_DCGF_Demonstrativo_Partic_Percentual_Pessoal_RCL_LRF.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 1, página 150 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-pessoal-rcl-lrf" data-id="pessoal-rcl-lrf">
   <div class="loa-ferramentas">

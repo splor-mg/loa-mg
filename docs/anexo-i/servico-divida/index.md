@@ -14,7 +14,7 @@ hide:
 
     Principal corresponde à amortização; acessório reúne juros e encargos. O total soma as duas parcelas.
 
-    **Conferência no PDF original:** `T23_DCGF_Demonstrativo_do_Servico_da_divida_publica.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 1, página 159 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-servico-divida" data-id="servico-divida">
   <div class="loa-ferramentas">

@@ -22,7 +22,7 @@ hide:
     Dentro de cada grupo, o gasto aparece separado entre Executivo e
     demais Poderes, e depois entre administração direta e indireta.
 
-    **Conferência no PDF original:** `01. Demonstrativo Consolidado do Or#U00e7amento Fiscal.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 1, página 6 do PDF oficial`.
 
 <div class="loa-cards">
 <div class="loa-card">

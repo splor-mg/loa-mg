@@ -14,7 +14,7 @@ hide:
 
     A primeira coluna identifica a fonte; as demais mostram onde o recurso é aplicado. Cada empresa tem seu próprio bloco no PDF.
 
-    **Conferência no PDF original:** `04_LOA_Volume_III.pdf — página 25-137`.
+    **Conferência no PDF original:** `Volume 3, página 25 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-investimentos-recursos-aplicacao-5-03-1-companhia-de-desenvolvimento-de-minas-gerais-codemge" data-id="investimentos-recursos-aplicacao-5-03-1-companhia-de-desenvolvimento-de-minas-gerais-codemge">
   <div class="loa-ferramentas">

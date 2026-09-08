@@ -14,7 +14,7 @@ hide:
 
     As partes do demonstrativo mostram, conforme a fonte, o previsto na LOA e/ou o realizado no acompanhamento de execução.
 
-    **Conferência no PDF original:** `T28_DCGF_PT4_Despesa_prevista_LOA.pdf — página 1-2`.
+    **Conferência no PDF original:** `Volume 1, páginas 186-187 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-programas-uniao-4" data-id="programas-uniao-4">
   <div class="loa-ferramentas">

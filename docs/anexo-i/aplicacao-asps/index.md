@@ -14,7 +14,7 @@ hide:
 
     A estrutura separa receitas que entram na base de cálculo e as deduções previstas. Não some níveis hierárquicos entre si.
 
-    **Conferência no PDF original:** `T18_DCGF_Demonst_Aplicacao_Recursos_Acoes_Servicos_Publicos_Saude.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 1, página 148 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-aplicacao-asps" data-id="aplicacao-asps">
   <div class="loa-ferramentas">

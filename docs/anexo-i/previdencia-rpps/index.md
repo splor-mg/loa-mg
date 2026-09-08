@@ -14,7 +14,7 @@ hide:
 
     A árvore separa os grandes blocos de receitas e despesas e seus componentes.
 
-    **Conferência no PDF original:** `T38_DCGF_DEMONSTRATIVO_RECEITAS_DESPESAS_PREVIDENCIARIAS_RPPS.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 1, página 173 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-previdencia-rpps" data-id="previdencia-rpps">
   <div class="loa-ferramentas">

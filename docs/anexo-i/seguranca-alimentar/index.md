@@ -14,7 +14,7 @@ hide:
 
     Cada linha corresponde a uma ação orçamentária identificada pela classificação funcional.
 
-    **Conferência no PDF original:** `T37_DCGF_DEMONSTRATIVOS_RECURSOS_APLICADOS_SEGURANCA_ALIMENTAR_NUTRICIONAL.pdf — página 1-2`.
+    **Conferência no PDF original:** `Volume 1, páginas 245-246 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-seguranca-alimentar" data-id="seguranca-alimentar">
   <div class="loa-ferramentas">

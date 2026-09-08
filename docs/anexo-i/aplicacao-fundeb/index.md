@@ -14,7 +14,7 @@ hide:
 
     A linha Receita inicia a composição; depois aparecem as receitas específicas e a aplicação na educação.
 
-    **Conferência no PDF original:** `T25_DCGF_Demonstrativo_Aplicacao_Recursos_FUNDEB.pdf — página 1-2`.
+    **Conferência no PDF original:** `Volume 1, páginas 161-162 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-aplicacao-fundeb" data-id="aplicacao-fundeb">
   <div class="loa-ferramentas">

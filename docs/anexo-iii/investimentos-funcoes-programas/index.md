@@ -14,7 +14,7 @@ hide:
 
     A hierarquia permite navegar do grande bloco funcional até a programação específica.
 
-    **Conferência no PDF original:** `T31_INVESTIMENTOS_SEGUNDO_FUNCOES_SUBFUNCOES_PROGRAMAS_POR_PROJETOS_ATIVIDADES.pdf — página 1-2`.
+    **Conferência no PDF original:** `Volume 3, página 9 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-investimentos-funcoes-programas" data-id="investimentos-funcoes-programas">
   <div class="loa-ferramentas">

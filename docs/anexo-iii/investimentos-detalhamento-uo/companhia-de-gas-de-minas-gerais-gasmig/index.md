@@ -14,7 +14,7 @@ hide:
 
     As linhas superiores mostram categorias e as inferiores abrem o detalhamento e as fontes. Não some categorias e subitens ao mesmo tempo.
 
-    **Conferência no PDF original:** `04_LOA_Volume_III.pdf — página 23-133`.
+    **Conferência no PDF original:** `Volume 3, página 23 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-investimentos-detalhamento-uo-companhia-de-gas-de-minas-gerais-gasmig" data-id="investimentos-detalhamento-uo-companhia-de-gas-de-minas-gerais-gasmig">
   <div class="loa-ferramentas">

@@ -14,7 +14,7 @@ hide:
 
     A RCL parte das receitas correntes e aplica as deduções previstas na legislação fiscal. A hierarquia permite abrir a composição sem somar níveis repetidos.
 
-    **Conferência no PDF original:** `T8_DCGF_RECEITA_CORRENTE_LIQUIDA.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 1, página 70 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-receita-corrente-liquida" data-id="receita-corrente-liquida">
   <div class="loa-ferramentas">

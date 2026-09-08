@@ -14,7 +14,7 @@ hide:
 
     Use a hierarquia para abrir cada poder e unidade até chegar às ações e subtotais.
 
-    **Conferência no PDF original:** `T27_DCGF_Demonst_Despesas_UGEPREVI.pdf — página 1-2`.
+    **Conferência no PDF original:** `Volume 1, páginas 171-172 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-despesas-ugeprevi" data-id="despesas-ugeprevi">
   <div class="loa-ferramentas">

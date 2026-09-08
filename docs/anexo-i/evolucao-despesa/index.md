@@ -14,7 +14,7 @@ hide:
 
     Cada ano apresenta o valor e a participação percentual da categoria. Use a comparação para perceber mudanças entre despesas correntes, de capital e reserva.
 
-    **Conferência no PDF original:** `T12_DCGF_Demonstrativo_Evolucao_Despesa_Categoria_Economica.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 1, página 84 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-evolucao-despesa" data-id="evolucao-despesa">
   <div class="loa-ferramentas">

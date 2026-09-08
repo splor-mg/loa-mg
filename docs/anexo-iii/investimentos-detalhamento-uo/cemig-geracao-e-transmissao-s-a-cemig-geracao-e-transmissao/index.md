@@ -14,7 +14,7 @@ hide:
 
     As linhas superiores mostram categorias e as inferiores abrem o detalhamento e as fontes. Não some categorias e subitens ao mesmo tempo.
 
-    **Conferência no PDF original:** `04_LOA_Volume_III.pdf — página 23-133`.
+    **Conferência no PDF original:** `Volume 3, página 23 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-investimentos-detalhamento-uo-cemig-geracao-e-transmissao-s-a-cemig-geracao-e-transmissao" data-id="investimentos-detalhamento-uo-cemig-geracao-e-transmissao-s-a-cemig-geracao-e-transmissao">
   <div class="loa-ferramentas">

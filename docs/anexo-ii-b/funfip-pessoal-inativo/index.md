@@ -14,7 +14,7 @@ hide:
 
     O total do Poder Executivo e a abertura por unidade orçamentária permitem conferir quantidade e valor.
 
-    **Conferência no PDF original:** `T3_FUNFIP_DETALHAMENTO_DE_PESSOAL_INATIVO_CIVIL.pdf — página 1-3`.
+    **Conferência no PDF original:** `Volume 2B, página 464 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-funfip-pessoal-inativo-resumo" data-id="funfip-pessoal-inativo-resumo">
   <div class="loa-ferramentas">

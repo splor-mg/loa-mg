@@ -28,7 +28,7 @@ hide:
     
     Comece com a árvore fechada e vá abrindo só o ramo que interessa.
 
-    **Conferência no PDF original:** `T4_DEMONSTRATIVO_DOS_RECURSOS_FINANCEIROS.pdf — página 1-161`.
+    **Conferência no PDF original:** `Volume 2A, página 21 do PDF oficial`.
 
 <div class="loa-cards">
 <div class="loa-card">

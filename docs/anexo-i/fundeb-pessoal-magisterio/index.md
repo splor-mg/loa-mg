@@ -14,7 +14,7 @@ hide:
 
     A última linha apresenta o percentual de aplicação em relação à receita do Fundeb.
 
-    **Conferência no PDF original:** `T25_DCGF_PT2_PESSOAL_MAGISTERIO_RELATIVO_RECEITA_FUNDEB.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 1, páginas 161-162 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-fundeb-pessoal-magisterio" data-id="fundeb-pessoal-magisterio">
   <div class="loa-ferramentas">

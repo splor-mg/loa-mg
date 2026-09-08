@@ -14,7 +14,7 @@ hide:
 
     A receita é organizada em correntes e de capital; a despesa, em correntes, de capital e reserva de contingência. As linhas de total e resultado fecham os blocos e não devem ser somadas novamente.
 
-    **Conferência no PDF original:** `T3_DCGF_Demonstrativo_Receita_Despesa_Segundo_Categorias_Economicas.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 1, página 8 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-receita-despesa-categorias" data-id="receita-despesa-categorias">
   <div class="loa-ferramentas">

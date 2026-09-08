@@ -14,7 +14,7 @@ hide:
 
     Abra os níveis para sair da categoria geral até a fonte e o desdobramento específico. Não some linhas de níveis diferentes, pois elas representam o mesmo recurso em diferentes graus de detalhe.
 
-    **Conferência no PDF original:** `T9_DEMONSTRATIVO_RECEITA_ORCAMENTARIA_CORRENTE_ORDINARIA.pdf — página 1-7`.
+    **Conferência no PDF original:** `Volume 1, páginas 71-77 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-receita-orcamentaria-corrente-ordinaria" data-id="receita-orcamentaria-corrente-ordinaria">
   <div class="loa-ferramentas">

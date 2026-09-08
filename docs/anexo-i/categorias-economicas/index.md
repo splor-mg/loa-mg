@@ -16,7 +16,7 @@ hide:
     orçamento público do país -, o que permite comparar Minas com outros
     estados.
 
-    **Conferência no PDF original:** `T3_DCGF_Demonstrativo_Receita_Despesa_Segundo_Categorias_Economicas.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 1, página 8 do PDF oficial`.
 
 <div class="loa-cards">
 <div class="loa-card">

@@ -109,7 +109,11 @@ class Gerador:
                 partes += [""]
             if dem.get("pdf"):
                 paginas = dem.get("paginas", "")
-                referencia = f"{dem['pdf']} — página {paginas}" if paginas else dem["pdf"]
+                if paginas:
+                    unidade = "páginas" if "-" in str(paginas) else "página"
+                    referencia = f"{dem['pdf']}, {unidade} {paginas} do PDF oficial"
+                else:
+                    referencia = dem["pdf"]
                 partes += [f"    **Conferência no PDF original:** `{referencia}`.", ""]
         return "\n".join(partes)
 

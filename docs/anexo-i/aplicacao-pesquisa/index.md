@@ -14,7 +14,7 @@ hide:
 
     Acompanhe as linhas de base de cálculo e a aplicação. O demonstrativo é de composição, não de soma de todas as linhas.
 
-    **Conferência no PDF original:** `T19_DCGF_Demonstrativo_Aplicacao_Recursos_Amparo_Fomento_Pesquisa.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 1, página 149 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-aplicacao-pesquisa" data-id="aplicacao-pesquisa">
   <div class="loa-ferramentas">

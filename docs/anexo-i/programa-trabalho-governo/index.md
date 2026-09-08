@@ -14,7 +14,7 @@ hide:
 
     Use a árvore para chegar ao programa ou à ação e veja como o valor se distribui entre pessoal, juros, outras correntes, investimentos e demais grupos.
 
-    **Conferência no PDF original:** `T15_PROGRAMA_TRABALHO_GOVERNO.pdf — página 1-28`.
+    **Conferência no PDF original:** `Volume 1, páginas 117-144 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-programa-trabalho-governo" data-id="programa-trabalho-governo">
   <div class="loa-ferramentas">

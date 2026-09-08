@@ -14,7 +14,7 @@ hide:
 
     As linhas detalham a programação por unidade ou ação, conforme a estrutura do demonstrativo oficial.
 
-    **Conferência no PDF original:** `T17_DCGF_Demonst_Aplicacao_Recursos_Progr_Saude_Investim.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 1, página 147 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-aplicacao-saude-programas" data-id="aplicacao-saude-programas">
   <div class="loa-ferramentas">

@@ -19,7 +19,7 @@ hide:
     As colunas são os **grupos de natureza da despesa**, a classificação
     oficial do que se pode fazer com o dinheiro.
 
-    **Conferência no PDF original:** `T4_DEMONSTRATIVO_DESPESA_POR_ORGAOS_ENTIDADES_SEGUNDO_GRUPOS_DESPESA.pdf — página 1-8`.
+    **Conferência no PDF original:** `Volume 1, páginas 9-16 do PDF oficial`.
 
 <div class="loa-cards">
 <div class="loa-card">

@@ -14,7 +14,7 @@ hide:
 
     A hierarquia parte da receita de impostos e abre os componentes que formam a base de cálculo.
 
-    **Conferência no PDF original:** `T16_DCGF_Demons_Aplicacao_Recursos_Manut_Desenv_Ensino.pdf — página 1`.
+    **Conferência no PDF original:** `Volume 1, página 146 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-aplicacao-ensino" data-id="aplicacao-ensino">
   <div class="loa-ferramentas">

@@ -20,7 +20,7 @@ hide:
     
     Use o filtro para digitar o nome do seu município.
 
-    **Conferência no PDF original:** `05_LOA__Volume_IV_sem_contra_capa.pdf — página 45-157`.
+    **Conferência no PDF original:** `Volume 4, página 37 do PDF oficial`.
 
 <div class="loa-cards">
 <div class="loa-card">

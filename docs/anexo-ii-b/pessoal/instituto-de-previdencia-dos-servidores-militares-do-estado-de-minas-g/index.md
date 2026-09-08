@@ -22,7 +22,7 @@ hide:
     A quantidade é o número de cargos previstos no orçamento, não
     necessariamente o número de pessoas em exercício hoje.
 
-    **Conferência no PDF original:** `T3_DETALHAMENTO_DA_CATEGORIA_DE_PESSOAL.pdf — página 1-68`.
+    **Conferência no PDF original:** `Volume 2B, página 16 do PDF oficial`.
 
 <div class="loa-cards">
 <div class="loa-card">

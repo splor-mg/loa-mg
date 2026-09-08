@@ -19,7 +19,7 @@ hide:
     São quantidades de cargos previstos no orçamento, não
     necessariamente pessoas em exercício hoje.
 
-    **Conferência no PDF original:** `T5_DEMONSTRATIVO_CONSOLIDADO_CATEGORIA_PESSOAL.pdf — página 1-3`.
+    **Conferência no PDF original:** `Volume 1, páginas 17-19 do PDF oficial`.
 
 <div class="loa-cards">
 <div class="loa-card">

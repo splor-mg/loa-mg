@@ -14,7 +14,7 @@ hide:
 
     A hierarquia segue função, subfunção e programa. As parcelas de recursos não devem ser somadas entre níveis repetidos.
 
-    **Conferência no PDF original:** `T14_DEMONSTRATIVO_DESPESA_FUNCAO_SUBFUNCAO_PROGRAMA_CONFORME_VINCULO_COM_RECURSOS.pdf — página 1-31`.
+    **Conferência no PDF original:** `Volume 1, páginas 86-116 do PDF oficial`.
 
 <div class="loa-tabela" id="tabela-despesa-vinculo-recursos" data-id="despesa-vinculo-recursos">
   <div class="loa-ferramentas">

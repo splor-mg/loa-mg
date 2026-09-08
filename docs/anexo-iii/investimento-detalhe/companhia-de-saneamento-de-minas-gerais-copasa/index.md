@@ -16,7 +16,7 @@ hide:
     
     Este quadro é diferente do demonstrativo consolidado “Investimentos por Empresa segundo o Detalhamento dos Investimentos”, que apresenta o destino do investimento.
 
-    **Conferência no PDF original:** `04_LOA_Volume_III.pdf — página 72-133`.
+    **Conferência no PDF original:** `Volume 3, página 72 do PDF oficial`.
 
 <div class="loa-cards">
 <div class="loa-card">
